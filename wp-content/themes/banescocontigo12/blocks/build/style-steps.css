@@ -1,0 +1,201 @@
+/*!****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/src/steps/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************/
+.steps {
+  position: relative;
+  margin-top: var(--margins-top);
+  margin-bottom: var(--margins-bottom);
+  padding-top: var(--paddings-top);
+  padding-bottom: var(--paddings-bottom);
+  background: var(--gradient);
+}
+@media (max-width: 767.98px) {
+  .steps {
+    margin-top: var(--margins-top--mobile);
+    margin-bottom: var(--margins-bottom--mobile);
+    padding-top: var(--paddings-top--mobile);
+    padding-bottom: var(--paddings-bottom--mobile);
+  }
+}
+.steps__inner {
+  position: relative;
+  z-index: 2;
+}
+.steps__title {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 575.98px) {
+  .steps__title {
+    font-size: 36px;
+  }
+}
+.steps__list {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+}
+@media (max-width: 1199.98px) {
+  .steps__list {
+    margin-right: -16px;
+  }
+}
+@media (max-width: 767.98px) {
+  .steps__list {
+    margin-top: 21px;
+    overflow: visible;
+    flex-direction: column;
+    margin-right: 0;
+  }
+}
+.steps__item {
+  position: relative;
+  background: #ffffff;
+  margin-top: 23px;
+  padding: 28px 31px 31px 36px;
+  min-width: 287px;
+  border: 1px solid #dce1e9;
+  border-top: 8px solid #219963;
+  border-radius: 10px;
+  background: #ffffff;
+  min-height: 447px;
+}
+@media (max-width: 1199.98px) {
+  .steps__item:last-child {
+    margin-right: 16px;
+  }
+}
+@media (max-width: 767.98px) {
+  .steps__item {
+    padding: 24px 24px 27px 24px;
+    margin-top: 16px;
+    min-height: auto;
+  }
+  .steps__item:last-child {
+    margin-right: 0px;
+  }
+}
+.steps__item-suptitle {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: #3a4454;
+}
+@media (max-width: 575.98px) {
+  .steps__item-suptitle {
+    font-size: 20px;
+  }
+}
+.steps__item-title {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 100%;
+  color: #3a4454;
+}
+@media (max-width: 575.98px) {
+  .steps__item-title {
+    font-size: 24px;
+  }
+}
+.steps__item-text {
+  margin-top: 28px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #748994;
+}
+@media (max-width: 575.98px) {
+  .steps__item-text {
+    margin-top: 13px;
+  }
+}
+.steps__item-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.steps__item-link {
+  margin-top: 16px;
+  display: inline-block;
+}
+.steps__item-link.link-button {
+  display: inline-block;
+}
+@media (max-width: 767.98px) {
+  .steps__item-buttons {
+    display: flex;
+    align-items: center;
+  }
+}
+.steps__item-appstore, .steps__item-googleplay {
+  display: block;
+  margin-top: 15px;
+  width: 150px;
+  height: 44px;
+}
+@media (max-width: 767.98px) {
+  .steps__item-appstore, .steps__item-googleplay {
+    width: 50%;
+    height: auto;
+    margin-top: 27px;
+  }
+}
+.steps__item-appstore img, .steps__item-googleplay img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 767.98px) {
+  .steps__item-appstore {
+    margin-right: 12px;
+  }
+}
+.steps__item-appstore {
+  margin-top: 20px;
+}
+@media (max-width: 767.98px) {
+  .steps__item-appstore {
+    margin-top: 27px;
+  }
+}
+.steps__item + .steps__item {
+  margin-left: 24px;
+}
+@media (max-width: 767.98px) {
+  .steps__item + .steps__item {
+    margin-left: 0;
+  }
+}
+.steps__background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+@media (max-width: 767.98px) {
+  .steps__background {
+    display: none;
+  }
+}
+.steps__background img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*# sourceMappingURL=style-steps.css.map*/

@@ -1,0 +1,141 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/src/promo-banner/style.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************/
+.promo-banner {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: var(--margins-top);
+  margin-bottom: var(--margins-bottom);
+  padding-top: var(--paddings-top);
+  padding-bottom: var(--paddings-bottom);
+  background: var(--gradient);
+}
+@media (max-width: 767.98px) {
+  .promo-banner {
+    margin-top: var(--margins-top--mobile);
+    margin-bottom: var(--margins-bottom--mobile);
+    padding-top: var(--paddings-top--mobile);
+    padding-bottom: var(--paddings-bottom--mobile);
+  }
+}
+@media (max-width: 767.98px) {
+  .promo-banner {
+    min-height: 777px;
+  }
+}
+@media (max-width: 575.98px) {
+  .promo-banner {
+    min-height: 577px;
+  }
+}
+.promo-banner__inner {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 5;
+}
+@media (max-width: 767.98px) {
+  .promo-banner__inner {
+    flex-direction: column;
+  }
+}
+.promo-banner__content {
+  flex: 1 0 31%;
+  width: 31%;
+}
+@media (max-width: 991.98px) {
+  .promo-banner__content {
+    flex: 1 0 41%;
+    width: 41%;
+  }
+}
+.promo-banner__title {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 100%;
+  color: #ffffff;
+  max-width: 350px;
+}
+@media (max-width: 767.98px) {
+  .promo-banner__title {
+    margin-top: 41px;
+  }
+}
+@media (max-width: 575.98px) {
+  .promo-banner__title {
+    font-size: 36px;
+    line-height: 100%;
+  }
+}
+.promo-banner__description {
+  margin-top: 36px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  max-width: 420px;
+}
+@media (max-width: 767.98px) {
+  .promo-banner__description {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 575.98px) {
+  .promo-banner__description {
+    font-size: 16px;
+  }
+}
+.promo-banner__buttons {
+  display: flex;
+  align-items: center;
+}
+.promo-banner__button {
+  margin-top: 36px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 36px;
+  min-width: 100px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+.promo-banner__button:visited {
+  color: #fff;
+}
+.promo-banner__button:hover {
+  color: #fff;
+  border-color: #fff;
+  cursor: pointer;
+}
+.promo-banner__button:active {
+  background: transparent;
+}
+@media (max-width: 767.98px) {
+  .promo-banner__button {
+    margin-top: 30px;
+  }
+}
+.promo-banner__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.promo-banner__background img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*# sourceMappingURL=style-promo-banner.css.map*/

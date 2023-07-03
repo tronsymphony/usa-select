@@ -1,0 +1,19 @@
+{
+  "name": "acf/heading-text-banner",
+  "title": "heading-text-banner",
+  "category": "widgets",
+  "icon": "calculator",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "heading-text-banner.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": true
+}

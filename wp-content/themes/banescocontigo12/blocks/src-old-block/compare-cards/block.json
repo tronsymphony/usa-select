@@ -1,0 +1,84 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/compare-cards",
+	"version": "1.0.0",
+	"title": "Compare Cards",
+	"category": "widgets",
+	"icon": "image-flip-horizontal",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/compare-cards.js",
+	"editorStyle": "file:../../../blocks/build/compare-cards.css",
+	"style": "file:../../../blocks/build/style-compare-cards.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "66px",
+					"bottom": "93px"
+				},
+				"mobile": {
+					"top": "32px",
+					"bottom": "24px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "-100px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "transparent"
+		},
+		"title": {
+			"type": "string",
+			"default": "Compara las tarjetas seleccionadas"
+		},
+		"internacional": {
+			"type": "string",
+			"default": "Internacional"
+		},
+		"chip": {
+			"type": "string",
+			"default": "Chip"
+		},
+		"multicredito_banesco": {
+			"type": "string",
+			"default": "Multicredito Banesco"
+		},
+		"puntos_verdes": {
+			"type": "string",
+			"default": "Puntos Verdes"
+		},
+		"proteccion_y_seguros": {
+			"type": "string",
+			"default": "Proteccion y Seguros"
+		},
+		"asistencia": {
+			"type": "string",
+			"default": "Asistencia"
+		},
+		"mas_detalles": {
+			"type": "string",
+			"default": "Más detalles"
+		},
+		"bottom": {
+			"type": "string",
+			"default": "La decisión de otorgamiento está sujeto a análisis crediticio."
+		}
+	}
+}

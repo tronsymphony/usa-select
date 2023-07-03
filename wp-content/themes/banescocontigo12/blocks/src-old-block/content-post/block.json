@@ -1,0 +1,52 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/content-post",
+	"version": "1.0.0",
+	"title": "Content post",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/content-post.js",
+	"editorStyle": "file:../../../blocks/build/content-post.css",
+	"style": "file:../../../blocks/build/style-content-post.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "82px"
+				},
+				"mobile": {
+					"top": "34px",
+					"bottom": "44px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"content": {
+			"type": "string",
+			"default": "<h3>Subtitle</h3>\n<p>Very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long description.</p>"
+		}
+	}
+}

@@ -1,0 +1,139 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/banner-with-info",
+	"version": "1.0.0",
+	"title": "Banner with info",
+	"category": "widgets",
+	"icon": "align-center",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/banner-with-info.js",
+	"editorStyle": "file:../../../blocks/build/banner-with-info.css",
+	"style": "file:../../../blocks/build/style-banner-with-info.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"bannerIcon": {
+			"type": "object",
+			"default": {
+				"alt": "",
+				"url": "icon.svg"
+			}
+		},
+		"bannerTitle": {
+			"type": "string",
+			"default": "Title"
+		},
+		"bannerSubtitle": {
+			"type": "string",
+			"default": "Subtitle"
+		},
+		"bannerContent": {
+			"type": "string",
+			"default": "<ul>\n<li>line #1</li>\n<li>line #2</li>\n<li>line #3</li>\n<li>line #4</li>\n</ul>"
+		},
+		"button": {
+			"type": "string",
+			"default": "Button"
+		},
+		"target": {
+			"type": "string",
+			"default": "/"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Title #1",
+					"link": "Link",
+					"target": "/",
+					"text": "",
+					"image": {
+						"alt": "",
+						"url": "pin.svg"
+					}
+				},
+				{
+					"name": "tab2",
+					"title": "Title #2",
+					"link": "Link",
+					"target": "/",
+					"text": "",
+					"image": {
+						"alt": "",
+						"url": "mail.svg"
+					}
+				},
+				{
+					"name": "tab3",
+					"title": "Title #3",
+					"link": "Link",
+					"target": "/",
+					"text": "",
+					"image": {
+						"alt": "",
+						"url": "tel.svg"
+					}
+				}
+			]
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"alt": "",
+				"url": "background.jpg"
+			}
+		},
+		"mBackground": {
+			"type": "object",
+			"default": {
+				"alt": "",
+				"url": "background-mobile.jpg"
+			}
+		},
+		"extraText": {
+			"type": "string",
+			"default": ""
+		},
+		"itemsInLine": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

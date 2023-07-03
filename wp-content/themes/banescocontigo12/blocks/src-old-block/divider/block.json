@@ -1,0 +1,64 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/divider",
+	"version": "1.0.0",
+	"title": "Divider",
+	"category": "widgets",
+	"icon": "minus",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/divider.js",
+	"editorStyle": "file:../../../blocks/build/divider.css",
+	"style": "file:../../../blocks/build/style-divider.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "50px",
+					"bottom": "50px"
+				},
+				"mobile": {
+					"top": "25px",
+					"bottom": "25px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"color": {
+			"type": "string",
+			"default": "#DCE1E9"
+		},
+		"type": {
+			"type": "string",
+			"default": "solid"
+		},
+		"height": {
+			"type": "string",
+			"default": "1px"
+		},
+		"fullWidth": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

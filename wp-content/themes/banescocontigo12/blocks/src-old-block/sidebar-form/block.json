@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/sidebar-form",
+	"version": "1.0.0",
+	"title": "Sidebar form",
+	"category": "widgets",
+	"icon": "welcome-write-blog",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/sidebar-form.js",
+	"editorStyle": "file:../../../blocks/build/sidebar-form.css",
+	"style": "file:../../../blocks/build/style-sidebar-form.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "50px",
+					"bottom": "50px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"description": {
+			"type": "string",
+			"default": "Description"
+		},
+		"form": {
+			"type": "string",
+			"default": "[gravityform id=\"3\" title=\"false\" description=\"false\" ajax=\"true\"]"
+		}
+	}
+}

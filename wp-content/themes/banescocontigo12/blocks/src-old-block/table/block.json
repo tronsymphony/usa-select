@@ -1,0 +1,105 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/table",
+	"version": "1.0.0",
+	"title": "Tables",
+	"category": "widgets",
+	"icon": "editor-table",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/table.js",
+	"editorStyle": "file:../../../blocks/build/table.css",
+	"style": "file:../../../blocks/build/style-table.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Title #1",
+					"id": "title-1",
+					"html": "<table>\n<thead>\n<tr>\n<td>Header #1</td><td>Header #2</td><td>Header #3</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n</tbody>\n</table>\n"
+				},
+				{
+					"name": "tab2",
+					"title": "Title #2",
+					"id": "title-2",
+					"html": "<table>\n<thead>\n<tr>\n<td>Header #1</td><td>Header #2</td><td>Header #3</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n</tbody>\n</table>\n"
+				},
+				{
+					"name": "tab3",
+					"title": "Title #3",
+					"id": "title-3",
+					"html": "<table>\n<thead>\n<tr>\n<td>Header #1</td><td>Header #2</td><td>Header #3</td><td>Header #4</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n</tbody>\n</table>\n"
+				},
+				{
+					"name": "tab4",
+					"title": "Title #4",
+					"id": "title-4",
+					"html": "<table>\n<thead>\n<tr>\n<td>Header #1</td><td>Header #2</td><td>Header #3</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n</tbody>\n</table>\n"
+				},
+				{
+					"name": "tab5",
+					"title": "Title #5",
+					"id": "title-5",
+					"html": "<table>\n<thead>\n<tr>\n<td>Header #1</td><td>Header #2</td><td>Header #3</td><td>Header #4</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n</tbody>\n</table>\n"
+				},
+				{
+					"name": "tab6",
+					"title": "Title #6",
+					"id": "title-6",
+					"html": "<table>\n<thead>\n<tr>\n<td>Header #1</td><td>Header #2</td><td>Header #3</td><td>Header #4</td><td>Header #5</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td><td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td><td></td>\n</tr>\n</tbody>\n</table>\n"
+				},
+				{
+					"name": "tab7",
+					"title": "Title #7",
+					"id": "title-7",
+					"html": "<table>\n<thead>\n<tr>\n<td>Header #1</td><td>Header #2</td><td>Header #3</td><td>Header #4</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td><td></td>\n</tr>\n</tbody>\n</table>\n"
+				},
+				{
+					"name": "tab8",
+					"title": "Title #8",
+					"id": "title-8",
+					"html": "<table>\n<thead>\n<tr>\n<td>Header #1</td><td>Header #2</td><td>Header #3</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n</tbody>\n</table>\n"
+				}
+			]
+		},
+		"info": {
+			"type": "string",
+			"default": "Extra very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long information."
+		}
+	}
+}

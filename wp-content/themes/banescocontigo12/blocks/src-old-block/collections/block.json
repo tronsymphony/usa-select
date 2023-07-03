@@ -1,0 +1,593 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/collections",
+	"version": "1.0.0",
+	"title": "Collections",
+	"category": "widgets",
+	"icon": "database",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/collections.js",
+	"editorStyle": "file:../../../blocks/build/collections.css",
+	"style": "file:../../../blocks/build/style-collections.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "object",
+			"default": {
+				"desktop": "Title",
+				"mobile": ""
+			}
+		},
+		"content": {
+			"type": "object",
+			"default": {
+				"desktop": "<p>Very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long paragraph.</p>\n<br/>\n<p>Very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long paragraph.</p>",
+				"mobile": ""
+			}
+		},
+		"items1": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"link": "/",
+					"title": "Title #1",
+					"image": {
+						"url": "image-1.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab2",
+					"link": "/",
+					"title": "Title #2",
+					"image": {
+						"url": "image-2.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab3",
+					"link": "/",
+					"title": "Title #3",
+					"image": {
+						"url": "image-3.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab4",
+					"link": "/",
+					"title": "Title #4",
+					"image": {
+						"url": "image-4.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab5",
+					"link": "/",
+					"title": "Title #5",
+					"image": {
+						"url": "image-5.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab6",
+					"link": "/",
+					"title": "Title #6",
+					"image": {
+						"url": "image-6.jpg",
+						"alt": ""
+					}
+				}
+			]
+		},
+		"items2": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab6",
+					"link": "/",
+					"title": "Title #7",
+					"image": {
+						"url": "image-6.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab3",
+					"link": "/",
+					"title": "Title #8",
+					"image": {
+						"url": "image-3.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab1",
+					"link": "/",
+					"title": "Title #9",
+					"image": {
+						"url": "image-1.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab2",
+					"link": "/",
+					"title": "Title #10",
+					"image": {
+						"url": "image-2.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab4",
+					"link": "/",
+					"title": "Title #11",
+					"image": {
+						"url": "image-4.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab5",
+					"link": "/",
+					"title": "Title #12",
+					"image": {
+						"url": "image-5.jpg",
+						"alt": ""
+					}
+				}
+			]
+		},
+		"items3": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab3",
+					"link": "/",
+					"title": "Title #13",
+					"image": {
+						"url": "image-3.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab4",
+					"link": "/",
+					"title": "Title #14",
+					"image": {
+						"url": "image-4.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab1",
+					"link": "/",
+					"title": "Title #15",
+					"image": {
+						"url": "image-1.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab2",
+					"link": "/",
+					"title": "Title #16",
+					"image": {
+						"url": "image-2.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab5",
+					"link": "/",
+					"title": "Title #17",
+					"image": {
+						"url": "image-5.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab6",
+					"link": "/",
+					"title": "Title #18",
+					"image": {
+						"url": "image-6.jpg",
+						"alt": ""
+					}
+				}
+			]
+		},
+		"items4": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"link": "/",
+					"title": "Title #19",
+					"image": {
+						"url": "image-1.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab4",
+					"link": "/",
+					"title": "Title #20",
+					"image": {
+						"url": "image-4.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab5",
+					"link": "/",
+					"title": "Title #21",
+					"image": {
+						"url": "image-5.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab2",
+					"link": "/",
+					"title": "Title #22",
+					"image": {
+						"url": "image-2.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab3",
+					"link": "/",
+					"title": "Title #23",
+					"image": {
+						"url": "image-3.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab6",
+					"link": "/",
+					"title": "Title #24",
+					"image": {
+						"url": "image-6.jpg",
+						"alt": ""
+					}
+				}
+			]
+		},
+		"items5": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab4",
+					"link": "/",
+					"title": "Title #25",
+					"image": {
+						"url": "image-4.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab5",
+					"link": "/",
+					"title": "Title #26",
+					"image": {
+						"url": "image-5.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab1",
+					"link": "/",
+					"title": "Title #27",
+					"image": {
+						"url": "image-1.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab2",
+					"link": "/",
+					"title": "Title #28",
+					"image": {
+						"url": "image-2.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab3",
+					"link": "/",
+					"title": "Title #29",
+					"image": {
+						"url": "image-3.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab6",
+					"link": "/",
+					"title": "Title #30",
+					"image": {
+						"url": "image-6.jpg",
+						"alt": ""
+					}
+				}
+			]
+		},
+		"items6": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab6",
+					"link": "/",
+					"title": "Title #31",
+					"image": {
+						"url": "image-6.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab1",
+					"link": "/",
+					"title": "Title #32",
+					"image": {
+						"url": "image-1.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab2",
+					"link": "/",
+					"title": "Title #33",
+					"image": {
+						"url": "image-2.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab3",
+					"link": "/",
+					"title": "Title #34",
+					"image": {
+						"url": "image-3.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab4",
+					"link": "/",
+					"title": "Title #35",
+					"image": {
+						"url": "image-4.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab5",
+					"link": "/",
+					"title": "Title #36",
+					"image": {
+						"url": "image-5.jpg",
+						"alt": ""
+					}
+				}
+			]
+		},
+		"items7": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab3",
+					"link": "/",
+					"title": "Title #37",
+					"image": {
+						"url": "image-3.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab1",
+					"link": "/",
+					"title": "Title #38",
+					"image": {
+						"url": "image-1.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab2",
+					"link": "/",
+					"title": "Title #39",
+					"image": {
+						"url": "image-2.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab4",
+					"link": "/",
+					"title": "Title #40",
+					"image": {
+						"url": "image-4.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab5",
+					"link": "/",
+					"title": "Title #41",
+					"image": {
+						"url": "image-5.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab6",
+					"link": "/",
+					"title": "Title #42",
+					"image": {
+						"url": "image-6.jpg",
+						"alt": ""
+					}
+				}
+			]
+		},
+		"items8": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab3",
+					"link": "/",
+					"title": "Title #43",
+					"image": {
+						"url": "image-3.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab4",
+					"link": "/",
+					"title": "Title #44",
+					"image": {
+						"url": "image-4.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab1",
+					"link": "/",
+					"title": "Title #45",
+					"image": {
+						"url": "image-1.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab2",
+					"link": "/",
+					"title": "Title #46",
+					"image": {
+						"url": "image-2.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab5",
+					"link": "/",
+					"title": "Title #47",
+					"image": {
+						"url": "image-5.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab6",
+					"link": "/",
+					"title": "Title #48",
+					"image": {
+						"url": "image-6.jpg",
+						"alt": ""
+					}
+				}
+			]
+		},
+		"items9": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab4",
+					"link": "/",
+					"title": "Title #49",
+					"image": {
+						"url": "image-4.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab5",
+					"link": "/",
+					"title": "Title #5",
+					"image": {
+						"url": "image-5.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab6",
+					"link": "/",
+					"title": "Title #50",
+					"image": {
+						"url": "image-6.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab1",
+					"link": "/",
+					"title": "Title #51",
+					"image": {
+						"url": "image-1.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab2",
+					"link": "/",
+					"title": "Title #52",
+					"image": {
+						"url": "image-2.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab3",
+					"link": "/",
+					"title": "Title #53",
+					"image": {
+						"url": "image-3.jpg",
+						"alt": ""
+					}
+				}
+			]
+		}
+	}
+}

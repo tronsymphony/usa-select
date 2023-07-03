@@ -1,0 +1,69 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/filters",
+	"version": "1.0.0",
+	"title": "Filters",
+	"category": "widgets",
+	"icon": "filter",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/filters.js",
+	"editorStyle": "file:../../../blocks/build/filters.css",
+	"style": "file:../../../blocks/build/style-filters.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Filter #1"
+				},
+				{
+					"name": "tab2",
+					"title": "Filter #2"
+				},
+				{
+					"name": "tab3",
+					"title": "Filter #3"
+				}
+			]
+		}
+	}
+}

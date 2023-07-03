@@ -1,0 +1,96 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/other-cards",
+	"version": "1.0.0",
+	"title": "Other cards",
+	"category": "widgets",
+	"icon": "columns",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/other-cards.js",
+	"editorStyle": "file:../../../blocks/build/other-cards.css",
+	"style": "file:../../../blocks/build/style-other-cards.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Title #1",
+					"text": "Very very very very very very very very very very very very very long description.",
+					"link": "Button",
+					"linkTarget": "/",
+					"button": "Primary Button",
+					"buttonTarget": "/",
+					"image": {
+						"alt": "",
+						"url": "image-1.jpg"
+					}
+				},
+				{
+					"name": "tab2",
+					"title": "Title #2",
+					"text": "Very very very very very very very very very very very very very long description.",
+					"link": "Button",
+					"linkTarget": "/",
+					"button": "Primary Button",
+					"buttonTarget": "/",
+					"image": {
+						"alt": "",
+						"url": "image-2.jpg"
+					}
+				},
+				{
+					"name": "tab3",
+					"title": "Title #3",
+					"text": "Very very very very very very very very very very very very very long description.",
+					"link": "Button",
+					"linkTarget": "/",
+					"button": "Primary Button",
+					"buttonTarget": "/",
+					"image": {
+						"alt": "",
+						"url": "image-3.jpg"
+					}
+				}
+			]
+		}
+	}
+}

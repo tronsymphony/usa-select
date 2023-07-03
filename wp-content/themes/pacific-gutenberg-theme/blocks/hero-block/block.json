@@ -1,0 +1,19 @@
+{
+	"name": "acf/hero-block",
+	"title": "Hero block",
+	"category": "design",
+	"icon": "cover-image",
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "hero-block.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "edit",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"pacificScripts": false
+}

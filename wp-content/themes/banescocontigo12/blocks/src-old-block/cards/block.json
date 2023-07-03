@@ -1,0 +1,107 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/cards",
+	"version": "1.0.0",
+	"title": "Cards",
+	"category": "widgets",
+	"icon": "screenoptions",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/cards.js",
+	"editorStyle": "file:../../../blocks/build/cards.css",
+	"style": "file:../../../blocks/build/style-cards.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "105px",
+					"bottom": "200px"
+				},
+				"mobile": {
+					"top": "45px",
+					"bottom": "45px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#f7f9fb"
+		},
+		"cards": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "MasterCard<br/> Standard",
+					"text": "Aceptada en comercios y cajeros en todo el mundo, con Multicrédito Banesco para diferir 1.5 veces el límite de tu crédito.",
+					"image": "card1.png"
+				},
+				{
+					"name": "tab2",
+					"title": "MasterCard<br/> Gold",
+					"text": "Aceptada mundialmente para compras locales e internacionales,  protección de compras y garantía extendida.",
+					"image": "card2.png"
+				},
+				{
+					"name": "tab3",
+					"title": "MasterCard<br/> Platinum",
+					"text": "Obtén múltiples beneficios como MasterAssist, 100% de avance de efectivo del límite de tu tarjeta y mucho más.",
+					"image": "card3.png"
+				},
+				{
+					"name": "tab4",
+					"title": "MasterCard<br/> Black",
+					"text": "Tu mejor momento empieza ahora ¡vívelo! Banesco pone a tu disposición una tarjeta que de cualquier lugar al que quieras llegar.",
+					"image": "card4.png"
+				},
+				{
+					"name": "tab5",
+					"title": "Visa<br/> Débito",
+					"text": "Con emisión gratuita, disponible para compras nacionales e internacionales.",
+					"image": "card5.png"
+				},
+				{
+					"name": "tab6",
+					"title": "Visa Clásica<br/> Internacional",
+					"text": "Aceptada en comercios y cajeros en todo el mundo, además, cuentas con acceso a Multicrédito Banesco.",
+					"image": "card6.png"
+				},
+				{
+					"name": "tab7",
+					"title": "Visa<br/> Gold",
+					"text": "Tarjeta doble saldo aceptada mundialmente para compras internacionales, en dólares y por internet.",
+					"image": "card7.png"
+				},
+				{
+					"name": "tab8",
+					"title": "Visa<br/> Infinite",
+					"text": "El complemento perfecto para tu estilo de vida, con Visa Concierge, Seguro de Auto y muchos beneficios más.",
+					"image": "card8.png"
+				},
+				{
+					"name": "tab9",
+					"title": "Visa<br/> Platinum",
+					"text": "Obtén garantía extendida de tus compras, protección de precios, y múltiples beneficios más que te harán vivir al máximo.",
+					"image": "card9.png"
+				}
+			]
+		}
+	}
+}

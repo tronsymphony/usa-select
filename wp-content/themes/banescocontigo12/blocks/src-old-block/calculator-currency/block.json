@@ -1,0 +1,64 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/calculator-currency",
+	"version": "1.0.0",
+	"title": "Calculator currency",
+	"category": "widgets",
+	"icon": "calculator",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/calculator-currency.js",
+	"editorStyle": "file:../../../blocks/build/calculator-currency.css",
+	"style": "file:../../../blocks/build/style-calculator-currency.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"description": {
+			"type": "string",
+			"default": "Last changes"
+		},
+		"buy": {
+			"type": "string",
+			"default": "Buy"
+		},
+		"sell": {
+			"type": "string",
+			"default": "Sell"
+		}
+	}
+}

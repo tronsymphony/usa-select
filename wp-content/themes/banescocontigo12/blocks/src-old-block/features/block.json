@@ -1,0 +1,150 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/features",
+	"version": "1.0.0",
+	"title": "Features",
+	"category": "widgets",
+	"icon": "star-filled",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/features.js",
+	"editorStyle": "file:../../../blocks/build/features.css",
+	"style": "file:../../../blocks/build/style-features.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Title #1",
+					"mTitle": "",
+					"text": "Description",
+					"mText": "",
+					"widths": {
+						"title": "280px",
+						"mTitle": "100%",
+						"text": "265px",
+						"mText": "100%"
+					},
+					"image": {
+						"alt": "",
+						"url": "check.svg"
+					}
+				},
+				{
+					"name": "tab2",
+					"title": "Title #2",
+					"mTitle": "",
+					"text": "Description",
+					"mText": "",
+					"widths": {
+						"title": "280px",
+						"mTitle": "100%",
+						"text": "265px",
+						"mText": "100%"
+					},
+					"image": {
+						"alt": "",
+						"url": "check.svg"
+					}
+				},
+				{
+					"name": "tab3",
+					"title": "Title #3",
+					"mTitle": "",
+					"text": "Description",
+					"mText": "",
+					"widths": {
+						"title": "280px",
+						"mTitle": "100%",
+						"text": "265px",
+						"mText": "100%"
+					},
+					"image": {
+						"alt": "",
+						"url": "check.svg"
+					}
+				},
+				{
+					"name": "tab4",
+					"title": "Title #5",
+					"mTitle": "",
+					"text": "Description",
+					"mText": "",
+					"widths": {
+						"title": "280px",
+						"mTitle": "100%",
+						"text": "265px",
+						"mText": "100%"
+					},
+					"image": {
+						"alt": "",
+						"url": "check.svg"
+					}
+				},
+				{
+					"name": "tab5",
+					"title": "Title #5",
+					"mTitle": "",
+					"text": "Description",
+					"mText": "",
+					"widths": {
+						"title": "280px",
+						"mTitle": "100%",
+						"text": "265px",
+						"mText": "100%"
+					},
+					"image": {
+						"alt": "",
+						"url": "check.svg"
+					}
+				}
+			]
+		},
+		"centered": {
+			"type": "boolean",
+			"default": false
+		},
+		"bigImages": {
+			"type": "boolean",
+			"default": false
+		},
+		"columns": {
+			"type": "object",
+			"default": false
+		}
+	}
+}

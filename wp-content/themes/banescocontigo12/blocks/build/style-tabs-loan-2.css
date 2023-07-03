@@ -1,0 +1,33 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/src/tabs-loan-2/style.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************/
+@media (max-width: 767.98px) {
+  .tabs-loan--2 .tabs-loan__content {
+    display: none !important;
+  }
+  .tabs-loan--2 .tabs-loan__content[data-id="#personales"] {
+    display: block !important;
+  }
+}
+.tabs-loan--2 .tabs-loan__wrapper {
+  position: relative;
+  margin-left: 150px;
+  margin-right: 90px;
+  border-radius: 10px;
+}
+@media (max-width: 1199.98px) {
+  .tabs-loan--2 .tabs-loan__wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.tabs-loan--2 .tabs-loan__wrapper::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 84px;
+  box-shadow: 0px 0px 60px rgba(15, 35, 52, 0.35);
+  z-index: -1;
+}
+
+/*# sourceMappingURL=style-tabs-loan-2.css.map*/

@@ -1,0 +1,118 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/steps",
+	"version": "1.0.0",
+	"title": "Steps",
+	"category": "widgets",
+	"icon": "editor-ol",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/steps.js",
+	"editorStyle": "file:../../../blocks/build/steps.css",
+	"style": "file:../../../blocks/build/style-steps.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "linear-gradient(228.78deg, #077750 13.78%, #003c71 50.9%, #543db8 79.17%)"
+		},
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"suptitle": "Suptitle #1",
+					"title": "Title #1",
+					"text": "Very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long description.",
+					"first_link_title": "First line",
+					"first_link_value": "/",
+					"second_link_title": "",
+					"second_link_value": "",
+					"appstore": "",
+					"googleplay": ""
+				},
+				{
+					"name": "tab2",
+					"suptitle": "Suptitle #2",
+					"title": "Title #2",
+					"text": "Very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long description.",
+					"first_link_title": "First line",
+					"first_link_value": "/",
+					"second_link_title": "Second Line",
+					"second_link_value": "/",
+					"appstore": "",
+					"googleplay": ""
+				},
+				{
+					"name": "tab3",
+					"suptitle": "Suptitle 31",
+					"title": "Title #3",
+					"text": "Very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long description.",
+					"first_link_title": "",
+					"first_link_value": "",
+					"second_link_title": "",
+					"second_link_value": "",
+					"appstore": "",
+					"googleplay": ""
+				},
+				{
+					"name": "tab4",
+					"suptitle": "Suptitle #4",
+					"title": "Title #4",
+					"text": "Very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long description.",
+					"first_link_title": "First line",
+					"first_link_value": "/",
+					"second_link_title": "",
+					"second_link_value": "",
+					"appstore": "/",
+					"googleplay": "/"
+				}
+			]
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"url": "background.jpg",
+					"alt": ""
+				},
+				"mobile": {
+					"url": "",
+					"alt": ""
+				}
+			}
+		}
+	}
+}

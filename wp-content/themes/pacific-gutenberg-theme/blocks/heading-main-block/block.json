@@ -1,0 +1,19 @@
+{
+	"name": "acf/main-heading-block",
+	"title": "Main heading block",
+	"category": "design",
+	"icon": "cover-image",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "main-heading-block.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"pacificScripts": false
+}

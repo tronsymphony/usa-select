@@ -1,0 +1,87 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/promo-image-out",
+	"version": "1.0.0",
+	"title": "Promo image out",
+	"category": "widgets",
+	"icon": "embed-generic",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/promo-image-out.js",
+	"editorStyle": "file:../../../blocks/build/promo-image-out.css",
+	"style": "file:../../../blocks/build/style-promo-image-out.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"tags": {
+			"type": "string",
+			"default": "tag"
+		},
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"description": {
+			"type": "string",
+			"default": "Very very very very very very very very very very very very very very very very very very very long description."
+		},
+		"button": {
+			"type": "object",
+			"default": {
+				"desktop": "Button",
+				"mobile": "",
+				"target": "/",
+				"type": "line-button"
+			}
+		},
+		"image": {
+			"type": "object",
+			"default": {
+				"url": "image.png",
+				"alt": ""
+			}
+		},
+		"mImage": {
+			"type": "object",
+			"default": {
+				"url": "image-mobile.png",
+				"alt": ""
+			}
+		},
+		"background": {
+			"type": "string",
+			"default": "linear-gradient(94.45deg, #543DB8 34.54%, #003C71 104.29%)"
+		}
+	}
+}

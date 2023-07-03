@@ -1,0 +1,136 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/accordions-with-filter",
+	"version": "1.0.0",
+	"title": "Accordions With Filter",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/accordions-with-filter.js",
+	"editorStyle": "file:../../../blocks/build/accordions-with-filter.css",
+	"style": "file:../../../blocks/build/style-accordions-with-filter.css",
+	"attributes": {
+		"accordions1": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "¿Cómo puedo afiliarme a BanescOnline?",
+					"category": "Cuentas",
+					"content": "Afiliarte a BanescoOnline es muy sencillo, solo debes ingresar a Banca por Internet desde la página de Banesco y seleccionar la opción “Afíliate Aquí”. Una vez dentro de la opción, debes colocar tus datos personales, los datos de algún producto que mantengas con Banesco y seguir los pasos que te presentamos."
+				},
+				{
+					"name": "tab2",
+					"title": "¿Qué es Tus Datos Banesco?",
+					"category": "Préstamos",
+					"content": "Afiliarte a BanescoOnline es muy sencillo, solo debes ingresar a Banca por Internet desde la página de Banesco y seleccionar la opción “Afíliate Aquí”. Una vez dentro de la opción, debes colocar tus datos personales, los datos de algún producto que mantengas con Banesco y seguir los pasos que te presentamos."
+				},
+				{
+					"name": "tab3",
+					"title": "¿Dónde puedo visualizar mi estado de cuenta?",
+					"category": "Tarjetas",
+					"content": "Afiliarte a BanescoOnline es muy sencillo, solo debes ingresar a Banca por Internet desde la página de Banesco y seleccionar la opción “Afíliate Aquí”. Una vez dentro de la opción, debes colocar tus datos personales, los datos de algún producto que mantengas con Banesco y seguir los pasos que te presentamos."
+				},
+				{
+					"name": "tab4",
+					"title": "¿Por qué cae en inactividad mi cuenta y qué debo hacer para reactivarla?",
+					"category": "BanescOnline",
+					"content": "Afiliarte a BanescoOnline es muy sencillo, solo debes ingresar a Banca por Internet desde la página de Banesco y seleccionar la opción “Afíliate Aquí”. Una vez dentro de la opción, debes colocar tus datos personales, los datos de algún producto que mantengas con Banesco y seguir los pasos que te presentamos."
+				},
+				{
+					"name": "tab5",
+					"title": "Guía para seguimiento de transferencias internacionales",
+					"category": "Seguros",
+					"content": "Afiliarte a BanescoOnline es muy sencillo, solo debes ingresar a Banca por Internet desde la página de Banesco y seleccionar la opción “Afíliate Aquí”. Una vez dentro de la opción, debes colocar tus datos personales, los datos de algún producto que mantengas con Banesco y seguir los pasos que te presentamos."
+				},
+				{
+					"name": "tab6",
+					"title": "¿Cuánto tiempo demora una transferencia internacional?",
+					"category": "Cambio de moneda",
+					"content": "Afiliarte a BanescoOnline es muy sencillo, solo debes ingresar a Banca por Internet desde la página de Banesco y seleccionar la opción “Afíliate Aquí”. Una vez dentro de la opción, debes colocar tus datos personales, los datos de algún producto que mantengas con Banesco y seguir los pasos que te presentamos."
+				},
+				{
+					"name": "tab7",
+					"title": "¿Qué transacciones puedo realizar a través de BanescOnline?",
+					"category": "Otros temas",
+					"content": "Afiliarte a BanescoOnline es muy sencillo, solo debes ingresar a Banca por Internet desde la página de Banesco y seleccionar la opción “Afíliate Aquí”. Una vez dentro de la opción, debes colocar tus datos personales, los datos de algún producto que mantengas con Banesco y seguir los pasos que te presentamos."
+				},
+				{
+					"name": "tab8",
+					"title": "¿Que es MóvilPay de Banesco?",
+					"category": "Información de seguridad general",
+					"content": "Afiliarte a BanescoOnline es muy sencillo, solo debes ingresar a Banca por Internet desde la página de Banesco y seleccionar la opción “Afíliate Aquí”. Una vez dentro de la opción, debes colocar tus datos personales, los datos de algún producto que mantengas con Banesco y seguir los pasos que te presentamos."
+				},
+				{
+					"name": "tab9",
+					"title": "¿Es necesario tener una cuenta bancaria con Banesco para tener MóvilPay?",
+					"category": "Transferencias",
+					"content": "Afiliarte a BanescoOnline es muy sencillo, solo debes ingresar a Banca por Internet desde la página de Banesco y seleccionar la opción “Afíliate Aquí”. Una vez dentro de la opción, debes colocar tus datos personales, los datos de algún producto que mantengas con Banesco y seguir los pasos que te presentamos."
+				}
+			]
+		},
+		"accordions2": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "¿Cómo accedo a BanescOnline?",
+					"category": "Otros temas",
+					"content": "Afiliarte a BanescoOnline es muy sencillo, solo debes ingresar a Banca por Internet desde la página de Banesco y seleccionar la opción “Afíliate Aquí”. Una vez dentro de la opción, debes colocar tus datos personales, los datos de algún producto que mantengas con Banesco y seguir los pasos que te presentamos."
+				},
+				{
+					"name": "tab2",
+					"title": "Mi cuenta está en saldo mínimo, ¿qué debo saber sobre esto?",
+					"category": "BanescOnline",
+					"content": "Afiliarte a BanescoOnline es muy sencillo, solo debes ingresar a Banca por Internet desde la página de Banesco y seleccionar la opción “Afíliate Aquí”. Una vez dentro de la opción, debes colocar tus datos personales, los datos de algún producto que mantengas con Banesco y seguir los pasos que te presentamos."
+				},
+				{
+					"name": "tab3",
+					"title": "¿Cómo puedo redimir mis puntos?",
+					"category": "Transferencias",
+					"content": "Afiliarte a BanescoOnline es muy sencillo, solo debes ingresar a Banca por Internet desde la página de Banesco y seleccionar la opción “Afíliate Aquí”. Una vez dentro de la opción, debes colocar tus datos personales, los datos de algún producto que mantengas con Banesco y seguir los pasos que te presentamos."
+				},
+				{
+					"name": "tab4",
+					"title": "¿Cuándo es mi fecha tope de pago?",
+					"category": "Cuentas",
+					"content": "Afiliarte a BanescoOnline es muy sencillo, solo debes ingresar a Banca por Internet desde la página de Banesco y seleccionar la opción “Afíliate Aquí”. Una vez dentro de la opción, debes colocar tus datos personales, los datos de algún producto que mantengas con Banesco y seguir los pasos que te presentamos."
+				},
+				{
+					"name": "tab5",
+					"title": "¿Cómo funciona el horario para realizar una transferencia a otros bancos locales (ACH)?",
+					"category": "Tarjetas",
+					"content": "Afiliarte a BanescoOnline es muy sencillo, solo debes ingresar a Banca por Internet desde la página de Banesco y seleccionar la opción “Afíliate Aquí”. Una vez dentro de la opción, debes colocar tus datos personales, los datos de algún producto que mantengas con Banesco y seguir los pasos que te presentamos."
+				},
+				{
+					"name": "tab6",
+					"title": "¿Cómo hacer una transferencia internacional?",
+					"category": "Cambio de moneda",
+					"content": "Afiliarte a BanescoOnline es muy sencillo, solo debes ingresar a Banca por Internet desde la página de Banesco y seleccionar la opción “Afíliate Aquí”. Una vez dentro de la opción, debes colocar tus datos personales, los datos de algún producto que mantengas con Banesco y seguir los pasos que te presentamos."
+				},
+				{
+					"name": "tab7",
+					"title": "¿Banesco tiene un código SWIFT (BIC) o IBAN?",
+					"category": "Cambio de moneda",
+					"content": "Afiliarte a BanescoOnline es muy sencillo, solo debes ingresar a Banca por Internet desde la página de Banesco y seleccionar la opción “Afíliate Aquí”. Una vez dentro de la opción, debes colocar tus datos personales, los datos de algún producto que mantengas con Banesco y seguir los pasos que te presentamos."
+				},
+				{
+					"name": "tab8",
+					"title": "Recuperar o desbloquear preguntas de seguridad",
+					"category": "Tarjetas",
+					"content": "Afiliarte a BanescoOnline es muy sencillo, solo debes ingresar a Banca por Internet desde la página de Banesco y seleccionar la opción “Afíliate Aquí”. Una vez dentro de la opción, debes colocar tus datos personales, los datos de algún producto que mantengas con Banesco y seguir los pasos que te presentamos."
+				},
+				{
+					"name": "tab9",
+					"title": "¿Cuáles son los requisitos para solicitar MóvilPay?",
+					"category": "Cuentas",
+					"content": "Afiliarte a BanescoOnline es muy sencillo, solo debes ingresar a Banca por Internet desde la página de Banesco y seleccionar la opción “Afíliate Aquí”. Una vez dentro de la opción, debes colocar tus datos personales, los datos de algún producto que mantengas con Banesco y seguir los pasos que te presentamos."
+				}
+			]
+		}
+	}
+}

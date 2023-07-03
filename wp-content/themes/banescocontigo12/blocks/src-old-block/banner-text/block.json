@@ -1,0 +1,82 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/banner-text",
+	"version": "1.0.0",
+	"title": "Banner text",
+	"category": "widgets",
+	"icon": "editor-kitchensink",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/banner-text.js",
+	"editorStyle": "file:../../../blocks/build/banner-text.css",
+	"style": "file:../../../blocks/build/style-banner-text.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"description": {
+			"type": "string",
+			"default": "Very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long description."
+		},
+		"list1": {
+			"type": "string",
+			"default": "<ul>\n<li>line #1</li>\n<li>line #2</li>\n<li>line #3</li>\n<li>line #4</li>\n</ul>"
+		},
+		"list2": {
+			"type": "string",
+			"default": "<ul>\n<li>line #1</li>\n<li>line #2</li>\n<li>line #3</li>\n<li>line #4</li>\n</ul>"
+		},
+		"image": {
+			"type": "object",
+			"default": {
+				"url": "image.png",
+				"alt": ""
+			}
+		},
+		"mImage": {
+			"type": "object",
+			"default": {
+				"url": "image-mobile.png",
+				"alt": ""
+			}
+		},
+		"background": {
+			"type": "string",
+			"default": "linear-gradient(97.67deg, #007953 -5.63%, #003C71 118.81%)"
+		}
+	}
+}

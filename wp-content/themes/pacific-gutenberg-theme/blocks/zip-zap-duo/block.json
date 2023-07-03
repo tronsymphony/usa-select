@@ -1,0 +1,19 @@
+{
+	"name": "acf/zip-zap-duo-block",
+	"title": "Zip Zap Duo block",
+	"category": "design",
+	"icon": "cover-image",
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "zip-zap-duo-block.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "edit",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"pacificScripts": false
+}

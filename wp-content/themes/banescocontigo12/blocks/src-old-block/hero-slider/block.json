@@ -1,0 +1,126 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/hero-slider",
+	"version": "1.0.0",
+	"title": "Hero slider",
+	"category": "widgets",
+	"icon": "admin-home",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/hero-slider.js",
+	"editorStyle": "file:../../../blocks/build/hero-slider.css",
+	"style": "file:../../../blocks/build/style-hero-slider.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "300px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px",
+					"title": "0px",
+					"description": "20px",
+					"button": "30px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px",
+					"title": "0px",
+					"description": "15px",
+					"button": "20px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "object",
+			"default": {
+				"desktop": "Title",
+				"mobile": ""
+			}
+		},
+		"description": {
+			"type": "object",
+			"default": {
+				"desktop": "Very very very very very very very very very very very very very very very very very long description.",
+				"mobile": ""
+			}
+		},
+		"button": {
+			"type": "object",
+			"default": {
+				"desktop": "Button",
+				"mobile": "",
+				"target": "/",
+				"type": "white-button"
+			}
+		},
+		"colors": {
+			"type": "object",
+			"default": {
+				"title": "#FFFFFF",
+				"description": "#FFFFFF"
+			}
+		},
+		"widths": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"title": "400px",
+					"description": "400px"
+				},
+				"mobile": {
+					"title": "100%",
+					"description": "100%"
+				}
+			}
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab2",
+					"title": "Slide #1",
+					"desktop": {
+						"url": "background-2.jpg",
+						"alt": ""
+					},
+					"mobile": {
+						"url": "background-2-mobile.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"title": "Slide #2",
+					"name": "tab3",
+					"desktop": {
+						"url": "background-3.jpg",
+						"alt": ""
+					},
+					"mobile": {
+						"url": "background-3-mobile.jpg",
+						"alt": ""
+					}
+				}
+			]
+		}
+	}
+}

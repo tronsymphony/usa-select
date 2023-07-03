@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/promotions",
+	"version": "1.0.0",
+	"title": "Promotions",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/promotions.js",
+	"editorStyle": "file:../../../blocks/build/promotions.css",
+	"style": "file:../../../blocks/build/style-promotions.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "112px",
+					"bottom": "126px"
+				},
+				"mobile": {
+					"top": "44px",
+					"bottom": "54px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"viewAll": {
+			"type": "string",
+			"default": "Ver todo"
+		},
+		"postsNotFound": {
+			"type": "string",
+			"default": "No se han encontrado publicaciones"
+		}
+	}
+}

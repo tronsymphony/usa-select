@@ -1,0 +1,101 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/text-banner",
+	"version": "1.0.0",
+	"title": "Text banner",
+	"category": "widgets",
+	"icon": "tagcloud",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/text-banner.js",
+	"editorStyle": "file:../../../blocks/build/text-banner.css",
+	"style": "file:../../../blocks/build/style-text-banner.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"widths": {
+			"type": "object",
+			"default": {
+				"text": "500px",
+				"mText": "300px"
+			}
+		},
+		"text": {
+			"type": "string",
+			"default": "<ul>\n<li>line #1</li>\n<li>line #2</li>\n<li>line #3</li>\n<li>line #4</li>\n<li>line #5</li>\n</ul>"
+		},
+		"extra": {
+			"type": "string",
+			"default": "Extra very very very very very very long description."
+		},
+		"button": {
+			"type": "string",
+			"default": "Button"
+		},
+		"target": {
+			"type": "string",
+			"default": "/"
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"url": "background-1.jpg",
+				"alt": ""
+			}
+		},
+		"mBackground": {
+			"type": "object",
+			"default": {
+				"url": "background-1-mobile.jpg",
+				"alt": ""
+			}
+		},
+		"reverseDirection": {
+			"type": "boolean",
+			"default": false
+		},
+		"crop": {
+			"type": "boolean",
+			"default": false
+		},
+		"initialOpened": {
+			"type": "boolean",
+			"default": false
+		},
+		"mobileFit": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

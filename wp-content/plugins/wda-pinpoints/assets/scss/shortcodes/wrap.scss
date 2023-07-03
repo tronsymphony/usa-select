@@ -1,0 +1,26 @@
+@import "vars";
+
+/* Responsiveness */
+
+@media ( min-width: #{$tablet-breakpoint} ) {
+    div[data-pinpoints="wrap"] {
+        display: grid;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-columns: 450px 1fr;
+        grid-template-rows: 1fr;
+        height: 900px;
+    }
+}
+@media ( min-width: #{$mobile-breakpoint} ) and ( max-width: #{$tablet-breakpoint} ) {
+    div[data-pinpoints="wrap"] {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media ( max-width: #{$mobile-breakpoint} ) {
+    div[data-pinpoints="wrap"] {
+        display: flex;
+        flex-direction: column;
+    }
+}

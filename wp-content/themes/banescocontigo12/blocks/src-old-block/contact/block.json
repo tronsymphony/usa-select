@@ -1,0 +1,87 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/contact",
+	"version": "1.0.0",
+	"title": "Contact",
+	"category": "widgets",
+	"icon": "slides",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/contact.js",
+	"editorStyle": "file:../../../blocks/build/contact.css",
+	"style": "file:../../../blocks/build/style-contact.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"image": {
+						"url": "marker.svg",
+						"alt": ""
+					},
+					"title": "Title #1",
+					"description": "Link to google maps",
+					"link": "https://maps.google.com/"
+				},
+				{
+					"name": "tab2",
+					"image": {
+						"url": "mail.svg",
+						"alt": ""
+					},
+					"title": "Title #2",
+					"description": "Link to email",
+					"link": "mailto:example@gmail.com"
+				},
+				{
+					"name": "tab3",
+					"image": {
+						"url": "tel.svg",
+						"alt": ""
+					},
+					"title": "Title #3",
+					"description": "Link to call",
+					"link": "tel:+123456789"
+				}
+			]
+		}
+	}
+}

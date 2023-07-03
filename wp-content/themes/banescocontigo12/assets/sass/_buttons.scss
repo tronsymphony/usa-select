@@ -1,0 +1,18 @@
+.primary-blue {
+  background: $blue2;
+  color: $white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 36px;
+  min-width: 120px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  transition: 0.3s;
+
+  &:hover {
+    background: $blue2;
+  }
+}

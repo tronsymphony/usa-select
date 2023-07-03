@@ -1,0 +1,102 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/posts-latest",
+	"version": "1.0.3",
+	"title": "Posts latest",
+	"category": "widgets",
+	"icon": "align-left",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/posts-latest.js",
+	"editorStyle": "file:../../../blocks/build/posts-latest.css",
+	"style": "file:../../../blocks/build/style-posts-latest.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Title #1",
+					"description": "Very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long description.",
+					"button": "Button",
+					"target": "/",
+					"image": {
+						"url": "1.jpg",
+						"alt": ""
+					},
+					"mImage": {
+						"url": "m-1.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab2",
+					"title": "Title #2",
+					"description": "Very very very very very very very very very very very long description.",
+					"button": "Button",
+					"target": "/",
+					"image": {
+						"url": "2.jpg",
+						"alt": ""
+					},
+					"mImage": {
+						"url": "m-2.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab3",
+					"title": "Title #3",
+					"description": "Very very very very very very very very very very very long description.",
+					"button": "Button",
+					"target": "/",
+					"image": {
+						"url": "3.jpg",
+						"alt": ""
+					},
+					"mImage": {
+						"url": "m-3.jpg",
+						"alt": ""
+					}
+				}
+			]
+		}
+	}
+}

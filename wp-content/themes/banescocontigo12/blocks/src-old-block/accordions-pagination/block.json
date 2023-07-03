@@ -1,0 +1,241 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/accordions-pagination",
+	"version": "1.0.0",
+	"title": "Accordions pagination",
+	"category": "widgets",
+	"icon": "list-view",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/accordions-pagination.js",
+	"editorStyle": "file:../../../blocks/build/accordions-pagination.css",
+	"style": "file:../../../blocks/build/style-accordions-pagination.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Main title"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Title #1",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"iframe": "https://www.youtube.com/embed/NpEaa2P7qZI"
+				},
+				{
+					"name": "tab2",
+					"title": "Title #2",
+					"content": "<ul>\n<li>line #1</li>\n<li>line #2</li>\n<li>line #3</li>\n<li>line #4</li>\n</ul>",
+					"iframe": ""
+				},
+				{
+					"name": "tab3",
+					"title": "Title #3",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"iframe": ""
+				},
+				{
+					"name": "tab4",
+					"title": "Title #4",
+					"content": "<h3>Subtitle</h3>",
+					"iframe": ""
+				},
+				{
+					"name": "tab5",
+					"title": "Title #5",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"iframe": "https://www.youtube.com/embed/NpEaa2P7qZI"
+				},
+				{
+					"name": "tab6",
+					"title": "Title #6",
+					"content": "<ul>\n<li>line #1</li>\n<li>line #2</li>\n<li>line #3</li>\n<li>line #4</li>\n</ul>",
+					"iframe": ""
+				},
+				{
+					"name": "tab7",
+					"title": "Title #7",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"iframe": ""
+				},
+				{
+					"name": "tab8",
+					"title": "Title #8",
+					"content": "<h3>Subtitle</h3>",
+					"iframe": ""
+				},
+				{
+					"name": "tab9",
+					"title": "Title #9",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"iframe": ""
+				},
+				{
+					"name": "tab10",
+					"title": "Title #10",
+					"content": "<h3>Subtitle</h3>",
+					"iframe": ""
+				},
+				{
+					"name": "tab11",
+					"title": "Title #11",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"iframe": "https://www.youtube.com/embed/NpEaa2P7qZI"
+				},
+				{
+					"name": "tab12",
+					"title": "Title #12",
+					"content": "<ul>\n<li>line #1</li>\n<li>line #2</li>\n<li>line #3</li>\n<li>line #4</li>\n</ul>",
+					"iframe": ""
+				},
+				{
+					"name": "tab13",
+					"title": "Title #13",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"iframe": ""
+				},
+				{
+					"name": "tab14",
+					"title": "Title #14",
+					"content": "<h3>Subtitle</h3>",
+					"iframe": ""
+				},
+				{
+					"name": "tab15",
+					"title": "Title #15",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"iframe": "https://www.youtube.com/embed/NpEaa2P7qZI"
+				},
+				{
+					"name": "tab16",
+					"title": "Title #16",
+					"content": "<ul>\n<li>line #1</li>\n<li>line #2</li>\n<li>line #3</li>\n<li>line #4</li>\n</ul>",
+					"iframe": ""
+				},
+				{
+					"name": "tab17",
+					"title": "Title #17",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"iframe": ""
+				},
+				{
+					"name": "tab18",
+					"title": "Title #18",
+					"content": "<h3>Subtitle</h3>",
+					"iframe": ""
+				},
+				{
+					"name": "tab19",
+					"title": "Title #19",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"iframe": ""
+				},
+				{
+					"name": "tab20",
+					"title": "Title #20",
+					"content": "<h3>Subtitle</h3>",
+					"iframe": ""
+				},
+				{
+					"name": "tab21",
+					"title": "Title #21",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"iframe": "https://www.youtube.com/embed/NpEaa2P7qZI"
+				},
+				{
+					"name": "tab22",
+					"title": "Title #22",
+					"content": "<ul>\n<li>line #1</li>\n<li>line #2</li>\n<li>line #3</li>\n<li>line #4</li>\n</ul>",
+					"iframe": ""
+				},
+				{
+					"name": "tab23",
+					"title": "Title #23",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"iframe": ""
+				},
+				{
+					"name": "tab24",
+					"title": "Title #24",
+					"content": "<h3>Subtitle</h3>",
+					"iframe": ""
+				},
+				{
+					"name": "tab25",
+					"title": "Title #25",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"iframe": "https://www.youtube.com/embed/NpEaa2P7qZI"
+				},
+				{
+					"name": "tab26",
+					"title": "Title #26",
+					"content": "<ul>\n<li>line #1</li>\n<li>line #2</li>\n<li>line #3</li>\n<li>line #4</li>\n</ul>",
+					"iframe": ""
+				},
+				{
+					"name": "tab27",
+					"title": "Title #27",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"iframe": ""
+				},
+				{
+					"name": "tab28",
+					"title": "Title #28",
+					"content": "<h3>Subtitle</h3>",
+					"iframe": ""
+				},
+				{
+					"name": "tab29",
+					"title": "Title #29",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"iframe": ""
+				},
+				{
+					"name": "tab30",
+					"title": "Title #30",
+					"content": "<h3>Subtitle</h3>",
+					"iframe": ""
+				}
+			]
+		},
+		"columns": {
+			"type": "string",
+			"default": "1"
+		}
+	}
+}

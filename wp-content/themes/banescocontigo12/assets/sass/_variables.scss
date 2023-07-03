@@ -1,0 +1,29 @@
+// Theme Colors
+$heading-color: #3a4454;
+$gradient: #f7f9fb;
+$gray: #708090;
+$gray2: #748994;
+$gray3: #4a5264;
+$gray4: #a5adb4;
+$gray5: #556176;
+$gray6: #a5adb4;
+$body-text: #556176;
+$light: #ebf0f5;
+$light2: #dce1e9;
+$white: #fff;
+$main-green: #007953;
+$green: #219963;
+$blue: #003c71;
+$blue2: #1a61ab;
+$light-green: #f1fff9;
+$box-shadow: rgba(97, 97, 97, 0.2);
+
+// Breakpoints
+$grid-breakpoints: (
+  xxs: 360px,
+  xs: 400px,
+  sm: 575px,
+  md: 767px,
+  lg: 992px,
+  xl: 1200px,
+) !default;

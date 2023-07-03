@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/content-promotion",
+	"version": "1.0.0",
+	"title": "Content promotion",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/content-promotion.js",
+	"editorStyle": "file:../../../blocks/build/content-promotion.css",
+	"style": "file:../../../blocks/build/style-content-promotion.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "123px",
+					"bottom": "94px"
+				},
+				"mobile": {
+					"top": "40px",
+					"bottom": "52px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"content": {
+			"type": "string",
+			"default": "<h3>Subtitle</h3>\n<p>Very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long description.</p>"
+		},
+		"formId": {
+			"type": "string",
+			"default": "2"
+		}
+	}
+}

@@ -1,0 +1,91 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/posts-new",
+	"version": "1.0.0",
+	"title": "Posts new",
+	"category": "widgets",
+	"icon": "archive",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/posts-new.js",
+	"editorStyle": "file:../../../blocks/build/posts-new.css",
+	"style": "file:../../../blocks/build/style-posts-new.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"tags": "tag",
+					"title": "Title #1",
+					"description": "Very very very very very very very very very very very long description.",
+					"button": "Button",
+					"target": "/",
+					"image": {
+						"url": "1.png",
+						"alt": ""
+					},
+					"mImage": {
+						"url": "m-1.png",
+						"alt": ""
+					},
+					"big": false
+				},
+				{
+					"name": "tab2",
+					"tags": "tag",
+					"title": "Title #2",
+					"description": "Very very very very very very very very very very very long description.",
+					"button": "Button",
+					"target": "/",
+					"image": {
+						"url": "2.png",
+						"alt": ""
+					},
+					"mImage": {
+						"url": "m-2.png",
+						"alt": ""
+					},
+					"big": true
+				}
+			]
+		}
+	}
+}

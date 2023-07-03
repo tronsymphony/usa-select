@@ -1,0 +1,284 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/videos-and-images",
+	"version": "1.0.0",
+	"title": "Videos, images and audios",
+	"category": "widgets",
+	"icon": "images-alt",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/videos-and-images.js",
+	"editorStyle": "file:../../../blocks/build/videos-and-images.css",
+	"style": "file:../../../blocks/build/style-videos-and-images.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "object",
+			"default": {
+				"desktop": "Title",
+				"mobile": "",
+				"mIncrease": false
+			}
+		},
+		"videosTitle": {
+			"type": "string",
+			"default": "Videos"
+		},
+		"videosIcon": {
+			"type": "object",
+			"default": {
+				"url": "videos.svg",
+				"alt": ""
+			}
+		},
+		"videos": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"link": "/",
+					"title": "Video title #1",
+					"text": "Very very very very very very very long description.",
+					"maxLines": "2",
+					"image": {
+						"url": "video-1.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab2",
+					"link": "/",
+					"title": "Video title #2",
+					"text": "Very very very very very very very long description.",
+					"maxLines": "2",
+					"image": {
+						"url": "video-2.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab3",
+					"link": "/",
+					"title": "Video title #3",
+					"text": "Very very very very very very very long description.",
+					"maxLines": "2",
+					"image": {
+						"url": "video-3.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab4",
+					"link": "/",
+					"title": "Video title #4",
+					"text": "Very very very very very very very long description.",
+					"maxLines": "2",
+					"image": {
+						"url": "video-4.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab5",
+					"link": "/",
+					"title": "Video title #5",
+					"text": "Very very very very very very very long description.",
+					"maxLines": "2",
+					"image": {
+						"url": "video-5.jpg",
+						"alt": ""
+					}
+				}
+			]
+		},
+		"imagesTitle": {
+			"type": "string",
+			"default": "Images"
+		},
+		"imagesIcon": {
+			"type": "object",
+			"default": {
+				"url": "images.svg",
+				"alt": ""
+			}
+		},
+		"images": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"link": "/",
+					"title": "Image title #1",
+					"text": "Very very very very very very very long description.",
+					"maxLines": "2",
+					"image": {
+						"url": "video-1.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab2",
+					"link": "/",
+					"title": "Image title #2",
+					"text": "Very very very very very very very long description.",
+					"maxLines": "2",
+					"image": {
+						"url": "video-2.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab3",
+					"link": "/",
+					"title": "Image title #3",
+					"text": "Very very very very very very very long description.",
+					"maxLines": "2",
+					"image": {
+						"url": "video-3.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab4",
+					"link": "/",
+					"title": "Image title #4",
+					"text": "Very very very very very very very long description.",
+					"maxLines": "2",
+					"image": {
+						"url": "video-4.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab5",
+					"link": "/",
+					"title": "Image title #5",
+					"text": "Very very very very very very very long description.",
+					"maxLines": "2",
+					"image": {
+						"url": "video-5.jpg",
+						"alt": ""
+					}
+				}
+			]
+		},
+		"audiosTitle": {
+			"type": "string",
+			"default": "Audios"
+		},
+		"audiosIcon": {
+			"type": "object",
+			"default": {
+				"url": "audios.svg",
+				"alt": ""
+			}
+		},
+		"audios": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"link": "/",
+					"title": "Audio title #1",
+					"text": "Very very very very very very very long description.",
+					"maxLines": "2",
+					"image": {
+						"url": "video-1.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab2",
+					"link": "/",
+					"title": "Audio title #2",
+					"text": "Very very very very very very very long description.",
+					"maxLines": "2",
+					"image": {
+						"url": "video-2.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab3",
+					"link": "/",
+					"title": "Audio title #3",
+					"text": "Very very very very very very very long description.",
+					"maxLines": "2",
+					"image": {
+						"url": "video-3.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab4",
+					"link": "/",
+					"title": "Audio title #4",
+					"text": "Very very very very very very very long description.",
+					"maxLines": "2",
+					"image": {
+						"url": "video-4.jpg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab5",
+					"link": "/",
+					"title": "Audio title #5",
+					"text": "Very very very very very very very long description.",
+					"maxLines": "2",
+					"image": {
+						"url": "video-5.jpg",
+						"alt": ""
+					}
+				}
+			]
+		},
+		"link": {
+			"type": "object",
+			"default": {
+				"enable": false,
+				"title": {
+					"desktop": "Extra line",
+					"mobile": ""
+				},
+				"image": {
+					"url": "youtube.svg",
+					"alt": ""
+				},
+				"target": "/"
+			}
+		}
+	}
+}

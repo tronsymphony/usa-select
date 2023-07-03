@@ -1,0 +1,322 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/src/calculator-currency/style.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+.calculator {
+  position: relative;
+  margin-top: var(--margins-top);
+  margin-bottom: var(--margins-bottom);
+  padding-top: var(--paddings-top);
+  padding-bottom: var(--paddings-bottom);
+  background: var(--gradient);
+}
+@media (max-width: 767.98px) {
+  .calculator {
+    margin-top: var(--margins-top--mobile);
+    margin-bottom: var(--margins-bottom--mobile);
+    padding-top: var(--paddings-top--mobile);
+    padding-bottom: var(--paddings-bottom--mobile);
+  }
+}
+.calculator__inner {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 767.98px) {
+  .calculator__inner {
+    flex-direction: column-reverse;
+  }
+}
+.calculator__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767.98px) {
+  .calculator__top {
+    margin-top: 16px;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 575.98px) {
+  .calculator__top {
+    justify-content: flex-start;
+  }
+}
+.calculator__refresh {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767.98px) {
+  .calculator__refresh {
+    position: absolute;
+    top: 35px;
+    left: 16px;
+  }
+}
+@media (max-width: 575.98px) {
+  .calculator__refresh {
+    max-width: 170px;
+  }
+}
+.calculator__date {
+  margin-left: 20px;
+}
+@media (max-width: 767.98px) {
+  .calculator__date {
+    margin-left: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .calculator__date {
+    width: 100%;
+    text-align: center;
+  }
+}
+.calculator__icon {
+  width: 23px;
+  height: 23px;
+  margin-right: 13px;
+  flex-shrink: 0;
+}
+@media (max-width: 575.98px) {
+  .calculator__icon {
+    width: 21px;
+    height: 21px;
+    margin-right: 12px;
+  }
+}
+.calculator__icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.calculator__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: #3a4454;
+  margin-bottom: 1px;
+}
+@media (max-width: 575.98px) {
+  .calculator__title {
+    font-size: 20px;
+    line-height: 110%;
+  }
+}
+.calculator__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #748994;
+}
+@media (max-width: 575.98px) {
+  .calculator__description {
+    font-size: 12px;
+  }
+}
+.calculator__content {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767.98px) {
+  .calculator__content {
+    margin-top: 20px;
+    padding-top: 48px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+@media (max-width: 767.98px) {
+  .calculator__currency {
+    position: absolute;
+    top: 25px;
+    right: 16px;
+  }
+}
+.calculator__currency.active .calculator__currency-button {
+  left: calc(100% - 117px);
+}
+@media (max-width: 991.98px) {
+  .calculator__currency.active .calculator__currency-button {
+    left: calc(100% - 50px);
+  }
+}
+.calculator__currency.active .calculator__currency-span-1-mobile {
+  color: #748994;
+}
+.calculator__currency.active .calculator__currency-span-2-mobile {
+  color: #ffffff;
+}
+.calculator__currency.active .calculator__currency-span-1 {
+  color: #748994;
+}
+.calculator__currency.active .calculator__currency-span-2 {
+  color: #ffffff;
+}
+.calculator__currency-wrapper {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #a5adb4;
+  box-shadow: inset 0px 1px 2px rgba(97, 97, 97, 0.2), inset 0px 2px 4px rgba(97, 97, 97, 0.2);
+  border-radius: 5px;
+  height: 48px;
+  width: 237px;
+}
+@media (max-width: 991.98px) {
+  .calculator__currency-wrapper {
+    width: 109px;
+  }
+}
+.calculator__currency-wrapper input {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.calculator__currency-wrapper .calculator__currency-button {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 113px;
+  height: 40px;
+  background: #219963;
+  box-shadow: 0px 1px 2px rgba(97, 97, 97, 0.2), 0px 2px 4px rgba(97, 97, 97, 0.2);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.calculator__currency-wrapper .calculator__currency-button:hover {
+  cursor: pointer;
+}
+@media (max-width: 991.98px) {
+  .calculator__currency-wrapper .calculator__currency-button {
+    width: 46px;
+  }
+}
+.calculator__currency-wrapper .calculator__currency-span-1,
+.calculator__currency-wrapper .calculator__currency-span-2 {
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #748994;
+  pointer-events: none;
+  transition: 0.3s;
+}
+@media (max-width: 991.98px) {
+  .calculator__currency-wrapper .calculator__currency-span-1,
+.calculator__currency-wrapper .calculator__currency-span-2 {
+    display: none;
+  }
+}
+.calculator__currency-wrapper .calculator__currency-span-1 {
+  left: 20px;
+  top: calc(50% - 12px);
+  color: #ffffff;
+}
+.calculator__currency-wrapper .calculator__currency-span-2 {
+  right: 20px;
+  top: calc(50% - 12px);
+}
+.calculator__currency-wrapper .calculator__currency-span-1-mobile,
+.calculator__currency-wrapper .calculator__currency-span-2-mobile {
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #748994;
+  pointer-events: none;
+  transition: 0.3s;
+}
+@media (min-width: 992px) {
+  .calculator__currency-wrapper .calculator__currency-span-1-mobile,
+.calculator__currency-wrapper .calculator__currency-span-2-mobile {
+    display: none;
+  }
+}
+.calculator__currency-wrapper .calculator__currency-span-1-mobile {
+  left: 12px;
+  top: calc(50% - 12px);
+  color: #ffffff;
+}
+.calculator__currency-wrapper .calculator__currency-span-2-mobile {
+  right: 12px;
+  top: calc(50% - 12px);
+}
+.calculator__buy, .calculator__sell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+@media (max-width: 767.98px) {
+  .calculator__buy, .calculator__sell {
+    margin-left: 0;
+  }
+}
+.calculator__buy-span, .calculator__sell-span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #3a4454;
+  margin-right: 16px;
+}
+@media (max-width: 767.98px) {
+  .calculator__buy-span, .calculator__sell-span {
+    min-width: 83px;
+  }
+}
+.calculator__buy-inputs, .calculator__sell-inputs {
+  display: flex;
+}
+.calculator__buy-input, .calculator__sell-input {
+  position: relative;
+}
+.calculator__buy-input input, .calculator__sell-input input {
+  display: block;
+  width: 100%;
+  max-width: 180px;
+  background: #ffffff;
+  border: 1px solid #a5adb4;
+  border-radius: 5px;
+  padding: 16px 12px 16px 45px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 100%;
+  color: #556176;
+}
+@media (max-width: 575.98px) {
+  .calculator__buy-input input, .calculator__sell-input input {
+    max-width: 120px;
+  }
+}
+.calculator__buy-input input::-moz-placeholder, .calculator__sell-input input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 100%;
+  color: #556176;
+}
+.calculator__buy-input input::placeholder, .calculator__sell-input input::placeholder {
+  font-size: 16px;
+  line-height: 100%;
+  color: #556176;
+}
+.calculator__buy-input span, .calculator__sell-input span {
+  position: absolute;
+  left: 11px;
+  top: 16.5px;
+  font-size: 16px;
+  line-height: 100%;
+  color: #556176;
+  pointer-events: none;
+}
+.calculator__buy-input + .calculator__buy-input, .calculator__buy-input + .calculator__sell-input, .calculator__sell-input + .calculator__buy-input, .calculator__sell-input + .calculator__sell-input {
+  margin-left: 16px;
+}
+@media (max-width: 767.98px) {
+  .calculator__sell {
+    margin-top: 16px;
+  }
+}
+
+/*# sourceMappingURL=style-calculator-currency.css.map*/

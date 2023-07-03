@@ -1,0 +1,85 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/accordions",
+	"version": "1.0.0",
+	"title": "Accordions",
+	"category": "widgets",
+	"icon": "list-view",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/accordions.js",
+	"editorStyle": "file:../../../blocks/build/accordions.css",
+	"style": "file:../../../blocks/build/style-accordions.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Main title"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Title #1",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"iframe": "https://www.youtube.com/embed/NpEaa2P7qZI"
+				},
+				{
+					"name": "tab2",
+					"title": "Title #2",
+					"content": "<ul>\n<li>line #1</li>\n<li>line #2</li>\n<li>line #3</li>\n<li>line #4</li>\n</ul>",
+					"iframe": ""
+				},
+				{
+					"name": "tab3",
+					"title": "Title #3",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"iframe": ""
+				},
+				{
+					"name": "tab4",
+					"title": "Title #4",
+					"content": "<h3>Subtitle</h3>",
+					"iframe": ""
+				}
+			]
+		},
+		"columns": {
+			"type": "string",
+			"default": "1"
+		}
+	}
+}

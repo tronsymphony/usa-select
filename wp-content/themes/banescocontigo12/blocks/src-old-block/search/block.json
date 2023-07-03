@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/search",
+	"version": "1.0.0",
+	"title": "Search",
+	"category": "widgets",
+	"icon": "search",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/search.js",
+	"editorStyle": "file:../../../blocks/build/search.css",
+	"style": "file:../../../blocks/build/style-search.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "¿En qué podemos ayudarte?"
+		},
+		"description": {
+			"type": "string",
+			"default": "Busca los productos o servicios específicos"
+		},
+		"placeholder": {
+			"type": "string",
+			"default": "Estoy buscando..."
+		}
+	}
+}

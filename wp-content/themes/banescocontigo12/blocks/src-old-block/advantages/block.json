@@ -1,0 +1,123 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/advantages",
+	"version": "1.0.0",
+	"title": "Advantages",
+	"category": "widgets",
+	"icon": "image-filter",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/advantages.js",
+	"editorStyle": "file:../../../blocks/build/advantages.css",
+	"style": "file:../../../blocks/build/style-advantages.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Title #1",
+					"image": {
+						"alt": "",
+						"url": "1.svg"
+					},
+					"color": "linear-gradient(100.66deg, #003C71 12.26%, #543DB8 67.17%, #219963 123.24%)",
+					"link": "/"
+				},
+				{
+					"name": "tab2",
+					"title": "Title #2",
+					"image": {
+						"alt": "",
+						"url": "2.svg"
+					},
+					"color": "linear-gradient(307.21deg, #007953 8.73%, #59D1FF 103.34%)",
+					"link": "/"
+				},
+				{
+					"name": "tab3",
+					"title": "Title #3",
+					"image": {
+						"alt": "",
+						"url": "3.svg"
+					},
+					"color": "linear-gradient(126.2deg, #543DB8 9.36%, #007953 103.15%)",
+					"link": "/"
+				},
+				{
+					"name": "tab4",
+					"title": "Title #4",
+					"image": {
+						"alt": "",
+						"url": "4.svg"
+					},
+					"color": "linear-gradient(123.12deg, #007953 -0.82%, #003C71 99.3%)",
+					"link": "/"
+				},
+				{
+					"name": "tab5",
+					"title": "Title #5",
+					"image": {
+						"alt": "",
+						"url": "5.svg"
+					},
+					"color": "linear-gradient(124.43deg, #007953 24.95%, #219963 81.8%, #003C71 131.31%)",
+					"link": "/"
+				},
+				{
+					"name": "tab6",
+					"title": "Title #6",
+					"image": {
+						"alt": "",
+						"url": "6.svg"
+					},
+					"color": "linear-gradient(124.81deg, #59D1FF 0.37%, #543DB8 55.32%, #003C71 117.6%)",
+					"link": "/"
+				},
+				{
+					"name": "tab7",
+					"title": "Title #7",
+					"image": {
+						"alt": "",
+						"url": "7.svg"
+					},
+					"color": "linear-gradient(124.54deg, #1A61AB 2.08%, #007953 103.96%)",
+					"link": "/"
+				}
+			]
+		}
+	}
+}

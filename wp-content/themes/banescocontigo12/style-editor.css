@@ -1,0 +1,207 @@
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+}
+
+/* html :where(.wp-block) {
+	max-width: 1250px;
+	padding: 0 15px;
+} */
+
+.input {
+	width: 100%;
+}
+
+.button {
+	display: block;
+	border-radius: 2px;
+	border: 1px solid #757575;
+	background: #f3f3f3;
+	padding: 0;
+	width: 100%;
+	height: 200px;
+}
+
+.button img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.button:hover {
+	background: #f3f3f3;
+	cursor: pointer;
+}
+
+.delete-button {
+	position: absolute;
+	right: 0;
+	top: 30px;
+	width: 36px;
+	height: 36px;
+	margin-top: 8px !important;
+	margin-right: 8px !important;
+	background: #f3f3f3;
+	border: 1px solid #1e1e1e;
+}
+
+.default-image-button {
+	position: absolute;
+	right: 0;
+	top: 75px;
+	width: 36px;
+	height: 36px;
+	margin-top: 8px !important;
+	margin-right: 8px !important;
+	background: #f3f3f3;
+	border: 1px solid #1e1e1e;
+}
+
+.default-image-button.second,
+.default-image-button.n2 {
+	top: 120px;
+}
+
+.default-image-button.third,
+.default-image-button.n3 {
+	top: 165px;
+}
+
+.default-image-button.fourth,
+.default-image-button.n4 {
+	top: 30px;
+	right: 50px;
+}
+
+.default-image-button.fifth,
+.default-image-button.n5 {
+	top: 75px;
+	right: 50px;
+}
+
+.default-image-button.sixth,
+.default-image-button.n6 {
+	top: 120px;
+	right: 50px;
+}
+
+.default-image-button.seventh,
+.default-image-button.n7 {
+	top: 165px;
+	right: 50px;
+}
+
+.default-image-button.seventh,
+.default-image-button.n8 {
+	top: 30px;
+	right: 100px;
+}
+
+.default-image-button.seventh,
+.default-image-button.n9 {
+	top: 75px;
+	right: 100px;
+}
+
+.default-image-button.seventh,
+.default-image-button.n10 {
+	top: 120px;
+	right: 100px;
+}
+
+.default-image-button.seventh,
+.default-image-button.n11 {
+	top: 165px;
+	right: 100px;
+}
+
+.default-image-button.seventh,
+.default-image-button.n12 {
+	top: 30px;
+	right: 150px;
+}
+
+.default-image-button.seventh,
+.default-image-button.n13 {
+	top: 75px;
+	right: 150px;
+}
+
+.default-image-button.seventh,
+.default-image-button.n14 {
+	top: 120px;
+	right: 150px;
+}
+
+.default-image-button.seventh,
+.default-image-button.n15 {
+	top: 165px;
+	right: 150px;
+}
+
+.primary-button {
+	margin-top: 10px;
+	display: block;
+	width: 100%;
+}
+
+.checkbox {
+	margin-top: 10px;
+	width: 100%;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.row > div {
+	flex: 1 1 50%;
+	width: 50%;
+}
+
+.row > div + div {
+	margin-left: 10px;
+}
+
+.components-placeholder__fieldset > div {
+	width: 100%;
+}
+
+.components-placeholder__fieldset .components-placeholder {
+	background: #f3f3f3;
+}
+
+.components-placeholder__fieldset .grey .button {
+	background: #b5b5b5;
+}
+
+.components-placeholder__fieldset .block {
+	padding: 13px;
+	background: #f1f1f1;
+	border-radius: 2px;
+	box-shadow: inset 0 0 0 1px #1e1e1e;
+	outline: 1px solid transparent;
+}
+
+.components-placeholder__fieldset .block + .block,
+.components-placeholder__fieldset .block + .row,
+.components-placeholder__fieldset .block + div > .components-tab-panel__tabs {
+	margin-top: 8px;
+}
+
+.components-base-control {
+	position: relative;
+}
+
+.components-tab-panel__tabs {
+	flex-wrap: wrap;
+	border: 1px solid #000;
+	border-bottom: none;
+}
+
+.long .components-textarea-control__input {
+	min-height: 300px;
+}

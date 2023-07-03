@@ -1,0 +1,61 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/banner-promotion",
+	"version": "1.0.0",
+	"title": "Banner promotion",
+	"category": "widgets",
+	"icon": "editor-kitchensink",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/banner-promotion.js",
+	"editorStyle": "file:../../../blocks/build/banner-promotion.css",
+	"style": "file:../../../blocks/build/style-banner-promotion.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "-72px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "-39px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "transparent"
+		},
+		"image": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"url": "image.jpg",
+					"alt": ""
+				},
+				"mobile": {
+					"url": "",
+					"alt": ""
+				}
+			}
+		}
+	}
+}

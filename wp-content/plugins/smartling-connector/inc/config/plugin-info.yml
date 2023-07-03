@@ -1,0 +1,4 @@
+parameters:
+  plugin.name: "wordpress-connector"
+  plugin.version: "auto updated"
+  plugin.domain: %plugin.name%

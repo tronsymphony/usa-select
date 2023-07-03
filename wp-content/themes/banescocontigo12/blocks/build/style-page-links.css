@@ -1,0 +1,50 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/src/page-links/style.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************/
+.page-links {
+  margin-top: var(--margins-top);
+  margin-bottom: var(--margins-bottom);
+  padding-top: var(--paddings-top);
+  padding-bottom: var(--paddings-bottom);
+  background: var(--gradient);
+}
+@media (max-width: 767.98px) {
+  .page-links {
+    margin-top: var(--margins-top--mobile);
+    margin-bottom: var(--margins-bottom--mobile);
+    padding-top: var(--paddings-top--mobile);
+    padding-bottom: var(--paddings-bottom--mobile);
+  }
+}
+.page-links .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.page-links a {
+  border: 1px solid #A5ADB4;
+  border-radius: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  padding: 16px 32px;
+}
+.page-links a:hover {
+  color: #fff;
+  background-color: #186f48;
+  border-color: #186f48;
+}
+.page-links a.active-link {
+  background-color: #219963;
+  border-color: #219963;
+  color: #fff;
+}
+.page-links a.active-link:hover {
+  background-color: #186f48;
+}
+
+/*# sourceMappingURL=style-page-links.css.map*/

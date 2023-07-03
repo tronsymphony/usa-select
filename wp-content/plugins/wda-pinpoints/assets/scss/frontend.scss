@@ -1,0 +1,110 @@
+@import "shortcodes/map";
+@import "shortcodes/search";
+@import "shortcodes/wrap";
+
+/* The map marker CSS styles */
+
+div.marker {
+    position: relative;
+    
+    :first-child {
+        margin-top: 0 !important;
+    }
+    
+    :last-child {
+        margin-bottom: 0 !important;
+    }
+    
+    div.pin {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+        display: block;
+        height: 42px;
+        width: 42px;
+    }
+    
+    div.content {
+        transition:
+            bottom 75ms linear,
+            box-shadow 75ms linear,
+            opacity 75ms linear,
+            visibility 75ms linear;
+        
+        background-color: #fff;
+        border-radius: 5px;
+        bottom: calc( 100% + 10px );
+        box-sizing: border-box;
+        display: block;
+        left: 50%;
+        opacity: 0;
+        padding: 15px;
+        position: absolute;
+        transform: translateX( -50% );
+        visibility: hidden;
+        width: 200px;
+        
+        &:after {
+            border-bottom: solid 10px transparent;
+            border-left: solid 10px transparent;
+            border-right: solid 10px transparent;
+            border-top: solid 10px #fff;
+            content: "";
+            height: 0;
+            left: 50%;
+            position: absolute;
+            top: calc( 100% - 1px );
+            transform: translateX( -50% );
+            width: 0;
+        }
+        
+        h6,
+        p {
+            margin: 5px 0;
+        }
+        
+        h6 {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        p {
+            color: #748994;
+            
+            a {
+                color: #219963;
+            }
+        }
+        
+        div.categories {
+            align-items: center;
+            display: flex;
+            margin-bottom: 12.5px;
+            margin-left: -2.5px !important;
+            margin-right: -2.5px !important;
+            margin-top: 12.5px;
+            
+            span {
+                background-color: #219963;
+                border-radius: 5px;
+                box-sizing: border-box;
+                color: #fff;
+                font-size: 10px;
+                margin: 2.5px;
+                padding: 4px 6px;
+            }
+        }
+    }
+}
+
+.is-highlighted {
+    div.marker {
+        div.content {
+            bottom: calc( 100% + 15px );
+            box-shadow: 0 2px 4px rgba( 0, 0, 0, 0.15 );
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

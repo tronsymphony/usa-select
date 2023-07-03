@@ -1,0 +1,64 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/promo-centered",
+	"version": "1.0.0",
+	"title": "Promo centered",
+	"category": "widgets",
+	"icon": "embed-photo",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/promo-centered.js",
+	"editorStyle": "file:../../../blocks/build/promo-centeredcss",
+	"style": "file:../../../blocks/build/style-promo-centered.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"description": {
+			"type": "string",
+			"default": "Very very very very very very very long description."
+		},
+		"button": {
+			"type": "string",
+			"default": "Button"
+		},
+		"target": {
+			"type": "string",
+			"default": "/"
+		}
+	}
+}

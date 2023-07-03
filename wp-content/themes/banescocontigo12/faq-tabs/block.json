@@ -1,0 +1,19 @@
+{
+  "name": "acf/faq-tabs",
+  "title": "FAQ Accordion Filter",
+  "category": "widgets",
+  "icon": "media-interactive",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "faq-tabs.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": true
+}

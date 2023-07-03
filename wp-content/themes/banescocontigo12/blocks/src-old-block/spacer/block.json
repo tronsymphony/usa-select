@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/spacer",
+	"version": "1.0.0",
+	"title": "Spacer",
+	"category": "widgets",
+	"icon": "button",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/spacer.js",
+	"editorStyle": "file:../../../blocks/build/spacer.css",
+	"style": "file:../../../blocks/build/style-spacer.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		}
+	}
+}

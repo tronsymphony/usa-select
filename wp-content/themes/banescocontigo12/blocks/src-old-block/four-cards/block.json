@@ -1,0 +1,105 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/four-cards",
+	"version": "1.0.0",
+	"title": "Four cards",
+	"category": "widgets",
+	"icon": "screenoptions",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/four-cards.js",
+	"editorStyle": "file:../../../blocks/build/four-cards.css",
+	"style": "file:../../../blocks/build/style-four-cards.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Title #1",
+					"description": "Very very very very very very very very very very very very very very long description.",
+					"firstLine": "Link #1",
+					"firstLineTarget": "/",
+					"secondLine": "Link #2",
+					"secondLineTarget": "/",
+					"image": {
+						"url": "image-0.svg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab2",
+					"title": "Title #2",
+					"description": "Very very very very very very very very very very very very very very long description.",
+					"firstLine": "Link #1",
+					"firstLineTarget": "/",
+					"secondLine": "Link #2",
+					"secondLineTarget": "/",
+					"image": {
+						"url": "image-0.svg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab3",
+					"title": "Title #3",
+					"description": "Very very very very very very very very very very very very very very long description.",
+					"firstLine": "Link #1",
+					"firstLineTarget": "/",
+					"secondLine": "Link #2",
+					"secondLineTarget": "/",
+					"image": {
+						"url": "image-0.svg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab4",
+					"title": "Title #4",
+					"description": "Very very very very very very very very very very very very very very long description.",
+					"firstLine": "Link #1",
+					"firstLineTarget": "/",
+					"secondLine": "Link #2",
+					"secondLineTarget": "/",
+					"image": {
+						"url": "image-0.svg",
+						"alt": ""
+					}
+				}
+			]
+		}
+	}
+}

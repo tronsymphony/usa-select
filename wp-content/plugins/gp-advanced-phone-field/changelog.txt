@@ -1,0 +1,65 @@
+# Changelog
+
+## 1.0.14
+
+	- Added new capabilities to grant/deny access to GP Advanced Phone Field settings and to uninstall it.
+
+## 1.0.13
+
+	- Added German translation. Credit: Brian Haas of digicube.li.
+
+## 1.0.12
+
+	- Added new [`gpapf_intltelinput_options`](https://gravitywiz.com/documentation/gpapf_intltelinput_options) JavaScript filter hook.
+	- Updated `intl-tel-input` library from version 17.0.13 to 17.0.21.
+
+## 1.0.11
+
+	- Updated validation logic to use the `gform_field_validation` filter hook rather than `gform_validation`.
+	- Improved validation to only clear out the value provided in Advanced Phone Fields if the value is clearly not a number and not just invalid.
+
+## 1.0.10
+
+	- Added compatibility for Gravity Forms' new Theme Framework.
+
+## 1.0.9
+
+	- Fixed an issue with empty phone field values causing PHP errors in some situations.
+
+## 1.0.8
+
+	- Added `gpapf_merge_tag_value` filter to modify phone value rendered with the merge tag and its modifiers.
+
+## 1.0.7
+
+	- Added support for `:nationalNumberFormatted` modifier to display numbers in the visual format generally accepted in its nation.
+
+## 1.0.6
+
+	- Fixed a formatting issue when invalid advanced phone field value was entered.
+
+## 1.0.5
+
+	- Improved handling of RTL languages in country list.
+
+## 1.0.4
+
+	- Added WebP versions of the flag sprites to improve performance. PNG versions of the sprites are still in place as a fallback.
+
+## 1.0.3
+
+	- Fixed issue where the country dropdown could initialize more than one time and cause the dropdown to show multiple times for a given Phone field.
+	- Updated plugin headers with correct Description and Plugin URI.
+
+## 1.0.2
+
+	- Added support for using the "Custom Validation Message" setting with Phone fields that have Advanced Phone Field enabled.
+
+## 1.0.1
+
+	- Fixed issue where the phone value could be lost on multi-page forms while navigating pages.
+	- Fixed issue with validation where the phone field would be validated even if hidden.
+
+## 1.0-beta-1
+
+	- Hello World!

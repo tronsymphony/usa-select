@@ -1,0 +1,111 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/directors",
+	"version": "1.0.0",
+	"title": "Directors",
+	"category": "widgets",
+	"icon": "groups",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/directors.js",
+	"editorStyle": "file:../../../blocks/build/directors.css",
+	"style": "file:../../../blocks/build/style-directors.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Title #1",
+					"text": "Subtitle",
+					"image": {
+						"url": "avatar.png",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab2",
+					"title": "Title #2",
+					"text": "Subtitle",
+					"image": {
+						"url": "avatar.png",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab3",
+					"title": "Title #3",
+					"text": "Subtitle",
+					"image": {
+						"url": "avatar.png",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab4",
+					"title": "Title #4",
+					"text": "Subtitle",
+					"image": {
+						"url": "avatar.png",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab5",
+					"title": "Title #5",
+					"text": "Subtitle",
+					"image": {
+						"url": "avatar.png",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab6",
+					"title": "Title #6",
+					"text": "Subtitle",
+					"image": {
+						"url": "avatar.png",
+						"alt": ""
+					}
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/content-popup",
+	"version": "1.0.0",
+	"title": "Content popup",
+	"category": "widgets",
+	"icon": "tagcloud",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/content-popup.js",
+	"editorStyle": "file:../../../blocks/build/content-popup.css",
+	"style": "file:../../../blocks/build/style-content-popup.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "50px",
+					"bottom": "50px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "object",
+			"default": {
+				"desktop": "Title",
+				"mobile": ""
+			}
+		},
+		"content": {
+			"type": "object",
+			"default": {
+				"desktop": "<h3><b>Lorem ipsum dolor</b> sit amet consectetur adipisicing elit.</h3>\n\n<br/>\n<br/>\n\n<p>Dolor, eius molestias deserunt quis reiciendis, molestiae consequatur necessitatibus neque corporis odio harum possimus dolores assumenda minus veritatis nam cumque voluptates iste! Quidem sit animi fugit illum provident? Possimus, excepturi iure. Veniam, a, id doloremque sit recusandae quam aut voluptates excepturi dolore autem iure, quo soluta! Vel blanditiis explicabo sapiente qui, culpa eligendi inventore quae asperiores est. Vero provident dolor sunt debitis. Natus, sequi. Odit tenetur ratione doloribus possimus quod repellat dolorem iusto delectus aperiam voluptatibus! Architecto, optio aspernatur at autem laborum ab blanditiis cumque quia suscipit, pariatur sequi sed distinctio, officiis molestiae iusto minus totam dolorem minima? Voluptatibus eos autem consequuntur odit, natus eveniet omnis doloremque consequatur dolor magni consectetur alias aliquam nostrum quis expedita! Mollitia eligendi ipsum, maiores alias veniam praesentium impedit tempora porro, doloribus minus expedita dignissimos suscipit a optio id officiis fugiat ex, rerum nostrum. Dicta quas, veniam voluptas amet deserunt ipsa nostrum repudiandae voluptatem tempora magnam adipisci, eveniet nobis veritatis iure modi corrupti ad labore doloremque voluptatibus! Ea quos ut reprehenderit consequuntur necessitatibus accusamus ipsam omnis molestiae, minima temporibus sed ullam.</p>\n\n<p>Sequi ullam quam blanditiis delectus alias nihil error corporis unde perspiciatis, officiis necessitatibus, enim, maiores consequatur?</p>",
+				"mobile": ""
+			}
+		}
+	}
+}

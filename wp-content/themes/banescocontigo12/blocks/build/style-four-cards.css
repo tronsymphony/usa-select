@@ -1,0 +1,87 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/src/four-cards/style.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************/
+.four-cards {
+  margin-top: var(--margins-top);
+  margin-bottom: var(--margins-bottom);
+  padding-top: var(--paddings-top);
+  padding-bottom: var(--paddings-bottom);
+  background: var(--gradient);
+}
+@media (max-width: 767.98px) {
+  .four-cards {
+    margin-top: var(--margins-top--mobile);
+    margin-bottom: var(--margins-bottom--mobile);
+    padding-top: var(--paddings-top--mobile);
+    padding-bottom: var(--paddings-bottom--mobile);
+  }
+}
+.four-cards__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -18px;
+}
+@media (max-width: 767.98px) {
+  .four-cards__inner {
+    margin: 0;
+  }
+}
+.four-cards__item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(50% - 36px);
+  width: calc(50% - 36px);
+  margin: 18px;
+  background: #ffffff;
+  border: 1px solid #dce1e9;
+  border-radius: 10px;
+  padding: 57px 54px 61px 50px;
+}
+@media (max-width: 767.98px) {
+  .four-cards__item {
+    padding: 36px 23px 36px;
+    flex: 100%;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  .four-cards__item:last-child {
+    margin-bottom: 0;
+  }
+}
+.four-cards__item-image {
+  width: 48px;
+  height: 48px;
+}
+.four-cards__item-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.four-cards__item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: #3a4454;
+  margin-top: 24px;
+}
+@media (max-width: 767.98px) {
+  .four-cards__item-title {
+    font-size: 20px;
+    line-height: 110%;
+  }
+}
+.four-cards__item-description {
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #748994;
+  max-width: 457px;
+}
+.four-cards__item-link {
+  margin-top: 24px;
+}
+
+/*# sourceMappingURL=style-four-cards.css.map*/

@@ -1,0 +1,125 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/banner-image",
+	"version": "1.0.0",
+	"title": "Banner image",
+	"category": "widgets",
+	"icon": "align-wide",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/banner-image.js",
+	"editorStyle": "file:../../../blocks/build/banner-image.css",
+	"style": "file:../../../blocks/build/style-banner-image.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px",
+					"description": "25px",
+					"buttons": "30px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px",
+					"description": "20px",
+					"buttons": "25px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "object",
+			"default": {
+				"desktop": "Title",
+				"mobile": ""
+			}
+		},
+		"description": {
+			"type": "object",
+			"default": {
+				"desktop": "Super super super super super super super super super super super super super super super super super super super super super super super super super super super super super super super super super super super super very long description.",
+				"mobile": ""
+			}
+		},
+		"button": {
+			"type": "object",
+			"default": {
+				"desktop": "Button",
+				"mobile": "",
+				"target": "/",
+				"type": "line-button"
+			}
+		},
+		"primaryButton": {
+			"type": "object",
+			"default": {
+				"desktop": "Primary button",
+				"mobile": "",
+				"target": "/",
+				"type": "white-button"
+			}
+		},
+		"colors": {
+			"type": "object",
+			"default": {
+				"title": "#FFFFFF",
+				"description": "#FFFFFF"
+			}
+		},
+		"widths": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"title": "440px",
+					"description": "550px"
+				},
+				"mobile": {
+					"title": "100%",
+					"description": "100%"
+				}
+			}
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"url": "background-1.jpg",
+					"alt": ""
+				},
+				"mobile": {
+					"url": "background-1-mobile.jpg",
+					"alt": ""
+				}
+			}
+		},
+		"shadow": {
+			"type": "boolean",
+			"default": true
+		},
+		"borderRadius": {
+			"type": "boolean",
+			"default": true
+		}
+	}
+}

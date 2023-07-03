@@ -1,0 +1,174 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/posts-with-info",
+	"version": "1.0.0",
+	"title": "Posts with info",
+	"category": "widgets",
+	"icon": "align-center",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/posts-with-info.js",
+	"editorStyle": "file:../../../blocks/build/posts-with-info.css",
+	"style": "file:../../../blocks/build/style-posts-with-info.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"items1": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"tags": "tag",
+					"title": "Title #1",
+					"description": "Very very very very very very very very very very very long description.",
+					"button": "Button",
+					"target": "/",
+					"primaryButton": "Primary Button",
+					"primaryTarget": "/",
+					"image": {
+						"url": "1.jpg",
+						"alt": ""
+					},
+					"mImage": {
+						"url": "m-1.jpg",
+						"alt": ""
+					},
+					"whiteText": true,
+					"big": true,
+					"mHide": false,
+					"green": false
+				}
+			]
+		},
+		"items2": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab2",
+					"tags": "tag",
+					"title": "Title #2",
+					"description": "Very very very very very very very very very very very long description.",
+					"button": "Button",
+					"target": "/",
+					"primaryButton": "Primary Button",
+					"primaryTarget": "/",
+					"image": {
+						"url": "2.jpg",
+						"alt": ""
+					},
+					"mImage": {
+						"url": "m-2.jpg",
+						"alt": ""
+					},
+					"whiteText": false,
+					"big": false,
+					"mHide": false,
+					"green": false
+				},
+				{
+					"name": "tab3",
+					"tags": "tag",
+					"title": "Title #3",
+					"description": "Very very very very very very very very very very very long description.",
+					"button": "Button",
+					"target": "/",
+					"primaryButton": "Primary Button",
+					"primaryTarget": "/",
+					"image": {
+						"url": "3.jpg",
+						"alt": ""
+					},
+					"mImage": {
+						"url": "",
+						"alt": ""
+					},
+					"whiteText": true,
+					"big": false,
+					"mHide": false,
+					"green": false
+				}
+			]
+		},
+		"blue": {
+			"type": "boolean",
+			"default": false
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Title #1",
+					"link": "Link",
+					"target": "/",
+					"text": "",
+					"image": {
+						"alt": "",
+						"url": "pin.svg"
+					}
+				},
+				{
+					"name": "tab2",
+					"title": "Title #2",
+					"link": "Link",
+					"target": "/",
+					"text": "",
+					"image": {
+						"alt": "",
+						"url": "mail.svg"
+					}
+				},
+				{
+					"name": "tab3",
+					"title": "Title #3",
+					"link": "Link",
+					"target": "/",
+					"text": "",
+					"image": {
+						"alt": "",
+						"url": "tel.svg"
+					}
+				}
+			]
+		},
+		"extraText": {
+			"type": "string",
+			"default": ""
+		}
+	}
+}

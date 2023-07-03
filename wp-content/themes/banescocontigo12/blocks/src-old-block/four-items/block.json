@@ -1,0 +1,111 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/four-items",
+	"version": "1.0.0",
+	"title": "Four items",
+	"category": "widgets",
+	"icon": "screenoptions",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/four-items.js",
+	"editorStyle": "file:../../../blocks/build/four-items.css",
+	"style": "file:../../../blocks/build/style-four-items.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Main title"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Title #1",
+					"link": "/",
+					"image": {
+						"url": "image-0.svg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab2",
+					"title": "Title #2",
+					"link": "/",
+					"image": {
+						"url": "image-0.svg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab3",
+					"title": "Title #3",
+					"link": "/",
+					"image": {
+						"url": "image-0.svg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab4",
+					"title": "Title #4",
+					"link": "/",
+					"image": {
+						"url": "image-0.svg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab5",
+					"title": "Title #5",
+					"link": "/",
+					"image": {
+						"url": "image-0.svg",
+						"alt": ""
+					}
+				},
+				{
+					"name": "tab6",
+					"title": "Title #6",
+					"link": "/",
+					"image": {
+						"url": "image-0.svg",
+						"alt": ""
+					}
+				}
+			]
+		}
+	}
+}

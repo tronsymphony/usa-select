@@ -1,0 +1,82 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/tabs-loan-2",
+	"version": "1.0.0",
+	"title": "Tabs Loan",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/tabs-loan-2.js",
+	"editorStyle": "file:../../../blocks/build/tabs-loan-2.css",
+	"style": "file:../../../blocks/build/style-tabs-loan-2.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "-36px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "-36px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "transparent"
+		},
+		"title": {
+			"type": "object",
+			"default": {
+				"desktop": "Estoy buscando un préstamo personal de...",
+				"mobile": "Estoy buscando un préstamo hipotecario"
+			}
+		},
+		"slider2": {
+			"type": "object",
+			"default": {
+				"title": {
+					"desktop": "Monto a solicitar",
+					"mobile": ""
+				}
+			}
+		},
+		"counter2": {
+			"type": "object",
+			"default": {
+				"title": {
+					"desktop": "Plazo en años",
+					"mobile": ""
+				}
+			}
+		},
+		"button": {
+			"type": "object",
+			"default": {
+				"title": {
+					"desktop": "Simular Préstamo",
+					"mobile": ""
+				}
+			}
+		}
+	}
+}

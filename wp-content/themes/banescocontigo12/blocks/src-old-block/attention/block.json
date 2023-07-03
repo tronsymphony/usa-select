@@ -1,0 +1,89 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/attention",
+	"version": "1.0.0",
+	"title": "Attention",
+	"category": "widgets",
+	"icon": "email",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/attention.js",
+	"editorStyle": "file:../../../blocks/build/attention.css",
+	"style": "file:../../../blocks/build/style-attention.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "60px",
+					"bottom": "60px"
+				},
+				"mobile": {
+					"top": "48px",
+					"bottom": "48px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "linear-gradient(93.29deg, #1A61AB -12.85%, #007953 115.58%)"
+		},
+		"title": {
+			"type": "string",
+			"default": "¿Necesitas ayuda?"
+		},
+		"description": {
+			"type": "string",
+			"default": "Estamos a tu disposición en todos los canales."
+		},
+		"button": {
+			"type": "string",
+			"default": "Conversemos"
+		},
+		"target": {
+			"type": "string",
+			"default": "/contactanos/"
+		},
+		"openChat": {
+			"type": "boolean",
+			"default": false
+		},
+		"icon": {
+			"type": "object",
+			"default": {
+				"alt": "",
+				"url": "icon.svg"
+			}
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"alt": "",
+				"url": ""
+			}
+		},
+		"mBackground": {
+			"type": "object",
+			"default": {
+				"alt": "",
+				"url": ""
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+    "name": "webdev.army/pinpoints",
+    "type": "project",
+    "license": "GPL 3.0",
+    "authors": [
+        {
+            "name": "Cosmin M.",
+            "email": "general@webdev.army"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "scssphp/scssphp": "^1.11",
+        "scssphp/server": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "WDAPinpoints\\": "src/"
+        },
+        "files": [
+            "src/Functions.php"
+        ]
+    }
+}

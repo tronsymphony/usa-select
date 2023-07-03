@@ -1,0 +1,154 @@
+.contact-form {
+	margin-top: var(--margins-top);
+	margin-bottom: var(--margins-bottom);
+	padding-top: var(--paddings-top);
+	padding-bottom: var(--paddings-bottom);
+	background: var(--gradient);
+
+	@media (max-width: 1199.98px) {
+		margin-top: var(--margins-top--mobile);
+		margin-bottom: var(--margins-bottom--mobile);
+		padding-top: var(--paddings-top--mobile);
+		padding-bottom: var(--paddings-bottom--mobile);
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		@media (max-width: 1199.98px) {
+			flex-direction: column;
+		}
+	}
+
+	&__items {
+		max-width: 477px;
+		margin-right: 20px;
+
+		@media (max-width: 1199.98px) {
+			max-width: none;
+			margin-right: 0;
+		}
+	}
+
+	&__title {
+		font-weight: 300;
+		font-size: 40px;
+		line-height: 100%;
+		color: #3a4454;
+		margin-bottom: 36px;
+
+		@media (max-width: 575.98px) {
+			font-size: 36px;
+		}
+	}
+
+	&__content {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+		color: #748994;
+		margin-bottom: 20px;
+
+		@media (max-width: 767.98px) {
+			 margin-bottom: 41px;
+		}
+	}
+
+	&__item {
+		display: flex;
+		align-items: flex-start;
+
+		@media (max-width: 1199.98px) {
+			flex-direction: column;
+		}
+
+		&-image {
+			width: 56px;
+			height: 55px;
+			margin-right: 22px;
+
+			@media (max-width: 1199.98px) {
+				margin-right: 0;
+			}
+
+			@media (max-width: 767.98px) {
+				width: 36px;
+				height: 36px;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+
+		&-text {
+			display: flex;
+			flex-direction: column;
+
+			@media (max-width: 1199.98px) {
+				margin-top: 10px;
+			}
+		}
+
+		&-title {
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 100%;
+			color: #3a4454;
+		}
+
+		&-content {
+			margin-top: 1px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		&-line {
+			display: inline;
+			margin-top: 3px;
+			font-size: 18px;
+			line-height: 150%;
+			display: -webkit-box;
+			-webkit-line-clamp: 1;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: normal;
+
+			@media (max-width: 1199.98px) {
+				margin-top: 0;
+			}
+
+			@media (max-width: 575.98px) {
+				font-size: 16px;
+			}
+		}
+
+		.contact-form__item-line + .contact-form__item-line {
+			margin-top: 5px;
+		}
+	}
+
+	&__item + &__item {
+		margin-top: 60px;
+
+		@media (max-width: 1199.98px) {
+			margin-top: 36px;
+		}
+	}
+
+	&__content {
+		width: 100%;
+		max-width: 592px;
+
+		@media (max-width: 1199.98px) {
+			max-width: 100%;
+			margin-top: 47px;
+		}
+	}
+}

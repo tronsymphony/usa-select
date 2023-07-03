@@ -1,0 +1,119 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/page-links",
+	"version": "1.0.0",
+	"title": "New Page links",
+	"category": "widgets",
+	"icon": "align-center",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/page-links.js",
+	"editorStyle": "file:../../../blocks/build/page-links.css",
+	"style": "file:../../../blocks/build/style-page-links.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "10px",
+					"bottom": "10px"
+				},
+				"mobile": {
+					"top": "10px",
+					"bottom": "10px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"linkTitle1": {
+			"type": "string",
+			"default": ""
+		},
+		"linkHref1": {
+			"type": "string",
+			"default": ""
+		},
+		"linkActive1": {
+			"type": "object",
+			"default": {
+				"active": false
+			}
+		},
+		"linkTitle2": {
+			"type": "string",
+			"default": ""
+		},
+		"linkHref2": {
+			"type": "string",
+			"default": ""
+		},
+		"linkActive2": {
+			"type": "object",
+			"default": {
+				"active": false
+			}
+		},
+		"linkTitle3": {
+			"type": "string",
+			"default": ""
+		},
+		"linkHref3": {
+			"type": "string",
+			"default": ""
+		},
+		"linkActive3": {
+			"type": "object",
+			"default": {
+				"active": false
+			}
+		},
+		"linkTitle4": {
+			"type": "string",
+			"default": ""
+		},
+		"linkHref4": {
+			"type": "string",
+			"default": ""
+		},
+		"linkActive4": {
+			"type": "object",
+			"default": {
+				"active": false
+			}
+		},
+		"linkTitle5": {
+			"type": "string",
+			"default": ""
+		},
+		"linkHref5": {
+			"type": "string",
+			"default": ""
+		},
+		"linkActive5": {
+			"type": "object",
+			"default": {
+				"active": false
+			}
+		}
+		
+	}
+}

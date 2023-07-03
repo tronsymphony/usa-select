@@ -1,0 +1,62 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/text-image-slider",
+	"version": "1.0.0",
+	"title": "Text Image Slider",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/text-image-slider.js",
+	"editorStyle": "file:../../../blocks/build/text-image-slider.css",
+	"style": "file:../../../blocks/build/style-text-image-slider.css",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Gestiona tus cuentas en segundos"
+		},
+		"content": {
+			"type": "string",
+			"default": "<ul><li>Autoafíliate a la banca en línea en tres simples pasos.</li><li>Elige un nombre de usuario que sea para ti fácil recordar, por ejemplo, tu correo electrónico.</li><li>Registro biométrico para login y autorización de transacciones.</li><li>Consulta tus balances recientes, movimientos del mes y detalles de tus productos.</li><li>Busca tus transacciones por monto o rango de fecha.</li><li>Consultar tus puntos verdes acumulados.</li></ul>"
+		},
+		"appstore": {
+			"type": "string",
+			"default": "/"
+		},
+		"googleplay": {
+			"type": "string",
+			"default": "/"
+		},
+		"image": {
+			"type": "string",
+			"default": "image.png"
+		},
+		"mImage": {
+			"type": "string",
+			"default": "image-mobile.png"
+		},
+		"topIcon": {
+			"type": "object",
+			"default": {
+				"hidden": false
+			}
+		},
+		"socialIcons": {
+			"type": "object",
+			"default": {
+				"hidden": false
+			}
+		},
+		"enablePopup": {
+			"type": "object",
+			"default": {
+				"hidden": false
+			}
+		}
+		
+		
+	}
+}

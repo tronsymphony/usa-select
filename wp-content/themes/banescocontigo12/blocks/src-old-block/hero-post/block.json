@@ -1,0 +1,89 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/hero-post",
+	"version": "1.0.0",
+	"title": "Hero post",
+	"category": "widgets",
+	"icon": "admin-home",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/hero-post.js",
+	"editorStyle": "file:../../../blocks/build/hero-post.css",
+	"style": "file:../../../blocks/build/style-hero-post.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "83px",
+					"bottom": "163px"
+				},
+				"mobile": {
+					"top": "45px",
+					"bottom": "135px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px",
+					"title": "0px",
+					"description": "0px",
+					"details": "20px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px",
+					"title": "0px",
+					"description": "0px",
+					"details": "20px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "linear-gradient(93.27deg, #007953 -6.63%, #003C71 105.63%)"
+		},
+		"title": {
+			"type": "object",
+			"default": {
+				"desktop": "Title",
+				"mobile": ""
+			}
+		},
+		"description": {
+			"type": "object",
+			"default": {
+				"desktop": "",
+				"mobile": ""
+			}
+		},
+		"colors": {
+			"type": "object",
+			"default": {
+				"title": "#FFFFFF",
+				"description": "#FFFFFF",
+				"details": "#FFFFFF"
+			}
+		},
+		"widths": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"title": "1200px",
+					"description": "400px"
+				},
+				"mobile": {
+					"title": "100%",
+					"description": "100%"
+				}
+			}
+		}
+	}
+}

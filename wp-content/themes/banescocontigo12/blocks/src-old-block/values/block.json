@@ -1,0 +1,81 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/values",
+	"version": "1.0.0",
+	"title": "Values",
+	"category": "widgets",
+	"icon": "feedback",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/values.js",
+	"editorStyle": "file:../../../blocks/build/values.css",
+	"style": "file:../../../blocks/build/style-values.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "linear-gradient(90deg, #007953 -15.33%, #003c71 113.67%)"
+		},
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Title #1",
+					"text": "Very very very very very very very very very very very very very very very very very very very long description.",
+					"color": "#219963"
+				},
+				{
+					"name": "tab2",
+					"title": "Title #2",
+					"text": "Very very very very very very very very very very very very very very very very very very very long description.",
+					"color": "#1A61AB"
+				},
+				{
+					"name": "tab3",
+					"title": "Title #3",
+					"text": "Very very very very very very very very very very very very very very very very very very very long description.",
+					"color": "#007953"
+				},
+				{
+					"name": "tab4",
+					"title": "Title #4",
+					"text": "Very very very very very very very very very very very very very very very very very very very long description.",
+					"color": "#543DB8"
+				}
+			]
+		}
+	}
+}

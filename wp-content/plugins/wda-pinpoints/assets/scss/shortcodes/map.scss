@@ -1,0 +1,41 @@
+@import "vars";
+
+div[data-pinpoints="map"] {
+    display: block;
+    width: 100%;
+    
+    div#pinpoints-map {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Responsiveness */
+
+@media ( min-width: #{$tablet-breakpoint} ) {
+    div[data-pinpoints="map"] {
+        height: inherit;
+        
+        div#pinpoints-map {
+            height: inherit;
+        }
+    }
+}
+@media ( min-width: #{$mobile-breakpoint} ) and ( max-width: #{$tablet-breakpoint} ) {
+    div[data-pinpoints="map"] {
+        height: 500px;
+        
+        div#pinpoints-map {
+            height: 500px;
+        }
+    }
+}
+@media ( max-width: #{$mobile-breakpoint} ) {
+    div[data-pinpoints="map"] {
+        height: 350px;
+        
+        div#pinpoints-map {
+            height: 350px;
+        }
+    }
+}

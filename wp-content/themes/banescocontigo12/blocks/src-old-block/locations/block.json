@@ -1,0 +1,112 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/locations",
+	"version": "1.0.0",
+	"title": "Locations",
+	"category": "widgets",
+	"icon": "location-alt",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/locations.js",
+	"editorStyle": "file:../../../blocks/build/locations.css",
+	"style": "file:../../../blocks/build/style-locations.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "transparent"
+		},
+		"title": {
+			"type": "string",
+			"default": "Ubícanos"
+		},
+		"placeholder": {
+			"type": "string",
+			"default": "Busca una dirección o localidad"
+		},
+		"checkbox1": {
+			"type": "string",
+			"default": "Agencias disponibles"
+		},
+		"checkbox2": {
+			"type": "string",
+			"default": "Manejo y gestión de divisas"
+		},
+		"checkbox3": {
+			"type": "string",
+			"default": "Cajeros Automáticos"
+		},
+		"checkbox4": {
+			"type": "string",
+			"default": "Taquilla"
+		},
+		"checkbox5": {
+			"type": "string",
+			"default": "Asesores"
+		},
+		"nearMe": {
+			"type": "string",
+			"default": "Mostrar puntos cerca de mi"
+		},
+		"results": {
+			"type": "string",
+			"default": "resultados"
+		},
+		"link1": {
+			"type": "string",
+			"default": "Descargar listado de agencias"
+		},
+		"link1target": {
+			"type": "string",
+			"default": "/"
+		},
+		"link2": {
+			"type": "string",
+			"default": "Ver cierres de agencias y suspensión de servicios"
+		},
+		"link2target": {
+			"type": "string",
+			"default": "/"
+		},
+		"indications": {
+			"type": "string",
+			"default": "Indicaciones"
+		},
+		"mobileFilterButton": {
+			"type": "string",
+			"default": "¿Qué necesitas?"
+		},
+		"mobileBottomButton": {
+			"type": "string",
+			"default": "Ver resultados de búsqueda"
+		}
+	}
+}

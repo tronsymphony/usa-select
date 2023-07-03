@@ -1,0 +1,103 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/calculator-loan",
+	"version": "1.0.0",
+	"title": "Calculator Loan",
+	"category": "widgets",
+	"icon": "admin-settings",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/calculator-loan.js",
+	"editorStyle": "file:../../../blocks/build/calculator-loan.css",
+	"style": "file:../../../blocks/build/style-calculator-loan.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "-84px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "-76px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "transparent"
+		},
+		"title": {
+			"type": "object",
+			"default": {
+				"desktop": "Estoy buscando un crédito comercial de...",
+				"mobile": "Estoy buscando un crédito comercial"
+			}
+		},
+		"slider": {
+			"type": "object",
+			"default": {
+				"title": {
+					"desktop": "Monto a solicitar",
+					"mobile": ""
+				}
+			}
+		},
+		"counter": {
+			"type": "object",
+			"default": {
+				"title": {
+					"desktop": "Plazo en años",
+					"mobile": ""
+				},
+				"count": ""
+			}
+		},
+		"button": {
+			"type": "object",
+			"default": {
+				"title": {
+					"desktop": "Simular Préstamo",
+					"mobile": ""
+				},
+				"target": "/"
+			}
+		},
+		"outlinedButton": {
+			"type": "object",
+			"default": {
+				"title": {
+					"desktop": "",
+					"mobile": ""
+				},
+				"target": "/"
+			}
+		},
+		"extra": {
+			"type": "object",
+			"default": {
+				"button": "",
+				"title": "",
+				"price": "",
+				"info": ""
+			}
+		}
+	}
+}

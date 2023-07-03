@@ -1,0 +1,192 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/tabs-content",
+	"version": "1.0.0",
+	"title": "tabs content",
+	"category": "widgets",
+	"icon": "list-view",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/tabs-content.js",
+	"editorStyle": "file:../../../blocks/build/tabs-content.css",
+	"style": "file:../../../blocks/build/style-tabs-content.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Main title"
+		},
+		"title1": {
+			"type": "string",
+			"default": "Cuentas en Moneda nacional"
+		},
+		"title2": {
+			"type": "string",
+			"default": "Cuenta Verde"
+		},
+		"title3": {
+			"type": "string",
+			"default": "Cuenta de Pensionados"
+		},
+		"items1": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Title #1",
+					"tabtitle": "tabtitle #1",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"feature_image1": {
+						"type": "object",
+						"default": {
+							"url": "",
+							"alt": ""
+						}
+					},
+					"feature_title1": "title",
+					
+					"banner_image": {
+						"type": "object",
+						"default": {
+							"url": "",
+							"alt": ""
+						}
+					},
+					"banner_title": "title",
+					"banner_text": {
+						"type": "string",
+						"default":""
+					},
+					"modal_title": "title",
+					"modal_text": {
+						"type": "string",
+						"default":""
+					},
+					"initial_opened": {
+						"type": "boolean",
+						"default": false
+					}
+				}
+			]
+		},
+		"items2": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Title #1",
+					"tabtitle": "tabtitle #1",
+					
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+				
+					"feature_image2": {
+						"type": "object",
+						"default": {
+							"url": "",
+							"alt": ""
+						}
+					},
+					"feature_title2": "title",
+					
+					"banner_image": {
+						"type": "object",
+						"default": {
+							"url": "",
+							"alt": ""
+						}
+					},
+					"banner_title": "title",
+					"banner_text": {
+						"type": "string",
+						"default":""
+					},
+					"modal_title": "title",
+					"modal_text": {
+						"type": "string",
+						"default":""
+					},
+					"initial_opened2": {
+						"type": "boolean",
+						"default": false
+					}
+				}
+			]
+		},
+		"items3": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Title #1",
+					"tabtitle": "tabtitle #1",
+					"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quis saepe dolore quisquam quidem est, aliquam eius esse, obcaecati debitis hic commodi repellendus voluptatibus veniam fuga quam, inventore quos quas delectus id soluta molestiae ab reiciendis nesciunt! Repellat, a autem.",
+					"feature_image3": {
+						"type": "object",
+						"default": {
+							"url": "",
+							"alt": ""
+						}
+					},
+					"feature_title3": "title",
+					"banner_image": {
+						"type": "object",
+						"default": {
+							"url": "",
+							"alt": ""
+						}
+					},
+					"banner_title": "title",
+					"banner_text": {
+						"type": "string",
+						"default":""
+					},
+					"modal_title": "title",
+					"modal_text": {
+						"type": "string",
+						"default":""
+					},
+					"initial_opened3": {
+						"type": "boolean",
+						"default": false
+					}
+				}
+			]
+		},
+		"columns": {
+			"type": "string",
+			"default": "1"
+		}
+	}
+}

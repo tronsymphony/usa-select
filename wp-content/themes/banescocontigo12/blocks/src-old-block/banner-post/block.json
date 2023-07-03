@@ -1,0 +1,61 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/banner-post",
+	"version": "1.0.0",
+	"title": "Banner post",
+	"category": "widgets",
+	"icon": "editor-kitchensink",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/banner-post.js",
+	"editorStyle": "file:../../../blocks/build/banner-post.css",
+	"style": "file:../../../blocks/build/style-banner-post.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "-103px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "-90px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "transparent"
+		},
+		"image": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"url": "image.jpg",
+					"alt": ""
+				},
+				"mobile": {
+					"url": "",
+					"alt": ""
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,110 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./blocks/src/banner-image/style.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************/
+.banner-image {
+  position: relative;
+  margin-top: var(--margins-top);
+  margin-bottom: var(--margins-bottom);
+  padding-top: var(--paddings-top);
+  padding-bottom: var(--paddings-bottom);
+  background: var(--gradient);
+}
+@media (max-width: 767.98px) {
+  .banner-image {
+    margin-top: var(--margins-top--mobile);
+    margin-bottom: var(--margins-bottom--mobile);
+    padding-top: var(--paddings-top--mobile);
+    padding-bottom: var(--paddings-bottom--mobile);
+  }
+}
+.banner-image[data-shadow=true] .banner-image__inner {
+  box-shadow: 0px 5px 30px rgba(42, 88, 125, 0.15);
+}
+.banner-image[data-border-radius=true] .banner-image__inner {
+  border-radius: 10px;
+}
+.banner-image[data-border-radius=true] .banner-image__background {
+  border-radius: 10px;
+}
+.banner-image[data-border-radius=true] .banner-image__background img {
+  border-radius: 10px;
+}
+.banner-image__inner {
+  position: relative;
+  padding: 62px 149px 71px 49px;
+  z-index: 2;
+}
+@media (max-width: 767.98px) {
+  .banner-image__inner {
+    padding: 39px 24px 210px;
+  }
+}
+.banner-image__content {
+  position: relative;
+  z-index: 3;
+}
+.banner-image__title {
+  max-width: var(--widths-title);
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 100%;
+  color: var(--colors-title);
+}
+@media (max-width: 767.98px) {
+  .banner-image__title {
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    max-width: var(--widths-title--mobile);
+  }
+}
+.banner-image__description {
+  margin-top: var(--margins-description);
+  max-width: var(--widths-description);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--colors-description);
+}
+@media (max-width: 767.98px) {
+  .banner-image__description {
+    margin-top: var(--margins-description--mobile);
+    max-width: var(--widths-description--mobile);
+  }
+}
+.banner-image__buttons {
+  display: flex;
+  align-items: center;
+  margin-top: var(--margins-buttons);
+}
+@media (max-width: 767.98px) {
+  .banner-image__buttons {
+    margin-top: var(--margins-buttons--mobile);
+  }
+}
+.banner-image__button + .banner-image__button {
+  margin-left: 36px;
+}
+@media (max-width: 767.98px) {
+  .banner-image__button + .banner-image__button {
+    margin-left: 24px;
+  }
+}
+.banner-image__background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.banner-image__background img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*# sourceMappingURL=style-banner-image.css.map*/

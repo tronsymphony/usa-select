@@ -1,0 +1,61 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/table-extended",
+	"version": "1.0.0",
+	"title": "Tables Extended",
+	"category": "widgets",
+	"icon": "editor-table",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/table-extended.js",
+	"editorStyle": "file:../../../blocks/build/table-extended.css",
+	"style": "file:../../../blocks/build/style-table-extended.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		 
+		"tableArea": {
+			"type": "string",
+			"default": "<table>\n<thead>\n<tr>\n<td>Header #1</td><td>Header #2</td><td>Header #3</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n<tr>\n<td></td><td></td><td></td>\n</tr>\n</tbody>\n</table>\n"
+		},
+		"title": {
+			"type": "string",
+			"default": "Extra very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long information."
+		},
+		"subtitle":{
+			"type": "string",
+			"default": "Extra very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long information."
+		}
+	}
+}

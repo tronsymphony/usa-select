@@ -1,0 +1,77 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/form-tabs",
+	"version": "1.0.0",
+	"title": "Form tabs",
+	"category": "widgets",
+	"icon": "list-view",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/form-tabs.js",
+	"editorStyle": "file:../../../blocks/build/form-tabs.css",
+	"style": "file:../../../blocks/build/style-form-tabs.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Main title"
+		},
+		"title1": {
+			"type": "string",
+			"default": "Cuentas en Moneda nacional"
+		},
+		"title2": {
+			"type": "string",
+			"default": "Cuenta Verde"
+		},
+		"title3": {
+			"type": "string",
+			"default": "Cuenta de Pensionados"
+		},
+		"title4": {
+			"type": "string",
+			"default": "Cuenta de Pensionados"
+		},
+		"title5": {
+			"type": "string",
+			"default": "Cuenta de Pensionados"
+		},
+		
+		"columns": {
+			"type": "string",
+			"default": "1"
+		}
+	}
+}

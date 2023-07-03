@@ -1,0 +1,133 @@
+.search-with-filter {
+	padding-bottom: 30px;
+
+	@media (max-width: 767.98px) {
+		padding-bottom: 0;
+	}
+
+	&__inner {
+		background: #ffffff;
+		border-radius: 10px;
+		padding: 40px 52px 39px 41px;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		margin-top: -65px;
+		position: relative;
+		z-index: 11;
+
+		@media (max-width: 767.98px) {
+			padding: 22px 15px 28px;
+			flex-direction: column;
+			margin-top: -62px;
+		}
+	}
+
+	&__content {
+		flex: 1 0 300px;
+		width: 300px;
+		display: flex;
+		flex-direction: column;
+		margin-right: 30px;
+
+		@media (max-width: 767.98px) {
+			flex: 1;
+			width: 100%;
+			margin-right: 0;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 100%;
+		color: #3a4454;
+
+		@media (max-width: 575.98px) {
+			font-size: 20px;
+			line-height: 110%;
+		}
+	}
+
+	&__input {
+		flex: 1 1 70%;
+		width: 70%;
+		position: relative;
+
+		@media (max-width: 767.98px) {
+			flex: 0;
+			width: 100%;
+			margin-top: 16px;
+		}
+
+		@media (max-width: 575.98px) {
+			input {
+				height: 42px;
+			}
+		}
+	}
+
+	&__filters {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-top: -24px;
+		padding: 0 40px;
+
+		@media (max-width: 767.98px) {
+			overflow-x: auto;
+			display: flex;
+			align-items: center;
+			flex-wrap: nowrap;
+			padding: 0;
+			margin: 0 -16px;
+			padding-left: 16px;
+		}
+	}
+
+	&__filter {
+		display: inline-block;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 100%;
+		text-align: center;
+		color: #708090;
+		background: #ffffff;
+		border: 1px solid #a5adb4;
+		border-radius: 50px;
+		padding: 15px 31.5px;
+		white-space: nowrap;
+		transition: 0.3s;
+		margin-top: 24px;
+		margin-right: 18px;
+
+		@media (max-width: 767.98px) {
+			margin-top: 0;
+			margin-right: 16px;
+		}
+
+		&.active {
+			color: #fff;
+			background: #219963;
+
+			&:hover {
+				color: #fff;
+				background: #007953;
+			}
+
+			&:active {
+				background: #219963;
+			}
+		}
+
+		&:hover {
+			color: #219963;
+			border-color: #219963;
+		}
+
+		&:active {
+			background: transparent;
+		}
+	}
+}

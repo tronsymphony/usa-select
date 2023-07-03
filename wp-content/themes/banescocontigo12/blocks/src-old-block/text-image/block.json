@@ -1,0 +1,154 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/text-image",
+	"version": "1.0.0",
+	"title": "Text image",
+	"category": "widgets",
+	"icon": "analytics",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/text-image.js",
+	"editorStyle": "file:../../../blocks/build/text-image.css",
+	"style": "file:../../../blocks/build/style-text-image.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px",
+					"title": "10px",
+					"description": "40px",
+					"button": "0px",
+					"between": "50px",
+					"image": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px",
+					"title": "0px",
+					"description": "30px",
+					"button": "0px",
+					"between": "80px",
+					"image": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "object",
+			"default": {
+				"desktop": "Title",
+				"mobile": ""
+			}
+		},
+		"description": {
+			"type": "object",
+			"default": {
+				"desktop": "<h3>Subtitle</h3>\n<p>Very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long description.</p>",
+				"mobile": ""
+			}
+		},
+		"button": {
+			"type": "object",
+			"default": {
+				"desktop": "Button",
+				"mobile": "",
+				"target": "/",
+				"type": "primary-button"
+			}
+		},
+		"colors": {
+			"type": "object",
+			"default": {
+				"title": "#3A4454",
+				"description": "#748994"
+			}
+		},
+		"widths": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"title": "400px",
+					"description": "600px"
+				},
+				"mobile": {
+					"title": "100%",
+					"description": "100%"
+				}
+			}
+		},
+		"image": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"url": "image-1.png",
+					"alt": ""
+				},
+				"mobile": {
+					"url": "image-1-mobile.png",
+					"alt": ""
+				},
+				"width": {
+					"desktop": "600px",
+					"mobile": "100%"
+				},
+				"height": {
+					"desktop": "400px",
+					"mobile": "auto"
+				},
+				"shift": {
+					"desktop": "-76px",
+					"mobile": "0px"
+				}
+			}
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"url": "",
+					"alt": ""
+				},
+				"mobile": {
+					"url": "",
+					"alt": ""
+				}
+			}
+		},
+		"reverse": {
+			"type": "object",
+			"default": {
+				"desktop": false,
+				"mobile": false
+			}
+		},
+		"shadow": {
+			"type": "boolean",
+			"default": false
+		},
+		"imageMobileFullWidth": {
+			"type": "boolean",
+			"default": true
+		}
+	}
+}

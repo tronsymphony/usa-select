@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/search-with-filter",
+	"version": "1.0.0",
+	"title": "Search With Filter",
+	"category": "widgets",
+	"icon": "warning",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/search-with-filter.js",
+	"editorStyle": "file:../../../blocks/build/search-with-filter.css",
+	"style": "file:../../../blocks/build/style-search-with-filter.css",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "¿En qué podemos ayudarte?"
+		},
+		"placeholder": {
+			"type": "string",
+			"default": "Estoy buscando..."
+		},
+		"filters": {
+			"type": "string",
+			"default": "Ver todo, Cuentas, Tarjetas, Préstamos, Seguros, Cambio de moneda, Transferencias, BanescOnline, Información de seguridad general, Otros temas"
+		}
+	}
+}

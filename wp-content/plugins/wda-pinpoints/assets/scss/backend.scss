@@ -1,0 +1,18 @@
+table.pinpoints.form-table {
+    textarea {
+        height: 48px;
+        max-height: calc( 2 * 48px );
+        min-height: 48px;
+        width: 100%;
+    }
+    
+    p.note {
+        font-size: 12px;
+    }
+}
+
+form#addtag div.form-field.term-parent-wrap,
+form#edittag tr.form-field.term-parent-wrap,
+form#post select#newlocation_category_parent {
+    display: none !important;
+}

@@ -1,0 +1,117 @@
+.banner-image {
+	position: relative;
+	margin-top: var(--margins-top);
+	margin-bottom: var(--margins-bottom);
+	padding-top: var(--paddings-top);
+	padding-bottom: var(--paddings-bottom);
+	background: var(--gradient);
+
+	@media (max-width: 767.98px) {
+		margin-top: var(--margins-top--mobile);
+		margin-bottom: var(--margins-bottom--mobile);
+		padding-top: var(--paddings-top--mobile);
+		padding-bottom: var(--paddings-bottom--mobile);
+	}
+
+	&[data-shadow='true'] {
+		.banner-image__inner {
+			box-shadow: 0px 5px 30px rgba(42, 88, 125, 0.15);
+		}
+	}
+
+	&[data-border-radius='true'] {
+		.banner-image__inner {
+			border-radius: 10px;
+		}
+
+		.banner-image__background {
+			border-radius: 10px;
+		}
+
+		.banner-image__background img {
+			border-radius: 10px;
+		}
+	}
+
+	&__inner {
+		position: relative;
+		padding: 62px 149px 71px 49px;
+		z-index: 2;
+
+		@media (max-width: 767.98px) {
+			padding: 39px 24px 210px;
+		}
+	}
+
+	&__content {
+		position: relative;
+		z-index: 3;
+	}
+
+	&__title {
+		max-width: var(--widths-title);
+		font-weight: 300;
+		font-size: 40px;
+		line-height: 100%;
+		color: var(--colors-title);
+
+		@media (max-width: 767.98px) {
+			font-size: 32px;
+			letter-spacing: -0.02em;
+			max-width: var(--widths-title--mobile);
+		}
+	}
+
+	&__description {
+		margin-top: var(--margins-description);
+		max-width: var(--widths-description);
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+		color: var(--colors-description);
+
+		@media (max-width: 767.98px) {
+			margin-top: var(--margins-description--mobile);
+			max-width: var(--widths-description--mobile);
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		margin-top: var(--margins-buttons);
+
+		@media (max-width: 767.98px) {
+			margin-top: var(--margins-buttons--mobile);
+		}
+	}
+
+	// &__button {
+	// }
+
+	&__button + &__button {
+		margin-left: 36px;
+
+		@media (max-width: 767.98px) {
+			margin-left: 24px;
+		}
+	}
+
+	&__background {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		pointer-events: none;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}

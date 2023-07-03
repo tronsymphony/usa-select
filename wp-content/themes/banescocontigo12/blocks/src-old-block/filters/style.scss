@@ -1,0 +1,140 @@
+.filters {
+	position: relative;
+	background: var(--gradient);
+	margin-top: var(--margins-top);
+	margin-bottom: var(--margins-bottom);
+	padding-top: var(--paddings-top);
+	padding-bottom: var(--paddings-bottom);
+	z-index: 10;
+
+	@media (max-width: 767.98px) {
+		margin-top: var(--margins-top--mobile);
+		margin-bottom: var(--margins-bottom--mobile);
+		padding-top: var(--paddings-top--mobile);
+		padding-bottom: var(--paddings-bottom--mobile);
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		padding: 42px 40px 40px;
+		background: #ffffff;
+		border-radius: 10px;
+
+		@media (max-width: 767.98px) {
+			display: block;
+			text-align: center;
+			padding: 30px 15px 4px;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 100%;
+		color: #3a4454;
+		margin-right: 30px;
+
+		@media (max-width: 767.98px) {
+			margin-bottom: 26px;
+			margin-right: 0;
+		}
+
+		@media (max-width: 575.98px) {
+			font-size: 20px;
+			line-height: 110%;
+		}
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		flex: 1;
+
+		@media (max-width: 767.98px) {
+			width: auto;
+			overflow-x: auto;
+			margin-left: -30px;
+			margin-right: -30px;
+			padding-left: 16px;
+			padding-bottom: 15px;
+			margin-bottom: -15px;
+	 }
+	}
+
+	&__item {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		padding: 14px 34px;
+		min-width: 100px;
+		flex: 1 0 127px;
+		background: transparent;
+		border: 1px solid #A5ADB4;
+		border-radius: 50px;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 110%;
+		color: #708090;
+		transition: 0.3s;
+
+		@media (max-width: 767.98px) {
+			 white-space: nowrap;
+			 flex-basis: auto;
+
+			 &:last-child {
+				margin-right: 16px;
+			 }
+		}
+
+		&.active {
+			background: #219963;
+			border-color: #219963;
+			color: #ffffff;
+
+			&:hover {
+				color: #fff;
+				background: #219963;
+			}
+		
+			&:active {
+				background: #007953;
+			}
+		}
+
+		&:hover {
+			color: #5c6a77;
+			border-color: #8f969d;
+		}
+
+		&:active {
+			color: #49545f;
+			border-color: #787e84;
+		}
+
+		&.with-icon {
+			img {
+				margin-right: 12px;
+				height: 32px;
+				width: 32px;
+				object-fit: contain;
+				flex-shrink: 0;
+			}
+		}
+
+		&.small {
+			padding: 8px 12px;
+
+			img {
+				margin-right: 8px;
+				height: 24px;
+				width: 24px;
+				object-fit: contain;
+			}
+		}
+	}
+
+	&__item + &__item {
+		margin-left: 16px;
+	}
+}

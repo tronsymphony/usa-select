@@ -1,0 +1,160 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/text-image-cropped",
+	"version": "1.0.0",
+	"title": "Text image cropped",
+	"category": "widgets",
+	"icon": "shortcode",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/text-image-cropped.js",
+	"editorStyle": "file:../../../blocks/build/text-image-cropped.css",
+	"style": "file:../../../blocks/build/style-text-image-cropped.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px",
+					"title": "200px",
+					"description": "30px",
+					"button": "40px",
+					"between": "100px",
+					"image": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px",
+					"title": "0px",
+					"description": "20px",
+					"button": "30px",
+					"between": "50px",
+					"image": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "object",
+			"default": {
+				"desktop": "Title",
+				"mobile": ""
+			}
+		},
+		"description": {
+			"type": "object",
+			"default": {
+				"desktop": "<h3>Subtitle</h3>\n<p>Very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long description.</p>",
+				"mobile": ""
+			}
+		},
+		"button": {
+			"type": "object",
+			"default": {
+				"desktop": "Button",
+				"mobile": "",
+				"type": "link-button"
+			}
+		},
+		"colors": {
+			"type": "object",
+			"default": {
+				"title": "#3A4454",
+				"description": "#748994"
+			}
+		},
+		"widths": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"title": "400px",
+					"description": "600px"
+				},
+				"mobile": {
+					"title": "100%",
+					"description": "100%"
+				}
+			}
+		},
+		"image": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"url": "image-1.png",
+					"alt": ""
+				},
+				"mobile": {
+					"url": "image-1-mobile.png",
+					"alt": ""
+				},
+				"width": {
+					"desktop": "650px",
+					"mobile": "100%"
+				},
+				"height": {
+					"desktop": "700px",
+					"mobile": "auto"
+				},
+				"shift": {
+					"desktop": "0px",
+					"mobile": "0px"
+				}
+			}
+		},
+		"cropped": {
+			"type": "object",
+			"default": {
+				"desktop": "72px",
+				"mobile": ""
+			}
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"url": "",
+					"alt": ""
+				},
+				"mobile": {
+					"url": "",
+					"alt": ""
+				}
+			}
+		},
+		"reverse": {
+			"type": "object",
+			"default": {
+				"desktop": false,
+				"mobile": false
+			}
+		},
+		"shadow": {
+			"type": "boolean",
+			"default": false
+		},
+		"imageMobileFullWidth": {
+			"type": "boolean",
+			"default": true
+		}
+	}
+}

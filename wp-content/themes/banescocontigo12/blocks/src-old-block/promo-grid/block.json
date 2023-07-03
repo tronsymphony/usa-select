@@ -1,0 +1,102 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/promo-grid",
+	"version": "1.0.0",
+	"title": "Promo grid",
+	"category": "widgets",
+	"icon": "embed-generic",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/promo-grid.js",
+	"editorStyle": "file:../../../blocks/build/promo-grid.css",
+	"style": "file:../../../blocks/build/style-promo-grid.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": "Title"
+		},
+		"item1title": {
+			"type": "string",
+			"default": "Title #1"
+		},
+		"item1description": {
+			"type": "string",
+			"default": "Very very very very very very very very very very very very very very very very very very very long description."
+		},
+		"item2title": {
+			"type": "string",
+			"default": "Title #2"
+		},
+		"item2description": {
+			"type": "string",
+			"default": "Very very very very very very very very very very very very very very very very very very very long description."
+		},
+		"item3title": {
+			"type": "string",
+			"default": "Title #3"
+		},
+		"item3description": {
+			"type": "string",
+			"default": "Very very very very very very very very very very very very very very very very very very very long description."
+		},
+		"item4title": {
+			"type": "string",
+			"default": "Title #4"
+		},
+		"item4description": {
+			"type": "string",
+			"default": "Very very very very very very very very very very very very very very very very very very very long description."
+		},
+		"image": {
+			"type": "object",
+			"default": {
+				"url": "image.png",
+				"alt": ""
+			}
+		},
+		"mImage": {
+			"type": "object",
+			"default": {
+				"url": "image-mobile.png",
+				"alt": ""
+			}
+		},
+		"background": {
+			"type": "string",
+			"default": "linear-gradient(97.67deg, #007953 -5.63%, #003C71 118.81%)"
+		}
+	}
+}

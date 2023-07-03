@@ -1,0 +1,33 @@
+@import 'variables';
+@import 'mixins';
+@import 'legacy-style-fixes';
+@import 'buttons';
+
+@import '../../blocks/**/styles/*.scss';
+
+
+.page-id-2497 {
+    .hero-background__background img {
+        object-position: top;
+        @media screen and (max-width:768px) {
+            object-position: center;
+        }
+    }
+}
+
+.page-id-2570{
+    .hero-background__background img {
+        object-position: top;
+        @media screen and (max-width:768px) {
+            object-position: center;
+        }
+    }
+}
+
+
+.page-id-2590{
+    .banner-with-info__extra-text {
+        font-size: 30px;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,137 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "banescocontigo/contact-form",
+	"version": "1.0.0",
+	"title": "Contact form",
+	"category": "widgets",
+	"icon": "welcome-write-blog",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks",
+	"editorScript": "file:../../../blocks/build/contact-form.js",
+	"editorStyle": "file:../../../blocks/build/contact-form.css",
+	"style": "file:../../../blocks/build/style-contact-form.css",
+	"attributes": {
+		"paddings": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "100px",
+					"bottom": "100px"
+				},
+				"mobile": {
+					"top": "50px",
+					"bottom": "50px"
+				}
+			}
+		},
+		"margins": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"top": "0px",
+					"bottom": "0px"
+				},
+				"mobile": {
+					"top": "0px",
+					"bottom": "0px"
+				}
+			}
+		},
+		"gradient": {
+			"type": "string",
+			"default": "#FFFFFF"
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"content": {
+			"type": "string",
+			"default": ""
+		},
+		"form": {
+			"type": "string",
+			"default": "[gravityform id=\"1\" title=\"false\" description=\"false\" ajax=\"true\"]"
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"name": "tab1",
+					"title": "Title",
+					"firstLine": {
+						"desktop": "Link to call: +1 111-111-1111",
+						"mobile": "",
+						"target": "tel:+11111111111"
+					},
+					"secondLine": {
+						"desktop": "Link to call: +1 222-222-2222",
+						"mobile": "",
+						"target": "tel:+12222222222"
+					},
+					"icon": {
+						"desktop": {
+							"url": "tel.svg",
+							"alt": ""
+						},
+						"mobile": {
+							"url": "",
+							"alt": ""
+						}
+					}
+				},
+				{
+					"name": "tab2",
+					"title": "Title",
+					"firstLine": {
+						"desktop": "Link to example@gmail.com",
+						"mobile": "",
+						"target": "mailto:example@gmail.com"
+					},
+					"secondLine": {
+						"desktop": "",
+						"mobile": "",
+						"target": ""
+					},
+					"icon": {
+						"desktop": {
+							"url": "mail.svg",
+							"alt": ""
+						},
+						"mobile": {
+							"url": "",
+							"alt": ""
+						}
+					}
+				},
+				{
+					"name": "tab3",
+					"title": "Title",
+					"firstLine": {
+						"desktop": "Link to WhatsApp +1 000 000 0000",
+						"mobile": "",
+						"target": "https://wa.me/10000000000"
+					},
+					"secondLine": {
+						"desktop": "",
+						"mobile": "",
+						"target": ""
+					},
+					"icon": {
+						"desktop": {
+							"url": "whatsapp.png",
+							"alt": ""
+						},
+						"mobile": {
+							"url": "",
+							"alt": ""
+						}
+					}
+				}
+			]
+		}
+	}
+}
