@@ -1,0 +1,19 @@
+{
+	"name": "acf/split-column-slider",
+	"title": "Split column slider",
+	"category": "embed",
+	"icon": "buddicons-buddypress-logo",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "split-column-slider.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"pacificScripts": false
+}

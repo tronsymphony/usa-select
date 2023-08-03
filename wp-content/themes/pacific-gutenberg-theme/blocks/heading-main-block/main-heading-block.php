@@ -45,7 +45,7 @@ $theHeading = Pacific_Helper::generate_header(array(
 
 ?>
 
-<div class="main-heading-parent headingRecife-Parent <?= $background; ?>">
+<div class="main-heading-parent headingRecife-Parent <?php echo $className; ?> <?= $background; ?>" style="background:<?php echo get_field('background_color'); ?>;">
     <div class="main-heading-inner center-align lightFont">
         <?= $theHeading; ?>
     </div>

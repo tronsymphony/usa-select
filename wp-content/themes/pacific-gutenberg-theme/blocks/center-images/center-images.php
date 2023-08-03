@@ -47,39 +47,54 @@ $block_styling = get_field('styling');
 ">
 	
     <div class="container">
-		<div class="first_image  enable-trig"><img src="<?php the_field('first_image'); ?>" alt="" class="float"></div>
-		<div class="second_image enable-trig"><img src="<?php the_field('second_image'); ?>" alt="" class="float"></div>
+		<div class="first_image enable-trig"><img src="<?php the_field('first_image'); ?>" alt="" class="float"></div>
+		<div class="second_image position-<?php the_field('position'); ?> position_vertical-<?php the_field('position_vertical'); ?> enable-trig" style="<?php if(get_field('zindex')){echo 'z-index:'.get_field('zindex');}; ?>"><img src="<?php the_field('second_image'); ?>" alt="" class="float"></div>
+
+		<?php if(get_field('third_image')): ?>
+			<div class="third_image enable-trig">
+				<img src="<?php the_field('third_image'); ?>" alt="" class="float">
+			</div>
+		<?php endif; ?>
+
     </div>
 </section>
 
-
-
-<!-- <script src="https://cdn.jsdelivr.net/npm/trig-js/src/trig.min.js"></script> -->
-
-
-
 <style>
 
-.first_image{ 
-    transform: translateY( calc(var(--trig-reverse) / 7) );
+	@media screen and (min-width:768px) {
+		
+	.third_image img{
+		position:relative;
+		<?php if(get_field('third_image_top_position')): ?>
+			top:<?php the_field('third_image_top_position'); ?>px!important;
+		<?php endif; ?>
+		<?php if(get_field('third_image_hori_position')): ?>
+			right:<?php the_field('third_image_hori_position'); ?>px!important;
+		<?php endif; ?>
+	}
+
+	.second_image img{
+		position:relative;
+		<?php if(get_field('second_image_top_position')): ?>
+			top:<?php the_field('second_image_top_position'); ?>px!important;
+		<?php endif; ?>
+		<?php if(get_field('second_image_hori_position')): ?>
+			right:<?php the_field('second_image_hori_position'); ?>px!important;
+		<?php endif; ?>
+	}
 }
-.second_image{
-    transform: translateY( calc(var(--trig) / 2) );
-}
-
-/* //var(--trig)  */
-/* Percentage */
-/* //var(--trig-reverse)  */
-/* Reverse percentage */
-/* //var(--trig-px)  */
-/* Pixels */
-/* //var(--trig-px-reverse)  */
-/* Reverse pixels */
-/* //var(--trig-deg)  */
-/* Degrees */
-/* //var(--trig-deg-reverse)  */
-/* Reverse degrees */
 
 
+	.first_image{ 
+		transform: translateY( calc(var(--trig-reverse) / 7) );
+	}
+
+	.second_image{
+		transform: translateY( calc(var(--trig) / 2) );
+	}
+
+	.third_image{
+		transform: translateY( calc(var(--trig) / 2) );
+	}
 
 </style>

@@ -88,7 +88,7 @@ $background = get_field('background');
 
 $preheader = Pacific_Helper::generate_paragraph(array(
 	'text'  => $preheader['title'],
-	'class' => 'h6-font-size fontWeight300'
+	'class' => 'h6-font-size fontWeight300 pre-header'
 ));
 
 $header = Pacific_Helper::generate_header(array(
@@ -97,14 +97,12 @@ $header = Pacific_Helper::generate_header(array(
 	'class' => 'h1-font-size'
 ));
 
-$text = Pacific_Helper::generate_paragraph(array(
-	'text'  => $text['normal_text'],
-	'class' => 'h6-font-size fontWeight300'
-));
+$text = $text['normal_text'];
 
 
 if($background == 'lightBackground'){
 	$background = ' lightBackground darkFont';
+ 
 }
 else if($background == 'heavyDarkBackground'){
 	$background = ' heavyDarkBackground lightFont ';
@@ -112,17 +110,17 @@ else if($background == 'heavyDarkBackground'){
 else {
 	$background = ' darkBackground lightFont ';
 }
-if($goldenline['text'] == true){
-	if($goldenline['url'] == true){
+
+if(!empty($goldenline)){
+	if(!empty($goldenline['url'])){
 		$goldenline = Pacific_Helper::generate_acf_link(array(
-		'link'            => $goldenline['url'],
-		'class'           => 'goldenLink h6-font-size fontWeight300',
-		'link_attributes' => array(
-			'title' => $goldenline['text']
-		)
+			'link'            => $goldenline['url'],
+			'class'           => 'goldenLink h6-font-size fontWeight300',
+			'link_attributes' => array(
+				'title' => $goldenline['text']
+			)
 		));
-	}
-	else {
+	} else {
 		$goldenline = Pacific_Helper::generate_paragraph(array(
 			'text'  => $goldenline['text'],
 			'class' => 'goldenLink h6-font-size fontWeight300'
@@ -145,18 +143,23 @@ if($goldenline['text'] == true){
 // 		'class' => 'img-fluid'
 // 	)
 // ));
+
+$block_image = get_field('block_image');
+$block_location = get_field('block_location');
+$enable_bg__gradient_shadow = get_field('enable_bg__gradient_shadow');
 ?>
 
-
-<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); echo $background; ?> hero-Parent selectedDesign center-align headingRecife-Parent">
+<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); echo $background; echo ' image_location'.$block_location; ?> vertical_<?php the_field('block_location_vertical'); ?> enable_bg__gradient_shadow_<?php the_field('enable_bg__gradient_shadow'); ?> hero-Parent selectedDesign center-align headingRecife-Parent">
 	<?php
 	if($breadcrumb):?>
 	<div class="breadcrumbs-parent">
-		<?php echo '<ul class="breadcrumbs">' . implode(' > ', $breadcrumbs) . '</ul>'; ?>
+	<?php if ( function_exists('yoast_breadcrumb') ) {
+    yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+} ?>
 	</div>
 	<?php
 	endif;?>
-	<div class="container-1024">
+	<div class="container">
 		<div class="hero-Flex">
 		<?php
 		if($preheader){
@@ -166,19 +169,20 @@ if($goldenline['text'] == true){
 			echo $header;
 		}
 		if($text){
+			echo '<div class="text">';
 			echo $text;
+			echo '<div>';
 		}
 
 
-		if(!empty($goldenline) ||  empty($goldenline['url'])){
-			if(!empty($goldenline['url'])){
-				echo $goldenline;
-
-			}
-
+		if(!empty($goldenline)){
+			echo $goldenline;
 		}
 
 		?>
 		</div>
+		<?php if(!empty($block_image)): ?>
+		<div class="bg_image"><img src="<?= $block_image; ?>" alt="Bg image"></div>
+		<?php endif; ?>
 	</div>
 </section>

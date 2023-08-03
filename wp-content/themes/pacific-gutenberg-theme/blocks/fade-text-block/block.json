@@ -1,0 +1,19 @@
+{
+	"name": "acf/fade-text-block",
+	"title": "fade text block",
+	"category": "embed",
+	"icon": "buddicons-buddypress-logo",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "fade-text-block.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"pacificScripts": false
+}

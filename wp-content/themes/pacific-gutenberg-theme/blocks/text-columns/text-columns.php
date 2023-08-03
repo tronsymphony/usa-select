@@ -44,7 +44,7 @@ $block_styling = get_field('styling');
 --margins-bottom--mobile: <?= ($block_styling['margins-bottom--mobile']) ? $block_styling['margins-bottom--mobile'].'px' : '0px' ?>;
 --gradient: <?= ($block_styling['gradient'])? $block_styling['gradient'] : '#fff' ?>;
 ">
-	<div class="float_div enable-trig"><img src="<?php the_field('back_image'); ?>" alt="" class="float"></div>
+	<div class="float_div enable-trig back_image_position<?php the_field('back_image_position'); ?>"><img src="<?php the_field('back_image'); ?>" alt="" class="float"></div>
     <div class="container">
         <?php
 		
@@ -52,14 +52,15 @@ $block_styling = get_field('styling');
 		if( have_rows('columns') ):
 
 			?>
-			<div class="columns">
+			<div class="columns" style="border-top:1px solid<?php echo get_field('border_color')?get_field('border_color'):'#E0E0E0'; ?>;">
 				<?php
 				// Loop through rows.
 			while( have_rows('columns') ) : the_row();
 
 			echo '<div class="column">';
-			// Load sub field value.
-			the_sub_field('title');
+			
+			echo '<span class="title title_style_'.get_sub_field('title_style').'">'.get_sub_field('title').'</span>';
+
 			the_sub_field('content');
 			// Do something...
 
@@ -85,3 +86,5 @@ $block_styling = get_field('styling');
     transform: translateY( calc(var(--trig-reverse) / 4) );
 }
 </style>
+
+

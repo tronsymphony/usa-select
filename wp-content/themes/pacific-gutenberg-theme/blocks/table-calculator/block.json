@@ -1,0 +1,19 @@
+{
+	"name": "acf/table-calculator",
+	"title": "table calculator",
+	"category": "embed",
+	"icon": "buddicons-buddypress-logo",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "table-calculator.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"pacificScripts": false
+}

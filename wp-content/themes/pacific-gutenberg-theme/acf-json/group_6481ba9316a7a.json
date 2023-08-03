@@ -3,6 +3,26 @@
     "title": "Main heading",
     "fields": [
         {
+            "key": "field_64aed76b5cca6",
+            "label": "Background Color",
+            "name": "background_color",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6481ba935b5ac",
             "label": "Background",
             "name": "background",
@@ -111,5 +131,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686223767
+    "modified": 1689180026
 }

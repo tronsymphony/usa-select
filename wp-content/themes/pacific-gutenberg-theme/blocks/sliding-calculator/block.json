@@ -1,0 +1,19 @@
+{
+	"name": "acf/sliding-calculator",
+	"title": "sliding calculator",
+	"category": "embed",
+	"icon": "buddicons-buddypress-logo",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "sliding-calculator.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"pacificScripts": false
+}

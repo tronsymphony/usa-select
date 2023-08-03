@@ -1,4 +1,6 @@
 .hero-block {
+  // overflow: hidden;
+
   &__background-wrapper {
     background: url("../../dist/img/bg-dot.webp"),
       url("../../dist/img/bg-dot.webp"), url("../../dist/img/bg-round.webp"),
@@ -9,4 +11,116 @@
     background-repeat: no-repeat;
     background-color: #2124b1;
   }
+
+  .container {
+    margin: 0 20px;
+    position: relative;
+    width: 100%;
+    max-width: calc(100% - 40px);
+  }
+
+  .hero-Flex {
+    max-width: 880px;
+    margin: 0 auto;
+  }
+
+  .pre-header {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    @media screen and (max-width:768px) {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 32px;
+      letter-spacing: 0em;
+      text-align: center;
+
+    }
+  }
+
+  p {
+    margin: 0 0 1rem;
+
+    &.goldenLink {
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 42px;
+      letter-spacing: 0em;
+
+      @media screen and (max-width:768px) {
+font-size: 28px;
+font-style: normal;
+font-weight: 300;
+line-height: 150%; /* 42px */
+      }
+    }
+  }
+
+  .text {
+    text-align: center;
+    font-family: Helvetica Neue LT Pro, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+    max-width: 640px;
+
+
+    @media screen and (max-width:768px) {
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 32px;
+    }
+  }
+
+  .container-1024 {
+    position: relative;
+  }
+
+  &.image_locationcenter {
+    .bg_image {
+      justify-content: center;
+    }
+  }
+
+  &.image_locationleft {
+    .bg_image {
+      justify-content: flex-start;
+    }
+  }
+
+  &.image_locationright {
+    .bg_image {
+      justify-content: flex-end;
+    }
+  }
+
+  &.vertical_top {
+    .bg_image {
+      top: 0px;
+      transform: translate(0px, -50%);
+      bottom: auto;
+    }
+  }
+
+  .bg_image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate(0px, 50%);
+
+    display: flex;
+
+    @media screen and (max-width:768px) {
+      display: none;
+    }
+
+  }
+
 }

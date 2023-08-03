@@ -1,0 +1,19 @@
+{
+	"name": "acf/repeater-columns",
+	"title": "Repeater Columns",
+	"category": "embed",
+	"icon": "buddicons-buddypress-logo",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "repeater-columns.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"preview_image_help": "screenshot.png"
+			}
+		}
+	},
+	"pacificScripts": false
+}

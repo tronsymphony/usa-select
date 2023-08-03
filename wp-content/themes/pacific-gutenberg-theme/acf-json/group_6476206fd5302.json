@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_64762084140b0",
-            "label": "paddings-top",
+            "label": "Padding Top",
             "name": "padding-top",
             "aria-label": "",
             "type": "range",
@@ -17,15 +17,15 @@
                 "id": ""
             },
             "default_value": 0,
-            "min": "",
-            "max": "",
+            "min": -500,
+            "max": 500,
             "step": "",
             "prepend": "",
             "append": ""
         },
         {
             "key": "field_647621756f2ce",
-            "label": "paddings-top--mobile",
+            "label": "Paddings Top Mobile",
             "name": "paddings-top--mobile",
             "aria-label": "",
             "type": "range",
@@ -38,15 +38,15 @@
                 "id": ""
             },
             "default_value": 0,
-            "min": "",
-            "max": "",
+            "min": -500,
+            "max": 500,
             "step": "",
             "prepend": "",
             "append": ""
         },
         {
             "key": "field_647621cd6f2cf",
-            "label": "paddings-bottom",
+            "label": "Paddings Bottom",
             "name": "paddings-bottom",
             "aria-label": "",
             "type": "range",
@@ -59,15 +59,15 @@
                 "id": ""
             },
             "default_value": 0,
-            "min": "",
-            "max": "",
+            "min": -500,
+            "max": 500,
             "step": "",
             "prepend": "",
             "append": ""
         },
         {
             "key": "field_647621d66f2d0",
-            "label": "paddings-bottom--mobile",
+            "label": "Paddings Bottom Mobile",
             "name": "paddings-bottom--mobile",
             "aria-label": "",
             "type": "range",
@@ -80,15 +80,15 @@
                 "id": ""
             },
             "default_value": 0,
-            "min": "",
-            "max": "",
+            "min": -500,
+            "max": 500,
             "step": "",
             "prepend": "",
             "append": ""
         },
         {
             "key": "field_647621de6f2d1",
-            "label": "margins-top",
+            "label": "Margin Top",
             "name": "margins-top",
             "aria-label": "",
             "type": "range",
@@ -101,15 +101,15 @@
                 "id": ""
             },
             "default_value": 0,
-            "min": "",
-            "max": "",
+            "min": -500,
+            "max": 500,
             "step": "",
             "prepend": "",
             "append": ""
         },
         {
             "key": "field_647621e66f2d2",
-            "label": "margins-top--mobile",
+            "label": "Margins Top Mobile",
             "name": "margins-top--mobile",
             "aria-label": "",
             "type": "range",
@@ -122,15 +122,15 @@
                 "id": ""
             },
             "default_value": 0,
-            "min": "",
-            "max": "",
+            "min": -500,
+            "max": 500,
             "step": "",
             "prepend": "",
             "append": ""
         },
         {
             "key": "field_647621f16f2d3",
-            "label": "margins-bottom",
+            "label": "Margins Bottom",
             "name": "margins-bottom",
             "aria-label": "",
             "type": "range",
@@ -143,15 +143,15 @@
                 "id": ""
             },
             "default_value": 0,
-            "min": "",
-            "max": "",
+            "min": -500,
+            "max": 500,
             "step": "",
             "prepend": "",
             "append": ""
         },
         {
             "key": "field_647621fb6f2d4",
-            "label": "margins-bottom--mobile",
+            "label": "Margin Bottom Mobile",
             "name": "margins-bottom--mobile",
             "aria-label": "",
             "type": "range",
@@ -164,8 +164,8 @@
                 "id": ""
             },
             "default_value": 0,
-            "min": "",
-            "max": "",
+            "min": -500,
+            "max": 500,
             "step": "",
             "prepend": "",
             "append": ""
@@ -209,5 +209,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1687818779
+    "modified": 1689794621
 }

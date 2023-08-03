@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main-heading-block.min.css","sourcesContent":[]}
+{"version":3,"sources":["heading-main-block/main-heading-block.scss"],"names":[],"mappings":"AAAA,oBACI","file":"main-heading-block.min.css","sourcesContent":[".main-heading-block{\n    margin: -1px 0;\n}"]}

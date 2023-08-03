@@ -17,6 +17,7 @@
 
     .content {
         margin: 0 auto;
+        padding: 0 20px;
 
         .text {
             color: #606060;
@@ -55,13 +56,14 @@
     gap: 1rem;
 
     .chevron {
-        transform: rotate(180deg);
+        transform: rotate(0deg);
         display: inline-flex;
     }
 
     &.active{
         .chevron {
-            transform: rotate(0deg);
+           
+            transform: rotate(180deg);
         }
     }
 
@@ -71,4 +73,6 @@
     display: flex;
     gap: 32px;
     flex-direction: column;
+    max-width: 1220px;
+    margin: 0 auto;
 }

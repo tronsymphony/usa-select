@@ -7,23 +7,61 @@
     margin-bottom: var(--margins-bottom--mobile);
     padding-top: var(--paddings-top--mobile);
     padding-bottom: var(--paddings-bottom--mobile);
-  
-      @media (min-width: 767.98px) {
-      margin-top: var(--margins-top);
-      margin-bottom: var(--margins-bottom);
-      padding-top: var(--padding-top);
-      padding-bottom: var(--paddings-bottom);
+
+    @media (min-width: 767.98px) {
+        margin-top: var(--margins-top);
+        margin-bottom: var(--margins-bottom);
+        padding-top: var(--padding-top);
+        padding-bottom: var(--paddings-bottom);
+    }
+*{
+    margin-top: 0;
+}
+    p,h2,h3,h4,h5,h6{
+        margin-bottom: 20px;
       }
+    .container {
+        max-width: 1150px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    span.title {
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 150%;
+        margin-bottom: 32px;
+        color: #000;
+        display: block;
+
+        @media screen and (max-width:768px) {
+            color: #000;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 130%;
+        }
+
+        &.title_style_stylized {
+            font-family: RecifeDisplay, serif;
+
+        }
+    }
 
 
     .columns {
         display: grid;
-        grid-template-columns: 1fr ;
-        padding: 220px 0 0;
+        grid-template-columns: 1fr;
+        padding: 160px 0 0;
         gap: 20px;
+        // border-top: 1px solid #E0E0E0;
 
         @media (min-width: 767.98px) {
             grid-template-columns: 1fr 1fr;
+            padding: 100px 0 0;
+            gap: 16vw;
         }
     }
 
@@ -33,6 +71,7 @@
         font-style: normal;
         font-weight: 300;
         line-height: 32px;
+
         h2 {
             color: #000;
             font-size: 28px;
@@ -47,9 +86,18 @@
         top: 0;
         left: -12vw;
         width: 33vw;
+        @media screen  and (max-width:768px){
+            top: -140px;
+        }
         @media (min-width: 767.98px) {
             left: -12vw;
             width: 23vw;
+        }
+
+        &.back_image_positionright {
+            right: -12vw;
+            left: auto;
+            
         }
 
     }

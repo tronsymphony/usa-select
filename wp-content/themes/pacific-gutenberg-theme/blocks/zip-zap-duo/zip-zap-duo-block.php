@@ -36,6 +36,8 @@ $className = apply_filters( 'pacific_block_class', $className, $block, $post_id 
 
 $container_wrapper = get_field('container_wrapper2');
 
+
+
 // // Retrieve values for the background radio button field.
 // $background = $container_wrapper['background'];
 
@@ -43,32 +45,48 @@ $container_wrapper = get_field('container_wrapper2');
 // $zip_zap_content_duo = $container_wrapper['zip_zap_content_duo'];
 
 
+
 if ($container_wrapper) {
+
+    
+
     foreach ($container_wrapper as $row_parent ) {
             
         $backgroundBG = $row_parent['background'];
-        $zip_zap_content_duo = $row_parent['zip_zap_content_duo']; ?>
+        $zip_zap_content_duo = $row_parent['zip_zap_content_duo']; 
+
+
+        ?>
 
 
 <section class="<?= $backgroundBG; ?>" style="background-color:<?php echo $row_parent['background_color']; ?>">
     <?php
-
         // echo '<pre>';
         // print_r($container_wrapper);
         // echo '</pre>';
         if ($zip_zap_content_duo) {
-            foreach ($zip_zap_content_duo as $row) {
+            foreach ($zip_zap_content_duo as $key => $row) {
+
+                $loop_time = time() + rand(10,100);
 
                 $alignmentRight = $row['alignment'];
                 $marginTop = $row['padding-top'];
                 $marginBottom = $row['padding-bottom'];
+                $spacing_top_mobile = $row['spacing_top_mobile'];
+                $spacing_bottom_mobile = $row['spacing_bottom_mobile'];
+
+
                 $positionOfImages = $row['margin_top_for_images__position'];
+                $mobile_image_position = $row['mobile_image_position'];
                 $main_image = $row['main_image'];
                 $main_imageIMG = $main_image['image'];
+                $remove_shadow = $main_image['remove_shadow'];
+                $add_strike_line_over_corner = $main_image['add_strike_line_over_corner'];
+
                 $main_imageIMG = Pacific_Helper::generate_image( array(
                 'image' => $main_imageIMG,
                 'attributes' => array(
-                    'class' => 'mainImg enable-trig'
+                    'class' => "mainImg enable-trig mainImg$loop_time shadow_$remove_shadow "
                 )
                 ));
 
@@ -80,288 +98,303 @@ if ($container_wrapper) {
                 $sub_imageIMG = Pacific_Helper::generate_image( array(
                 'image' => $sub_imageIMG,
                 'attributes' => array(
-                    'class' => 'subImg enable-trig '. $sub_imagePOS . ' ' . $sub_imageFRBA
+                    'class' => "subImg subImg$loop_time  ". $sub_imagePOS . ' ' . $sub_imageFRBA
                 )
                 ));
                 
                 if(strpos($sub_imagePOS, 'bottom') === 0 ) {
-                    $sub_imagePOS = 'sFlex-bottom-parent';
+                    $sub_imagePOS = "sFlex-bottom-parent ";
                 } else {
                     $sub_imagePOS = ' ';
                 }
 
                 $showBigFirstHeading = $row['loading_headings'];
                 $verticaly_aligned = $row['verticaly_aligned'];
-                // $smallHeader = $row['small_heading'];
-                // $smallHeader = Pacific_Helper::generate_header(array(
-                //     'text' => $smallHeader['title'],
-                //     'tag' => $smallHeader['tag'],
-                //     'class' => 'h4-font-size'
-                // ));
-
-                // $bigHeader = $row['big_heading'];
-                // $bigHeader = Pacific_Helper::generate_header(array(
-                //     'text' => $bigHeader['title'],
-                //     'tag' => $bigHeader['tag'],
-                //     'class' => 'h2-font-size'
-                // ));
 
                 $theContents = $row['thecontent'];
                 
                 $circleEffects = $row['circle_effects'];
                 $showCircles = $circleEffects['show_circles'];
-                // $graphic_effects = $circleEffects['graphic_effects'];
-                // $effect_desktop_top = $graphic_effects[0]['top'];
-                // $effect_desktop_right = $graphic_effects[0]['right'];
-                // $effect_desktop_bottom = $graphic_effects[0]['bottom'];
-                // $effect_desktop_left = $graphic_effects[0]['left'];
-
-                // $effect_mobile_top = $graphic_effects[0]['top'];
-                // $effect_mobile_right = $graphic_effects[0]['right'];
-                // $effect_mobile_bottom = $graphic_effects[0]['bottom'];
-                // $effect_mobile_left = $graphic_effects[0]['left'];
 
                 $enable_vertical_slider = $row['enable_vertical_slider'];
+                $background_corner_image = $row['background_corner_image'];
 
-                if($enable_vertical_slider){
-                    ?>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+                ?>
+                <style>
+                    <?php if(!empty($main_image['manual_size'])): ?>
+                    @media screen and (min-width:768px){
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <?php
+                    .mainImg<?= $loop_time; ?>{
+                        max-width: <?php echo $main_image['manual_size']; ?> !important;
+                    }
                 }
 
+                    <?php endif; ?>
 
+                    <?php if(!empty($main_image['manual_position_top'])): ?>
+                    @media screen and (min-width:768px){
+                        .mainImg<?= $loop_time; ?>{
+                            top: <?= $main_image['manual_position_top']; ?> !important;
+                            left:<?= $main_image['manual_position_left']; ?> !important;
+                        }
+                    }
+                    <?php endif; ?>
 
-                if ($alignmentRight){
+                    <?php if(!empty($sub_image['manual_size'])): ?>
+                    @media screen and (min-width:768px){
+
+                    .subImg<?= $loop_time; ?>{
+                        max-width: <?php echo $sub_image['manual_size']; ?> !important;
+                    }
+                }
+
+                    <?php endif; ?>
+
+                    <?php if(!empty($sub_image['manual_position_top'])): ?>
+                    @media screen and (min-width:768px){
+                        .subImg<?= $loop_time; ?>{
+                            top: <?= $sub_image['manual_position_top']; ?> !important;
+                            left:<?= $sub_image['manual_position_left']; ?> !important;
+                        }
+                    }
+                    <?php endif; ?>
+                </style>
                 
+
+                        <style>
+                            .parent_padding_<?= $loop_time; ?> {
+                                --padding-top: <?= $marginTop? $marginTop :""; ?>;
+                                --padding-bottom: <?= $marginTop? $marginBottom :""; ?> ;
+                            }
+                            @media screen and (max-width:768px) {
+                                .parent_padding_<?= $loop_time; ?> {
+                                    --padding-top: <?= $spacing_top_mobile? $spacing_top_mobile :""; ?>;
+                                    --padding-bottom: <?= $spacing_bottom_mobile? $spacing_bottom_mobile :""; ?>;
+                                }  
+                            }
+                        </style>
+
+                    <div class="sFlex-parent parent_padding_<?= $loop_time; ?> <?php echo $row['enable_bg_gradient_shadow'] ? "enable_bg_gradient_shadow_".$row['enable_bg_gradient_shadow'] : ''; ?> sFlex-wrapper lightFont <?php echo ($alignmentRight && $alignmentRight[0] === 'sFlex-reverse') ? 'sFlex-reverse' : ''; ?> fontWeight300 <?php echo $verticaly_aligned . ' ' . $showBigFirstHeading;?>"
+                        style="padding-top:var(--padding-top); padding-bottom: var(--padding-bottom);">
+
+                        <?php
                     if($showCircles == 'showTwo'){
                         ?>
-    <div class="circle-effects">
-        <img class="darkCircle1" src="<?= get_template_directory_uri();?>/assets/img/darkCircle1.png" alt="effects" />
-        <img class="goldCircle1" src="<?= get_template_directory_uri();?>/assets/img/goldCircle1.png" alt="effects" />
-        <span class="shadow-circle"></span>
-    </div>
-    <?
-                    } elseif ($showCircles == 'showOne'){
-                    ?>
-    <div class="circle-effect-singl-small">
-        <img class="goldCircle-solo" src="<?= get_template_directory_uri();?>/assets/img/goldCircle1.png"
-            alt="effects" />
-    </div>
-    <?php
-                    } else { 
-                        
-                    }
-
-                } 
-            
-                ?>
-
-
-    <div class="sFlex-parent sFlex-wrapper lightFont <?php echo ($alignmentRight && $alignmentRight[0] === 'sFlex-reverse') ? 'sFlex-reverse' : ''; ?> fontWeight300 <?php echo $verticaly_aligned . ' ' . $showBigFirstHeading;?>"
-        style="padding-top:<?= $marginTop; ?>; padding-bottom:<?= $marginBottom; ?>;">
-
-        <div class="sFlexImg sFlex-1-3 <?= $sub_imagePOS; ?>" style="margin-top: <?= $positionOfImages; ?>">
-            <?php
-                        if($sub_imageIMG){
-                            echo $sub_imageIMG;
-                        }
-                        if($main_imageIMG){
-                            echo $main_imageIMG;
-                        }
-                        ?>
-        </div>
-
-
-        <?php    if($enable_vertical_slider): ?>
-
-
-
-
-
-        <div class="sFlexContent sFlex-2-3">
-
-            <!-- Slider main container -->
-            <div class="swiper flexContentSlider">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-
-
-
-
-                    <?php 
-                        if ($theContents) {
-                            foreach ($theContents as $theContent) { ?>
-
-                    <div class="sFlexContent-inner maxwidth-shortcontent swiper-slide">
-                        <?php
-                                        $smallHeader = $theContent['small_heading'];
-                                        $smallHeader = Pacific_Helper::generate_header(array(
-                                            'text' => $smallHeader['title'],
-                                            'tag' => $smallHeader['tag'],
-                                            'class' => 'h4-font-size'
-                                        ));
-
-                                        $bigHeader = $theContent['big_heading'];
-                                        $bigHeader = Pacific_Helper::generate_header(array(
-                                            'text' => $bigHeader['title'],
-                                            'tag' => $bigHeader['tag'],
-                                            'class' => 'h2-font-size'
-                                        ));
-                                        $defaultContent = $theContent['content'];
-                                        $ctaButton = $theContent['cta_button'];
-                                        $ctaButtonTitle = $ctaButton['title'];
-                                        $ctaButtonUrl = $ctaButton['link'];
-
-                                        if ($smallHeader) {
-                                            echo $smallHeader;
-                                        }
-
-                                        if ($bigHeader) {
-                                            echo $bigHeader;
-                                        }
-
-                                        if ($defaultContent) {
-                                            echo $defaultContent;
-                                        }
-                                        
-                                        echo "<br>"; // Add a line break between each item
-                                
-                        if($ctaButtonUrl && $ctaButtonUrl): ?>
-                        <div class="buttonsWrap ">
-                            <a href="<?= $ctaButtonUrl; ?>"
-                                class=" sButton sButton-icon sButton-right lightFont sButton-fullwidth sButton-right">
-                                <span class="trig_wrapper enable-trig">
-                                <span><?= $ctaButtonTitle; ?></span>
-                                <img src="<?= get_template_directory_uri();?>/assets/icons/arrow_right_white.svg"
-                                    alt="arrow right" />
-                                </span>
-                            </a>
+                        <div class="circle-effects">
+                            <img class="darkCircle1" src="<?= get_template_directory_uri();?>/assets/img/darkCircle1.png" alt="effects" />
+                            <img class="goldCircle1" src="<?= get_template_directory_uri();?>/assets/img/goldCircle1.png" alt="effects" />
+                            <!-- <span class="shadow-circle"></span> -->
                         </div>
-                        <?php endif; ?>
-                    </div>
-
                     <?php
+                    } 
+
+                    if ($showCircles == "showOne"){
+                    ?>
+                        <div class="circle-effects">
+                                <img class="darkCircle1" src="<?= get_template_directory_uri();?>/assets/img/darkCircle1.png" alt="effects" />
+                                <img class="goldCircle1" src="<?= get_template_directory_uri();?>/assets/img/goldCircle1.png" alt="effects" />
+                                <!-- <span class="shadow-circle"></span> -->
+                            </div>
+                    <?php
+                    }
+                    ?>
+
+                        <?php if(!empty($background_corner_image)): ?>
+                            <div class="corner_image">
+                                <img src="<?php echo $background_corner_image; ?>" alt="corner image">
+                            </div>
+                        <?php endif; ?>
+
+                        <div class="sFlexImg sFlex-1-3 enable-trig <?php echo "strike_$add_strike_line_over_corner"; ?> <?= $sub_imagePOS; ?>" style="margin-top: <?= $positionOfImages; ?>">
+                            <?php
+                            if($sub_imageIMG){
+                                echo $sub_imageIMG;
                             }
-                        } ?>
+                            if($main_imageIMG){
+                                echo $main_imageIMG;
+                            }
+                            ?>
+                        </div>
 
-                </div>
+                        
 
-            </div>
-        </div>
+                            <?php if($enable_vertical_slider): ?>
 
+                            <div class="sFlexContent sFlex-2-3 veritcal_slider_container <?php echo "mobile_image_position_$mobile_image_position"; ?>">
 
-
-
-
-
-
-
-        <script>
-
-
-(function() {
-
-'use strict';
-
-// breakpoint where swiper will be destroyed
-// and switches to a dual-column layout
-const breakpoint = window.matchMedia( '(min-width:768px)' );
-
-// keep track of swiper instances to destroy later
-let mySwiper;
+                                <!-- Slider main container -->
+                                <div class="swiper flexContentSlider">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
 
 
-const breakpointChecker = function() {
+                                        <?php 
+                                            if ($theContents) {
+                                                foreach ($theContents as $theContent) { ?>
 
-  // if larger viewport and multi-row layout needed
-  if ( breakpoint.matches === true ) {
+                                                    <div class="sFlexContent-inner maxwidth-shortcontent swiper-slide">
+                                                        <?php
+                                                            $smallHeader = $theContent['small_heading'];
+                                                            $smallHeader = Pacific_Helper::generate_header(array(
+                                                                'text' => $smallHeader['title'],
+                                                                'tag' => $smallHeader['tag'],
+                                                                'class' => 'h2-font-size'
+                                                            ));
 
-   
+                                                            $bigHeader = $theContent['big_heading'];
+                                                            $bigHeader = Pacific_Helper::generate_header(array(
+                                                                'text' => $bigHeader['title'],
+                                                                'tag' => $bigHeader['tag'],
+                                                                'class' => 'h4-font-size'
+                                                            ));
+                                                            $defaultContent = $theContent['content'];
+                                                            $ctaButton = $theContent['cta_button'];
+                                                            $ctaButtonTitle = $ctaButton['title'];
+                                                            $ctaButtonUrl = $ctaButton['link'];
 
-    return enableSwiper();
+                                                            
+                                                            if ($smallHeader) {
+                                                                echo $smallHeader;
+                                                            }
+                                                            
+                                                                if ($bigHeader) {
+                                                                echo $bigHeader;
 
-    // else if a small viewport and single column layout needed
-    } else if ( breakpoint.matches === false ) {
+                                                            }
 
-      // fire small viewport version of swiper
-      // clean up old instances and inline styles when available
-    if ( mySwiper !== undefined ) mySwiper.destroy( true, true );
+                                                            
 
-// or/and do nothing
-return;
+                                                            if ($defaultContent) {
+                                                                echo $defaultContent;
+                                                            }
+                                                            
+                                                            if($ctaButtonUrl && $ctaButtonUrl): ?>
+                                                            <div class="buttonsWrap">
+                                                                <a href="<?= $ctaButtonUrl; ?>"
+                                                                    class=" sButton sButton-icon sButton-right lightFont sButton-fullwidth sButton-right">
+                                                                    <span class="trig_wrapper enable-trig">
+                                                                        <span><?= $ctaButtonTitle; ?></span>
+                                                                        <img src="<?= get_template_directory_uri();?>/assets/icons/arrow_right_white.svg"
+                                                                            alt="arrow right" />
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                            <?php endif; ?>
+                                                        </div>
 
-    }
+                                                    <?php
+                                                }
+                                                foreach ($theContents as $theContent) { ?>
 
-};
+                                                    <div class="sFlexContent-inner maxwidth-shortcontent swiper-slide">
+                                                        <?php
+                                                            $smallHeader = $theContent['small_heading'];
+                                                            $smallHeader = Pacific_Helper::generate_header(array(
+                                                                'text' => $smallHeader['title'],
+                                                                'tag' => $smallHeader['tag'],
+                                                                'class' => 'h2-font-size'
+                                                            ));
 
-//////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////
+                                                            $bigHeader = $theContent['big_heading'];
+                                                            $bigHeader = Pacific_Helper::generate_header(array(
+                                                                'text' => $bigHeader['title'],
+                                                                'tag' => $bigHeader['tag'],
+                                                                'class' => 'h4-font-size'
+                                                            ));
+                                                            $defaultContent = $theContent['content'];
+                                                            $ctaButton = $theContent['cta_button'];
+                                                            $ctaButtonTitle = $ctaButton['title'];
+                                                            $ctaButtonUrl = $ctaButton['link'];
+                                                            if ($smallHeader) {
+                                                                echo $smallHeader;
+                                                            }
+                                                            if ($bigHeader) {
+                                                                echo $bigHeader;
 
-const enableSwiper = function() {
+                                                            }
 
-        mySwiper  = new Swiper('.swiper', {
-            // Optional parameters
-            direction: 'vertical',
-            loop: false,
+                                                            if ($defaultContent) {
+                                                                echo $defaultContent;
+                                                            }
+                                                    
+                                                            if($ctaButtonUrl && $ctaButtonUrl): ?>
+                                                            <div class="buttonsWrap">
+                                                                <a href="<?= $ctaButtonUrl; ?>"
+                                                                    class=" sButton sButton-icon sButton-right lightFont sButton-fullwidth sButton-right">
+                                                                    <span class="trig_wrapper enable-trig">
+                                                                        <span><?= $ctaButtonTitle; ?></span>
+                                                                        <img src="<?= get_template_directory_uri();?>/assets/icons/arrow_right_white.svg"
+                                                                            alt="arrow right" />
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                            <?php endif; ?>
+                                                        </div>
 
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            },
-            mousewheel: {
-                releaseOnEdges: true,
-            },
-            speed: 600,
+                                                    <?php
+                                                }
+                                            } ?>
 
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+                                    </div>
 
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        });
+                                </div>
+                            </div>
 
-};
+                            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-// keep an eye on viewport size changes
-breakpoint.addListener(breakpointChecker);
+                            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-// kickstart
-breakpointChecker();
+                                <script>
+
+                                    new Swiper('.swiper', {
+                                            direction: 'vertical',
+                                            height : window.innerHeight,
+                                            mousewheel: {
+                                                enabled: true,
+                                                sensitivity: 4,
+                                            },
+                                            autoplay: {
+                                                delay: 2000,
+                                            },
+                                            disableOnInteraction: false,
+                                            slidesPerView: 'auto',
+                                            speed: 600,
+                                            navigation: {
+                                                nextEl: '.swiper-button-next',
+                                                prevEl: '.swiper-button-prev',
+                                            },
+
+                                            
+                                        });
+
+                                        let swipeBar = document.querySelector(".swiper").closest(".lightBackground");
+                                        console.log(swipeBar)
+                                        swipeBar.style.overflow='hidden';
 
 
+                                </script>
+                                <?php else: ?>
+                                <div class="sFlexContent sFlex-2-3 <?php echo "mobile_image_position_$mobile_image_position"; ?>">
 
-})(); /* IIFE end */
-
-        
-        </script>
-        <?php else: ?>
-        <div class="sFlexContent sFlex-2-3">
-
-            <?php 
-                        if ($theContents) {
-                            foreach ($theContents as $theContent) { ?>
-            <div class="sFlexContent-inner maxwidth-shortcontent">
-                <?php
+                                    <?php 
+                                                if ($theContents) {
+                                                    foreach ($theContents as $theContent) { ?>
+                                    <div class="sFlexContent-inner maxwidth-shortcontent">
+                                        <?php
                                         $smallHeader = $theContent['small_heading'];
                                         $smallHeader = Pacific_Helper::generate_header(array(
                                             'text' => $smallHeader['title'],
                                             'tag' => $smallHeader['tag'],
                                             'class' => 'h4-font-size'
                                         ));
-
+                                        
+                                        $big_head_style = $theContent['heading_style'];
                                         $bigHeader = $theContent['big_heading'];
+
                                         $bigHeader = Pacific_Helper::generate_header(array(
                                             'text' => $bigHeader['title'],
                                             'tag' => $bigHeader['tag'],
-                                            'class' => 'h2-font-size'
+                                            'class' => "h2-font-size $big_head_style"
                                         ));
                                         $defaultContent = $theContent['content'];
                                         $ctaButton = $theContent['cta_button'];
@@ -380,76 +413,49 @@ breakpointChecker();
                                             echo $defaultContent;
                                         }
                                         
-                                        echo "<br>"; // Add a line break between each item
                                 
                                 if($ctaButtonUrl && $ctaButtonUrl): ?>
-                <div class="buttonsWrap ">
-                    <a href="<?= $ctaButtonUrl; ?>"
-                        class="sButton sButton-icon sButton-right lightFont sButton-fullwidth sButton-right">
-                        <span class="trig_wrapper enable-trig">
-                                <span><?= $ctaButtonTitle; ?></span>
-                                <img src="<?= get_template_directory_uri();?>/assets/icons/arrow_right_white.svg"
-                                    alt="arrow right" />
-                                </span>
-                    </a>
-                </div>
-                <?php endif; ?>
-            </div>
+                                <div class="buttonsWrap ">
+                                    <a href="<?= $ctaButtonUrl; ?>"
+                                        class="sButton sButton-icon sButton-right lightFont sButton-fullwidth sButton-right">
+                                        <span class="trig_wrapper enable-trig">
+                                            <span><?= $ctaButtonTitle; ?></span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="33" viewBox="0 0 20 33"
+                                                fill="none">
+                                                <path d="M2 31L18.108 17.2608C18.5761 16.8616 18.5761 16.1384 18.108 15.7392L2 2"
+                                                    stroke="#fff" stroke-width="3" stroke-linecap="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                                <?php endif; ?>
+                                </div>
 
-            <?php
+                                <?php
+                                                }
+                                            } ?>
+                            </div>
+                            <?php endif; ?>
+                            </div>
+                            <?php 
+                                    }
+                                } ?>
+                        </section>
+                        <?php 
                             }
-                        } ?>
-        </div>
-        <?php endif; ?>
-
-
-
-
-    </div>
-
-    <?php 
-            }
-        } ?>
-</section>
-<?php 
-    }
-}
-?>
-
-
-
-
-
-
-
+                        }
+                        ?>
 <style>
+    .mainImg {
+        transform: translateY(calc(var(--trig-reverse) / 5));
+    }
 
-.mainImg{ 
-    transform: translateY( calc(var(--trig-reverse) / 4) );
-}
-.subImg{
-    transform: translateY( calc(var(--trig-reverse) / 2) );
-}
+    .subImg {
+        transform: translateY(calc(var(--trig-reverse) / 3));
+    }
 
-.trig_wrapper {
-    transform: translateX( calc(var(--trig) / 5) );
-    animation-delay: 0.25s;
-}
-
-/* //var(--trig)  */
-/* Percentage */
-/* //var(--trig-reverse)  */
-/* Reverse percentage */
-/* //var(--trig-px)  */
-/* Pixels */
-/* //var(--trig-px-reverse)  */
-/* Reverse pixels */
-/* //var(--trig-deg)  */
-/* Degrees */
-/* //var(--trig-deg-reverse)  */
-/* Reverse degrees */
-
-
-
+    .trig_wrapper {
+        transform: translateX(calc(var(--trig) / 6));
+        animation-delay: 0.25s;
+    }
 </style>
-

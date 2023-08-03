@@ -124,7 +124,7 @@
          </div>
      </div>
  </div>
-  <div class="container-640 footer-bottom-img">
+  <div class="footer-background-image footer-bottom-img">
     <img src="<?= get_template_directory_uri();?>/dist/img/footer-selected.webp" alt="Banesco Selected Footer Image"/>
   </div>
   <div class="footer-bottom">
