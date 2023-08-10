@@ -1,0 +1,19 @@
+{
+  "name": "acf/two-column-image-text-general",
+  "title": "Two Column Image Text General",
+  "category": "media",
+  "icon": "image-flip-horizontal",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "two-column-image-text-general.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}

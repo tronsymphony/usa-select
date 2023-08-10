@@ -32,34 +32,16 @@ if (!empty($block['align'])) :
 endif;
 
 $className = apply_filters( 'pacific_block_class', $className, $block, $post_id );
-
-
 $container_wrapper = get_field('container_wrapper2');
-
-
-
-// // Retrieve values for the background radio button field.
-// $background = $container_wrapper['background'];
-
-// // Retrieve values for the zip_zap_content_duo repeater field.
-// $zip_zap_content_duo = $container_wrapper['zip_zap_content_duo'];
-
-
 
 if ($container_wrapper) {
 
-    
-
     foreach ($container_wrapper as $row_parent ) {
-            
         $backgroundBG = $row_parent['background'];
         $zip_zap_content_duo = $row_parent['zip_zap_content_duo']; 
-
-
         ?>
 
-
-<section class="<?= $backgroundBG; ?>" style="background-color:<?php echo $row_parent['background_color']; ?>">
+    <section class="split-columns-content <?= $backgroundBG; ?>" style="background-color:<?php echo $row_parent['background_color']; ?>">
     <?php
         // echo '<pre>';
         // print_r($container_wrapper);
@@ -79,27 +61,32 @@ if ($container_wrapper) {
                 $positionOfImages = $row['margin_top_for_images__position'];
                 $mobile_image_position = $row['mobile_image_position'];
                 $main_image = $row['main_image'];
+
                 $main_imageIMG = $main_image['image'];
+                $mobile_image = $main_image['mobile_image'];
                 $remove_shadow = $main_image['remove_shadow'];
                 $add_strike_line_over_corner = $main_image['add_strike_line_over_corner'];
 
                 $main_imageIMG = Pacific_Helper::generate_image( array(
-                'image' => $main_imageIMG,
-                'attributes' => array(
-                    'class' => "mainImg enable-trig mainImg$loop_time shadow_$remove_shadow "
-                )
+                    'image' => $main_imageIMG,
+                    'attributes' => array(
+                        'class' => "mainImg enable-trig mainImg$loop_time shadow_$remove_shadow "
+                    )
                 ));
+                
 
                 
                 $sub_image = $row['sub_image'];
                 $sub_imageFRBA = $sub_image['front_or_back'];
                 $sub_imageIMG = $sub_image['image'];
                 $sub_imagePOS = $sub_image['position'];
+                $image_size_type = $sub_image['image_size_type'];
+
                 $sub_imageIMG = Pacific_Helper::generate_image( array(
-                'image' => $sub_imageIMG,
-                'attributes' => array(
-                    'class' => "subImg subImg$loop_time  ". $sub_imagePOS . ' ' . $sub_imageFRBA
-                )
+                    'image' => $sub_imageIMG,
+                    'attributes' => array(
+                        'class' => "subImg image_size_type_$image_size_type subImg$loop_time  ". $sub_imagePOS . ' ' . $sub_imageFRBA
+                    )
                 ));
                 
                 if(strpos($sub_imagePOS, 'bottom') === 0 ) {
@@ -146,7 +133,7 @@ if ($container_wrapper) {
                     .subImg<?= $loop_time; ?>{
                         max-width: <?php echo $sub_image['manual_size']; ?> !important;
                     }
-                }
+                    }   
 
                     <?php endif; ?>
 
@@ -178,26 +165,24 @@ if ($container_wrapper) {
                         style="padding-top:var(--padding-top); padding-bottom: var(--padding-bottom);">
 
                         <?php
-                    if($showCircles == 'showTwo'){
-                        ?>
-                        <div class="circle-effects">
-                            <img class="darkCircle1" src="<?= get_template_directory_uri();?>/assets/img/darkCircle1.png" alt="effects" />
-                            <img class="goldCircle1" src="<?= get_template_directory_uri();?>/assets/img/goldCircle1.png" alt="effects" />
-                            <!-- <span class="shadow-circle"></span> -->
-                        </div>
-                    <?php
-                    } 
-
-                    if ($showCircles == "showOne"){
-                    ?>
-                        <div class="circle-effects">
-                                <img class="darkCircle1" src="<?= get_template_directory_uri();?>/assets/img/darkCircle1.png" alt="effects" />
-                                <img class="goldCircle1" src="<?= get_template_directory_uri();?>/assets/img/goldCircle1.png" alt="effects" />
+                        if($showCircles == 'showTwo'){
+                            ?>
+                            <div class="circle-effects">
+                                <img class="darkCircle1 enable-trig" src="<?= get_template_directory_uri();?>/assets/img/darkCircle1.png" alt="effects" />
+                                <img class="goldCircle1 enable-trig" src="<?= get_template_directory_uri();?>/assets/img/goldCircle1.png" alt="effects" />
                                 <!-- <span class="shadow-circle"></span> -->
                             </div>
-                    <?php
-                    }
-                    ?>
+                        <?php
+                        } 
+
+                        if ($showCircles == "showOne"){
+                        ?>
+                            <div class="circle-effects circle-single">
+                                    <img class="goldCircle1" src="<?= get_template_directory_uri();?>/assets/img/goldCircle1.png" alt="effects" />
+                                </div>
+                        <?php
+                        }
+                        ?>
 
                         <?php if(!empty($background_corner_image)): ?>
                             <div class="corner_image">
@@ -212,6 +197,9 @@ if ($container_wrapper) {
                             }
                             if($main_imageIMG){
                                 echo $main_imageIMG;
+                                if($mobile_image){
+                                    echo "<img src='$mobile_image' class='mainImg main_img_mobile enable-trig mainImg$loop_time shadow_$remove_shadow'></img>";
+                                }
                             }
                             ?>
                         </div>
@@ -224,66 +212,13 @@ if ($container_wrapper) {
 
                                 <!-- Slider main container -->
                                 <div class="swiper flexContentSlider">
+                                    
                                     <!-- Additional required wrapper -->
                                     <div class="swiper-wrapper">
 
 
                                         <?php 
                                             if ($theContents) {
-                                                foreach ($theContents as $theContent) { ?>
-
-                                                    <div class="sFlexContent-inner maxwidth-shortcontent swiper-slide">
-                                                        <?php
-                                                            $smallHeader = $theContent['small_heading'];
-                                                            $smallHeader = Pacific_Helper::generate_header(array(
-                                                                'text' => $smallHeader['title'],
-                                                                'tag' => $smallHeader['tag'],
-                                                                'class' => 'h2-font-size'
-                                                            ));
-
-                                                            $bigHeader = $theContent['big_heading'];
-                                                            $bigHeader = Pacific_Helper::generate_header(array(
-                                                                'text' => $bigHeader['title'],
-                                                                'tag' => $bigHeader['tag'],
-                                                                'class' => 'h4-font-size'
-                                                            ));
-                                                            $defaultContent = $theContent['content'];
-                                                            $ctaButton = $theContent['cta_button'];
-                                                            $ctaButtonTitle = $ctaButton['title'];
-                                                            $ctaButtonUrl = $ctaButton['link'];
-
-                                                            
-                                                            if ($smallHeader) {
-                                                                echo $smallHeader;
-                                                            }
-                                                            
-                                                                if ($bigHeader) {
-                                                                echo $bigHeader;
-
-                                                            }
-
-                                                            
-
-                                                            if ($defaultContent) {
-                                                                echo $defaultContent;
-                                                            }
-                                                            
-                                                            if($ctaButtonUrl && $ctaButtonUrl): ?>
-                                                            <div class="buttonsWrap">
-                                                                <a href="<?= $ctaButtonUrl; ?>"
-                                                                    class=" sButton sButton-icon sButton-right lightFont sButton-fullwidth sButton-right">
-                                                                    <span class="trig_wrapper enable-trig">
-                                                                        <span><?= $ctaButtonTitle; ?></span>
-                                                                        <img src="<?= get_template_directory_uri();?>/assets/icons/arrow_right_white.svg"
-                                                                            alt="arrow right" />
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                            <?php endif; ?>
-                                                        </div>
-
-                                                    <?php
-                                                }
                                                 foreach ($theContents as $theContent) { ?>
 
                                                     <div class="sFlexContent-inner maxwidth-shortcontent swiper-slide">
@@ -336,44 +271,24 @@ if ($container_wrapper) {
                                             } ?>
 
                                     </div>
+                                    <div class="sticky_bg"></div>
+
 
                                 </div>
                             </div>
 
-                            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+                            <script>
+                                const el = document.querySelector(".sticky_bg")
+                                const observer = new IntersectionObserver( 
+                                ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
+                                { threshold: [1] }
+                                );
 
-                            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+                                observer.observe(el);
+                            </script>
 
-                                <script>
-
-                                    new Swiper('.swiper', {
-                                            direction: 'vertical',
-                                            height : window.innerHeight,
-                                            mousewheel: {
-                                                enabled: true,
-                                                sensitivity: 4,
-                                            },
-                                            autoplay: {
-                                                delay: 2000,
-                                            },
-                                            disableOnInteraction: false,
-                                            slidesPerView: 'auto',
-                                            speed: 600,
-                                            navigation: {
-                                                nextEl: '.swiper-button-next',
-                                                prevEl: '.swiper-button-prev',
-                                            },
-
-                                            
-                                        });
-
-                                        let swipeBar = document.querySelector(".swiper").closest(".lightBackground");
-                                        console.log(swipeBar)
-                                        swipeBar.style.overflow='hidden';
-
-
-                                </script>
                                 <?php else: ?>
+                                    
                                 <div class="sFlexContent sFlex-2-3 <?php echo "mobile_image_position_$mobile_image_position"; ?>">
 
                                     <?php 
@@ -447,15 +362,29 @@ if ($container_wrapper) {
                         ?>
 <style>
     .mainImg {
-        transform: translateY(calc(var(--trig-reverse) / 5));
+        transform: translateY(calc(var(--trig-reverse) / 8));
     }
 
     .subImg {
-        transform: translateY(calc(var(--trig-reverse) / 3));
+        transform: translateY(calc(var(--trig-reverse) / 2));
+    }
+
+    .darkCircle1{
+        transform: translateY(calc(var(--trig-reverse) / 8));  
+    }
+
+    .goldCircle1{
+        transform: translateY(calc(var(--trig-reverse) / 2));
     }
 
     .trig_wrapper {
-        transform: translateX(calc(var(--trig) / 6));
+        transform: translateX(calc(var(--trig) / 11));
         animation-delay: 0.25s;
     }
+
+
+    .strike_1:after{
+        transform: translateY(calc(var(--trig-reverse) / 12)) rotate(135deg) !important;
+    }
 </style>
+

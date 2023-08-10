@@ -1,0 +1,19 @@
+{
+  "name": "acf/hero-general",
+  "title": "Hero General",
+  "category": "design",
+  "icon": "embed-generic",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "hero-general.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}

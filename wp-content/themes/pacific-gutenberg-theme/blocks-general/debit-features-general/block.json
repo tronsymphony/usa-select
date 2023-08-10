@@ -1,0 +1,19 @@
+{
+  "name": "acf/debit-features-general",
+  "title": "Debit Features General",
+  "category": "common",
+  "icon": "id",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "debit-features-general.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}

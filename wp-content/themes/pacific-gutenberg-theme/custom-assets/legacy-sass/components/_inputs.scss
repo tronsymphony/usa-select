@@ -1,0 +1,165 @@
+.search-input {
+	&.active {
+		.search-input__form {
+			visibility: visible;
+			opacity: 1;
+			width: 100%;
+		}
+		.search-input__open {
+			visibility: hidden;
+			opacity: 0;
+			width: 0;
+		}
+	}
+
+	&:not(.active) {
+		.search-input__form {
+			visibility: hidden;
+			opacity: 0;
+			width: 0;
+		}
+		.search-input__entry {
+			padding: 0;
+		}
+	}
+
+	&.focused {
+		.search-input__form {
+			box-shadow: 0px 5px 15px rgba(15, 35, 52, 0.2);
+		}
+		.search-input__entry {
+			border-color: #007953;
+
+			&::placeholder {
+				opacity: 0;
+			}
+		}
+	}
+
+	&--only-button-right {
+		.search-input__entry {
+			padding-left: 16px;
+		}
+
+		.search-input__button {
+			left: auto;
+			right: 11px;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
+
+	&__form {
+		position: relative;
+		display: flex;
+		align-items: center;
+		transition: opacity, box-shadow 0.3s ease;
+
+		&:hover {
+			box-shadow: 0px 5px 15px rgba(15, 35, 52, 0.2);
+		}
+	}
+
+	&__button {
+		position: absolute;
+		left: 11px;
+		top: 50%;
+		height: 20px;
+		width: 20px;
+		fill: #556176;
+		transform: translateY(-50%);
+
+		svg,
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&__entry {
+		width: 100%;
+		padding: 9px 39px;
+		border: 1px solid #a5adb4;
+		border-radius: 5px;
+		height: 42px;
+		transition: border-color 0.3s ease;
+
+		@media (max-width: 1199.98px) {
+			height: 40px;
+		}
+	}
+
+	&__close {
+		position: absolute;
+		right: 11px;
+		top: 50%;
+		height: 24px;
+		width: 24px;
+		fill: #556176;
+		transform: translateY(-50%);
+
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__open {
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+		line-height: 150%;
+		color: #556176;
+		visibility: visible;
+		opacity: 1;
+		transition: opacity 0.3s ease;
+
+		svg {
+			height: 24px;
+			width: 24px;
+			margin-right: 7.5px;
+			fill: #556176;
+
+			@media (max-width: 1199.98px) {
+				margin-right: 0;
+			}
+		}
+
+		span {
+			@media (max-width: 1199.98px) {
+				display: none;
+			}
+		}
+	}
+}
+
+.input {
+	width: 100%;
+	padding: 9px 39px;
+	border: 1px solid #a5adb4;
+	border-radius: 5px;
+	height: 48px;
+	transition: 0.3s;
+
+	&::placeholder {
+		transition: 0.3s;
+	}
+
+	&:focus {
+		box-shadow: 0px 5px 15px rgba(15, 35, 52, 0.2);
+		border-color: #007953;
+
+		&::placeholder {
+			opacity: 0;
+		}
+	}
+
+	&:hover {
+		box-shadow: 0px 5px 15px rgba(15, 35, 52, 0.2);
+	}
+}
+

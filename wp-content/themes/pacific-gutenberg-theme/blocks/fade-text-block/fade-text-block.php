@@ -51,7 +51,10 @@ $block_styling = get_field('styling');
         <?php if(!empty(get_field('content'))): ?>
             <div class="content">
                 <?php the_field('content'); ?>
+
+                <?php if(!get_field('disable_fade_effect')): ?>
                 <div class="overlay " data-trig-offset="400" data-trig></div>
+                <?php endif; ?>
             </div>
         <?php endif; ?>
     </div>  

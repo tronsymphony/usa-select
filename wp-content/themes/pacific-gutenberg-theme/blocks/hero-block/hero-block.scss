@@ -1,6 +1,4 @@
 .hero-block {
-  // overflow: hidden;
-
   &__background-wrapper {
     background: url("../../dist/img/bg-dot.webp"),
       url("../../dist/img/bg-dot.webp"), url("../../dist/img/bg-round.webp"),
@@ -13,10 +11,10 @@
   }
 
   .container {
-    margin: 0 20px;
+    padding: 0 24px;
+    margin: 0 auto;
     position: relative;
     width: 100%;
-    max-width: calc(100% - 40px);
   }
 
   .hero-Flex {
@@ -37,7 +35,6 @@
       line-height: 32px;
       letter-spacing: 0em;
       text-align: center;
-
     }
   }
 
@@ -47,14 +44,15 @@
     &.goldenLink {
       font-size: 28px;
       font-weight: 300;
-      line-height: 42px;
+      line-height: 32px;
       letter-spacing: 0em;
+      margin: 0;
 
       @media screen and (max-width:768px) {
-font-size: 28px;
-font-style: normal;
-font-weight: 300;
-line-height: 150%; /* 42px */
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 150%;
       }
     }
   }
@@ -66,8 +64,7 @@ line-height: 150%; /* 42px */
     font-style: normal;
     font-weight: 300;
     line-height: 160%;
-    max-width: 640px;
-
+    max-width: 812px;
 
     @media screen and (max-width:768px) {
       text-align: center;
@@ -76,10 +73,6 @@ line-height: 150%; /* 42px */
       font-weight: 300;
       line-height: 32px;
     }
-  }
-
-  .container-1024 {
-    position: relative;
   }
 
   &.image_locationcenter {
@@ -114,13 +107,10 @@ line-height: 150%; /* 42px */
     right: 0;
     bottom: 0;
     transform: translate(0px, 50%);
-
     display: flex;
 
     @media screen and (max-width:768px) {
       display: none;
     }
-
   }
-
 }

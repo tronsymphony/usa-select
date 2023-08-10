@@ -1,0 +1,24 @@
+body {
+  background: $dark2;
+
+  &.element-blured {
+    overflow: hidden;
+  }
+}
+
+#main {
+  &.element-blured {
+    filter: blur(10px);
+  }
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

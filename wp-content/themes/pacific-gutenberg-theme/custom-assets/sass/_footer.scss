@@ -1,0 +1,560 @@
+.footer {
+  $self: &;
+  padding: 0 20px;
+
+  &__top-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 224px;
+    padding-bottom: 80px;
+  }
+
+  &__top-text {
+    font-weight: 300;
+    line-height: 115%;
+    color: $gray3;
+    font-family: $font-recife;
+    text-align: center;
+    margin-bottom: 24px;
+    
+
+    @include media-breakpoint-up(lg) {
+      font-size: 70px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      font-size: 42px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 35px;
+    }
+  }
+
+  &__normal-text {
+    color: $gray3;
+    font-weight: 300;
+    line-height: 125%;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 28px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      font-size: 24px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 20px;
+    }
+  }
+
+  &__bottom-part {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+      height: 404px;
+      background: var(--mobile-background);
+      background-size: cover;
+      background-position: center;
+    }
+
+    img {
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+  }
+
+  &__middle-part {
+    max-width: 812px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 80px;
+
+    .gform_confirmation_wrapper {
+      .gform_confirmation_message {
+        color: $gold;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 160%;
+      }
+    }
+
+    .gform_wrapper {
+      display: none;
+
+      form {
+        max-width: 520px;
+        width: 100%;
+
+        &.margin-body-footer {
+          .gform-body {
+            @include media-breakpoint-up(sm) {
+              margin-bottom: 100px;
+            }
+
+            @include media-breakpoint-down(sm) {
+              margin-bottom: 180px;
+            }
+          }
+        }
+
+        .gform-body {
+          width: 100%;
+
+          .gform_fields {
+            .gfield {
+              &.top-margin-lg {
+                margin-top: 44px;
+              }
+
+              &.gfield--type-html {
+                color: $white;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 18px;
+
+                @include media-breakpoint-down(sm) {
+                  margin-bottom: 52px;
+                }
+              }
+
+              &.gfield--type-radio {
+                .gfield_radio {
+                  @include media-breakpoint-down(sm) {
+                    flex-direction: column;
+                    align-items: start;
+                  }
+                }
+              }
+
+              .gfield_label {
+                color: $white;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 32px;
+                margin-bottom: 15px;
+              }
+
+              .ginput_container {
+                input {
+                  border-radius: 4px;
+                  border: 1px solid $gray5;
+                  background: $dark4;
+                  outline: none;
+                  color: $gray;
+                  font-size: 18px;
+                  font-weight: 300;
+                  line-height: 32px;
+                  padding: 20px;
+
+                  &::placeholder {
+                    color: $gray;
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 32px;
+                  }
+                }
+
+                .gfield_checkbox {
+                  margin-top: 44px;
+
+                  .gchoice {
+                    display: flex;
+                    gap: 20px;
+
+                    .gfield-choice-input {
+                      height: 28px;
+                      max-width: 28px;
+                      width: 100%;
+                      border-radius: 4px;
+                      border: 1px solid $light;
+                      position: relative;
+                      top: 6px;
+                      accent-color: $gray;
+                    }
+
+                    .gform-field-label {
+                      color: $gray;
+                      font-size: 18px;
+                      font-weight: 300;
+                      line-height: 32px;
+
+                      a {
+                        color: $gray;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .gfield_radio {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 50px;
+
+                .gchoice {
+                  display: flex;
+                  align-items: center;
+                  gap: 6px;
+
+                  .gfield-choice-input {
+                    width: 18px;
+                    height: 18px;
+                    accent-color: $light2;
+                  }
+
+                  .gform-field-label {
+                    color: $white;
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .gform_footer {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: end;
+          border-bottom: 1px solid $gray2;
+          gap: 8px;
+          padding-bottom: 16px;
+
+          &:after {
+            content: "";
+            background: url("../../custom-assets/icons/arrow-right.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            display: block;
+            height: 9px;
+            width: 5px;
+          }
+
+          .gform_button {
+            background: none;
+            border: none;
+            color: $white;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 32px;
+            padding: 0;
+            margin: 0;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  &__quiz-question {
+    color: $gold;
+    font-weight: 300;
+    line-height: 160%;
+    text-align: center;
+    margin-bottom: 40px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 28px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      font-size: 24px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 20px;
+    }
+  }
+
+  #{$self}__quiz {
+    &[data-quizid="secondQuiz"] {
+      #{$self}__answers-item {
+        padding: 14px 0 17px 0;
+      }
+    }
+  }
+
+  &__quiz-content {
+    color: $gray3;
+    text-align: center;
+    font-weight: 300;
+    line-height: 160%;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 80px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 20px;
+    }
+
+    @include media-breakpoint-up(sm) {
+      font-size: 28px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 24px;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__quiz-answers {
+    display: flex;
+
+    &.buttons {
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+
+      #{$self}__answers-item {
+        border: 1px solid $gray4;
+        border-radius: 8px;
+        padding: 28px 0;
+        color: $gray3;
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 160%;
+        text-align: center;
+        cursor: pointer;
+        transition: ease-in-out 0.3s;
+        display: flex;
+        flex-direction: column;
+
+        @include media-breakpoint-up(sm) {
+          min-width: 230px;
+        }
+
+        @include media-breakpoint-down(sm) {
+          max-width: 180px;
+          width: 100%;
+        }
+
+        &.answer-xs {
+          font-size: 18px;
+        }
+
+        &.answer-sm {
+          @include media-breakpoint-up(lg) {
+            font-size: 20px;
+          }
+
+          @include media-breakpoint-down(lg) {
+            font-size: 24px;
+          }
+        }
+
+        &.answer-lg {
+          font-size: 28px;
+        }
+
+        &:hover {
+          border-color: $gray3;
+        }
+
+        span {
+          @include media-breakpoint-up(sm) {
+            font-size: 18px;
+            line-height: 32px;
+          }
+
+          @include media-breakpoint-down(sm) {
+            font-size: 15px;
+            line-height: 130%;
+          }
+        }
+      }
+    }
+
+    &.links {
+      justify-content: space-between;
+
+      @include media-breakpoint-down(sm) {
+        flex-direction: column;
+        gap: 68px;
+      }
+
+      #{$self}__answers-item {
+        color: $white;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 32px;
+
+        &:nth-child(2) {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          cursor: pointer;
+
+          @include media-breakpoint-down(sm) {
+            justify-content: end;
+          }
+
+          &:after {
+            content: "";
+            background: url("../../custom-assets/icons/arrow-right.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            display: block;
+            height: 9px;
+            width: 5px;
+          }
+        }
+
+        @include media-breakpoint-down(sm) {
+          border-bottom: 1px solid $gray2;
+          padding-bottom: 16px;
+        }
+      }
+
+      .footer__back-to-previous {
+        display: flex;
+      }
+    }
+  }
+
+  &__quiz-answers-forms {
+    max-width: 520px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+
+    .gform_confirmation_wrapper {
+      padding: 200px 0;
+    }
+  }
+
+  &__back-to-previous {
+    display: none;
+    color: $white;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      background: url("../../custom-assets/icons/arrow-right.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      display: block;
+      height: 9px;
+      width: 5px;
+      transform: rotate(180deg);
+    }
+
+    &.back-to-previous--visible {
+      display: flex;
+      position: absolute;
+      left: 0;
+
+      @include media-breakpoint-up(sm) {
+        bottom: 18px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        bottom: 78px;
+        width: 100%;
+        border-bottom: 1px solid $gray2;
+        padding-bottom: 16px;
+      }
+    }
+  }
+
+  &__copyright-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include media-breakpoint-up(sm) {
+      gap: 20px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      gap: 10px;
+    }
+
+    li {
+      &:not(:last-child) {
+        #{$self}__copyright-link {
+          border-right: 1px solid  #3C3C3C;
+          
+
+          @include media-breakpoint-up(sm) {
+            padding-right: 20px;
+          }
+
+          @include media-breakpoint-down(sm) {
+            padding-right: 10px;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        @include media-breakpoint-down(sm) {
+          #{$self}__copyright-link {
+            border-right: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__copyright-link {
+    color: #BFBFBF;
+    text-align: center;
+    font-family: Helvetica Neue LT Pro,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    text-decoration: none;
+  }
+
+  &__copyrights {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+
+    @include media-breakpoint-up(sm) {
+      bottom: 132px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      bottom: 33px;
+    }
+  }
+
+  &__copyright-text {
+    color: #A3A3A3;
+    text-align: center;
+    font-family: Helvetica Neue LT Pro,sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 16.25px */
+
+    img {
+      margin: 0;
+    }
+  }
+}

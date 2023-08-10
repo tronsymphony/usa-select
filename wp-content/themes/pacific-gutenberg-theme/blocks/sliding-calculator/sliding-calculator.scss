@@ -21,14 +21,15 @@
     }
 
     .sliding_calculator_column {
-        width: 400px;
+        width: 307px;
+
         @media screen and (max-width:768px) {
-            width: 200px;  
+            width: 150px;
         }
     }
 
     .sliding_calculator_column {
-        > .row_header {
+        >.row_header {
             border-bottom: 1px solid #000;
         }
 
@@ -48,19 +49,22 @@
             min-height: 40px;
         }
     }
+
     .sliding_calculator_columns .row_text.row_link {
-        
+
         padding: 20px 40px;
-        a{
-            color: #000;
-            font-size: 15px;
+
+        a {
+            color: #222;
+            font-size: 16px;
             font-style: normal;
             font-weight: 300;
-            line-height: 130%; /* 19.5px */
+            line-height: 130%;
+            text-decoration: none;
         }
     }
 
-    .sliding_calculator_column.tier1 > .row_header {
+    .sliding_calculator_column.tier1>.row_header {
         border-radius: 8px 8px 0px 0px;
         border-bottom: 1px solid #000;
         background: rgb(239 239 239);
@@ -74,11 +78,12 @@
         background: rgb(250 248 240);
     }
 
-    .sliding_calculator_column.tier2 > .row_header {
+    .sliding_calculator_column.tier2>.row_header {
         border-radius: 8px 8px 0px 0px;
         border-bottom: 1px solid #000;
         background: rgb(241 231 206);
-        .row_text.row_default{
+
+        .row_text.row_default {
             background-color: transparent;
         }
     }
@@ -111,24 +116,31 @@
     }
 
     .row_text {
-        color: #000;
         font-family: Helvetica Neue, sans-serif;
-        font-size: 15px;
+   
+        color: #222;
+        font-size: 16px;
         font-style: normal;
         font-weight: 300;
         line-height: 130%;
         /* 19.5px */
         padding: 20px;
         border-bottom: 1px solid #E6E6E6;
-        min-height: 80px;
+        height: 80px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
+
+        &:nth-last-child(1) {
+            border-radius: 0 0 16px 16px;
+            overflow: hidden;
+            border: none;
+        }
     }
 
     .calculator_slider {
         display: grid;
-        margin: 140px 0 111px;
+        margin: 140px 0 117px;
         width: 100%;
         grid-template-columns: auto 1fr auto;
         align-items: center;
@@ -143,7 +155,7 @@
             flex-wrap: wrap;
         }
 
-        span.amount.left{
+        span.amount.left {
             @media screen and (max-width:768px) {
                 order: 2;
                 width: auto;
@@ -152,32 +164,36 @@
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 300;
-                line-height: 36px; /* 150% */
-            } 
+                line-height: 36px;
+                /* 150% */
+            }
         }
-        span.amount.right{
+
+        span.amount.right {
             @media screen and (max-width:768px) {
                 order: 3;
                 width: auto;
                 color: var(--body-text, #313131);
-font-size: 24px;
-font-style: normal;
-font-weight: 300;
-line-height: 36px; /* 150% */
-            } 
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 36px;
+                /* 150% */
+            }
         }
 
 
         .calculator_slider_slide {
             width: 100%;
             padding: 0 40px;
+
             @media screen and (max-width:768px) {
                 width: 100%;
                 padding: 0 0px 40px;
-                
+
                 order: 1;
-            } 
-            
+            }
+
         }
     }
 
@@ -269,7 +285,7 @@ line-height: 36px; /* 150% */
         transform: rotate(-135deg);
         flex-shrink: 0;
         background: #222;
-        transform: translate(-6px, -50%) rotate(45deg);
+        transform: translate(3px, -50%) rotate(45deg);
     }
 
     .rs-range {
@@ -283,168 +299,174 @@ line-height: 36px; /* 150% */
         &:focus {
             outline: none;
         }
-/*generated with Input range slider CSS style generator (version 20211225)
-https://toughengineer.github.io/demo/slider-styler*/
-& {
-    height: 2.2em;
-    -webkit-appearance: none;
-  }
-  
-  /*progress support*/
-  &.slider-progress {
-    --range: calc(var(--max) - var(--min));
-    --ratio: calc((var(--value) - var(--min)) / var(--range));
-    --sx: calc(0.5 * 2em + var(--ratio) * (100% - 2em));
-  }
-  
-  &:focus {
-    outline: none;
-  }
-  
-  /*webkit*/
-  &::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 2em;
-    height: 2em;
-    border-radius: 1em;
-    background: #000;
-    border: none;
-    box-shadow: 0 0 2px black;
-    margin-top: calc(max((1em - 1px - 1px) * 0.5,0px) - 2em * 0.5);
-  }
-  
-  &::-webkit-slider-runnable-track {
-    height: 14px;
-    border-radius: 0.5em;
-    background: #efefef;
-    box-shadow: none;
-  }
-  
-  &::-webkit-slider-thumb:hover {
-    background: #0061c3;
-  }
-  
-  &:hover::-webkit-slider-runnable-track {
-    background: #e5e5e5;
-    border-color: #9a9a9a;
-  }
-  
-  &::-webkit-slider-thumb:active {
-    background: #2f98f9;
-  }
-  
-  &:active::-webkit-slider-runnable-track {
-    background: #f5f5f5;
-    border-color: #c1c1c1;
-  }
-  
-  &.slider-progress::-webkit-slider-runnable-track {
-    background: linear-gradient(#000,#000) 0/var(--sx) 100% no-repeat, #efefef;
-  }
-  
 
-  
-  /*mozilla*/
-  &::-moz-range-thumb {
-    width: 2em;
-    height: 2em;
-    border-radius: 1em;
-    background: #000;
-    border: none;
-    box-shadow: 0 0 2px black;
-  }
-  
-  &::-moz-range-track {
-    height: max(calc(1em - 1px - 1px),0px);
-    border: 1px solid #b2b2b2;
-    border-radius: 0.5em;
-    background: #efefef;
-    box-shadow: none;
-  }
-  
-  &::-moz-range-thumb:hover {
-    background: #0061c3;
-  }
-  
-  &:hover::-moz-range-track {
-    background: #e5e5e5;
-    border-color: #9a9a9a;
-  }
-  
-  &::-moz-range-thumb:active {
-    background: #2f98f9;
-  }
-  
-  &:active::-moz-range-track {
-    background: #f5f5f5;
-    border-color: #c1c1c1;
-  }
-  
-  &.slider-progress::-moz-range-track {
-    background: linear-gradient(#000,#000) 0/var(--sx) 100% no-repeat, #efefef;
-  }
-  
+        & {
+            height: 2.2em;
+            -webkit-appearance: none;
+        }
 
-  
-  /*ms*/
-  &::-ms-fill-upper {
-    background: transparent;
-    border-color: transparent;
-  }
-  
-  &::-ms-fill-lower {
-    background: transparent;
-    border-color: transparent;
-  }
-  
-  &::-ms-thumb {
-    width: 2em;
-    height: 2em;
-    border-radius: 1em;
-    background: #000;
-    border: none;
-    box-shadow: 0 0 2px black;
-    margin-top: 0;
-    box-sizing: border-box;
-  }
-  
-  &::-ms-track {
-    height: 1em;
-    border-radius: 0.5em;
-    background: #efefef;
-    border: 1px solid #b2b2b2;
-    box-shadow: none;
-    box-sizing: border-box;
-  }
-  
-  &::-ms-thumb:hover {
-    background: #0061c3;
-  }
-  
-  &:hover::-ms-track {
-    background: #e5e5e5;
-    border-color: #9a9a9a;
-  }
-  
-  &::-ms-thumb:active {
-    background: #2f98f9;
-  }
-  
-  &:active::-ms-track {
-    background: #f5f5f5;
-    border-color: #c1c1c1;
-  }
-  
-  &.slider-progress::-ms-fill-lower {
-    height: max(calc(1em - 1px - 1px),0px);
-    border-radius: 0.5em 0 0 0.5em;
-    margin: -1px 0 -1px -1px;
-    background: #000;
-    border: 1px solid #b2b2b2;
-    border-right-width: 0;
-  }
-  
- 
+        /*progress support*/
+        &.slider-progress {
+            --range: calc(var(--max) - var(--min));
+            --ratio: calc((var(--value) - var(--min)) / var(--range));
+            --sx: calc(0.5 * 2em + var(--ratio) * (100% - 2em));
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        /*webkit*/
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 2em;
+            height: 2em;
+            border-radius: 1em;
+            background: #000;
+            border: none;
+            box-shadow: 0 0 2px black;
+            margin-top: calc(max((1em - 1px - 1px) * 0.5, 0px) - 2em * 0.5);
+
+            width: 16px;
+            height: 16px;
+            background-color: #313131;
+            border: 3px solid #fff;
+            filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.16));
+            margin-top: -6px;
+        }
+
+        &::-webkit-slider-runnable-track {
+            height: 4px;
+            border-radius: 0.5em;
+            background: #efefef;
+            box-shadow: none;
+        }
+
+        &::-webkit-slider-thumb:hover {
+            background: #0061c3;
+        }
+
+        &:hover::-webkit-slider-runnable-track {
+            background: #e5e5e5;
+            border-color: #9a9a9a;
+        }
+
+        &::-webkit-slider-thumb:active {
+            background: #2f98f9;
+        }
+
+        &:active::-webkit-slider-runnable-track {
+            background: #f5f5f5;
+            border-color: #c1c1c1;
+        }
+
+        &.slider-progress::-webkit-slider-runnable-track {
+            background: linear-gradient(#000, #000) 0/var(--sx) 100% no-repeat, #efefef;
+        }
+
+
+
+        /*mozilla*/
+        &::-moz-range-thumb {
+            width: 2em;
+            height: 2em;
+            border-radius: 1em;
+            background: #000;
+            border: none;
+            box-shadow: 0 0 2px black;
+        }
+
+        &::-moz-range-track {
+            height: max(calc(1em - 1px - 1px), 0px);
+            border: 1px solid #b2b2b2;
+            border-radius: 0.5em;
+            background: #efefef;
+            box-shadow: none;
+        }
+
+        &::-moz-range-thumb:hover {
+            background: #0061c3;
+        }
+
+        &:hover::-moz-range-track {
+            background: #e5e5e5;
+            border-color: #9a9a9a;
+        }
+
+        &::-moz-range-thumb:active {
+            background: #2f98f9;
+        }
+
+        &:active::-moz-range-track {
+            background: #f5f5f5;
+            border-color: #c1c1c1;
+        }
+
+        &.slider-progress::-moz-range-track {
+            background: linear-gradient(#000, #000) 0/var(--sx) 100% no-repeat, #efefef;
+        }
+
+
+
+        /*ms*/
+        &::-ms-fill-upper {
+            background: transparent;
+            border-color: transparent;
+        }
+
+        &::-ms-fill-lower {
+            background: transparent;
+            border-color: transparent;
+        }
+
+        &::-ms-thumb {
+            width: 2em;
+            height: 2em;
+            border-radius: 1em;
+            background: #000;
+            border: none;
+            box-shadow: 0 0 2px black;
+            margin-top: 0;
+            box-sizing: border-box;
+        }
+
+        &::-ms-track {
+            height: 1em;
+            border-radius: 0.5em;
+            background: #efefef;
+            border: 1px solid #b2b2b2;
+            box-shadow: none;
+            box-sizing: border-box;
+        }
+
+        &::-ms-thumb:hover {
+            background: #0061c3;
+        }
+
+        &:hover::-ms-track {
+            background: #e5e5e5;
+            border-color: #9a9a9a;
+        }
+
+        &::-ms-thumb:active {
+            background: #2f98f9;
+        }
+
+        &:active::-ms-track {
+            background: #f5f5f5;
+            border-color: #c1c1c1;
+        }
+
+        &.slider-progress::-ms-fill-lower {
+            height: max(calc(1em - 1px - 1px), 0px);
+            border-radius: 0.5em 0 0 0.5em;
+            margin: -1px 0 -1px -1px;
+            background: #000;
+            border: 1px solid #b2b2b2;
+            border-right-width: 0;
+        }
+
+
 
         // &::-webkit-slider-runnable-track {
         //     width: 100%;
@@ -506,6 +528,7 @@ https://toughengineer.github.io/demo/slider-styler*/
 
     .range-slider {
         position: relative;
+        display: flex;
     }
 
     .rs-label {
@@ -515,18 +538,22 @@ https://toughengineer.github.io/demo/slider-styler*/
         display: block;
         box-sizing: border-box;
         text-align: center;
-        font-family: Helvetica Neue LT Pro, sans-serif;
-        font-size: 28px;
-        font-style: normal;
-        font-weight: 100;
-        line-height: 160%;
-        max-width: 210px;
+        max-width: 179px;
         margin-left: -90px;
-        border-radius: 3px;
+        border-radius: 6px;
         color: #fff;
-        padding: 11px 20px;
+        padding: 11px 7px;
         background: var(--background-black, #222);
         transform: translate(-9px, 0px);
+        width: 100%;
+
+        color: #FFF;
+text-align: center;
+font-family: Helvetica Neue LT Pro;
+font-size: 28px;
+font-style: normal;
+font-weight: 300;
+line-height: 150%; /* 42px */
 
         &::before {
             content: "Relationship Balance";
@@ -541,19 +568,28 @@ https://toughengineer.github.io/demo/slider-styler*/
             font-style: normal;
             font-weight: 300;
             line-height: 130%;
+
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 150%;
+            /* 22.5px */
         }
 
         &[data-position="0"] {
-            transform: translate(95px, 0px);
-            &:after{
-                transform: translate(-97px, -50%) rotate(45deg);
+            transform: translate(89px, 0px);
+
+            &:after {
+                transform: translate(-84px, -50%) rotate(45deg);
             }
         }
+
         &[data-position="10"] {
-            transform: translate(-125px, 0px);
+            transform: translate(-16px, 0px);
             width: 100%;
-            &:after{
-                transform: translate(93px, -50%) rotate(45deg);
+
+            &:after {
+                transform: translate(3px, -50%) rotate(45deg);
             }
         }
 
@@ -589,15 +625,17 @@ https://toughengineer.github.io/demo/slider-styler*/
             @media screen and (max-width:768px) {
                 min-width: 80px;
             }
-            &.btn_active{
+
+            &.btn_active {
                 border-radius: 28px;
                 background: rgba(214, 214, 214, 0.60);
-                &.btn_active_orange{
+
+                &.btn_active_orange {
                     background: rgba(219, 195, 131, 0.40);
 
                 }
             }
-            
+
         }
     }
 

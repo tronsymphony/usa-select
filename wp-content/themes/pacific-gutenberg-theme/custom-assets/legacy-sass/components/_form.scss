@@ -1,0 +1,50 @@
+.checkbox {
+	position: relative;
+	padding-left: 30px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 100%;
+	color: #556176;
+
+	&.active {
+		&::before {
+			background: #007953;
+			border-color: #007953;
+		}
+		&::after {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 1px;
+		width: 18px;
+		height: 18px;
+		border: 1px solid #a5adb4;
+		border-radius: 3px;
+		transition: 0.3s;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: 1px;
+		top: 5px;
+		width: 14px;
+		height: 10px;
+		background: url("data:image/svg+xml,%3Csvg viewBox='0 0 17 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.6388 1.26675C17.0278 1.64426 17.0277 2.2563 16.6388 2.63379L7.34373 11.6554C6.95482 12.0329 6.32428 12.0329 5.93536 11.6554L1.28782 7.14483C0.898877 6.76734 0.898849 6.1553 1.28776 5.77778C1.67666 5.40027 2.30723 5.40024 2.69617 5.77772L6.63952 9.60489L15.2304 1.26672C15.6194 0.889231 16.2499 0.889244 16.6388 1.26675Z' fill='white'/%3E%3C/svg%3E");
+		background-repeat: no-repeat;
+		background-size: contain;
+		visibility: hidden;
+		opacity: 0;
+		transition: 0.3s;
+	}
+}

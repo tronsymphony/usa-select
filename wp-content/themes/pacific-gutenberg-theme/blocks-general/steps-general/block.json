@@ -1,0 +1,19 @@
+{
+  "name": "acf/steps-general",
+  "title": "Steps General",
+  "category": "common",
+  "icon": "editor-expand",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "steps-general.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}

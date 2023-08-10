@@ -1,0 +1,19 @@
+{
+  "name": "acf/speacial-rates-general",
+  "title": "Special Rates General",
+  "category": "text",
+  "icon": "superhero",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "speacial-rates-general.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}

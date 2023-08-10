@@ -226,8 +226,6 @@ Array.from(buttonsTrack).forEach(function(button,index) {
                 break;
         }
 
-
-
         rangeSlider.value = rangeIndex;
 
         Array.from(buttonsTrack).forEach(function(button,index) {
@@ -259,7 +257,7 @@ function showSliderValue(indexValue) {
         slideCount = indexValue;
     }
 
-    transformValue = slideCount * widthBox;
+    transformValue = slideCount * widthBox + (16 * slideCount);
     slide_overflow_container.style.transform = "translateX(-"+transformValue+"px)";
 
     rangeBullet.style.left = (bulletPosition * 10) + "0%";

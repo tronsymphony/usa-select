@@ -14,52 +14,6 @@ if( isset( $block['data']['preview_image_help'] )  ) :
 	return;
 endif;
 
-// Build the breadcrumb trail dynamically based on the page hierarchy
-// function generate_breadcrumbs() {
-//     $breadcrumbs = array();
-//     $current_page_id = get_the_ID();
-
-//     while ($current_page_id) {
-//         $page = get_post($current_page_id);
-//         $breadcrumbs[$page->post_title] = get_permalink($page->ID);
-//         $current_page_id = $page->post_parent;
-//     }
-
-//     krsort($breadcrumbs); // Sort the breadcrumbs in descending order
-
-//     $breadcrumb_html = '<ul class="breadcrumbs">';
-//     foreach ($breadcrumbs as $label => $url) {
-//         $breadcrumb_html .= '<li><a href="' . $url . '">' . $label . '</a></li>';
-//         $breadcrumb_html .= '<li class="separator">></li>';
-//     }
-//     $breadcrumb_html .= '</ul>';
-
-//     return $breadcrumb_html;
-// }
-
-$categories = get_the_terms(get_the_ID(), 'category-for-page');
-
-// Initialize the breadcrumb trail
-$breadcrumbs = array();
-
-// Add the "Home" link as the first element
-$breadcrumbs[] = '<li><a href="' . home_url() . '">Home</a></li>';
-
-// Iterate through each category and add them to the breadcrumb trail
-// . get_term_link($category) .
-if ($categories && !is_wp_error($categories)) {
-    foreach ($categories as $category) {
-        if ($category->slug !== 'who-do-we-serve') {
-            $breadcrumbs[] = '<li><span>' . $category->name . '</span></li>';
-        } else {
-            $breadcrumbs[] = '<li>' . $category->name . '</li>';
-        }
-    }
-}
-
-// Add the current page as the last element (without a link)
-$breadcrumbs[] = '<li>' . get_the_title() . '</li>';
-
 // Create id attribute allowing for custom 'anchor' value.
 $id = 'hero-block-' . $block['id'];
 if (!empty($block['anchor'])) :
@@ -82,6 +36,8 @@ $breadcrumb = get_field('show_breadcrumb');
 $preheader = get_field('preheader');
 $header = get_field('header');
 $text = get_field('text');
+$padding_top = get_field('padding_top');
+$padding_bottom = get_field('padding_bottom');
 
 $goldenline = get_field('golden_text_line');
 $background = get_field('background');
@@ -91,13 +47,13 @@ $preheader = Pacific_Helper::generate_paragraph(array(
 	'class' => 'h6-font-size fontWeight300 pre-header'
 ));
 
-$header = Pacific_Helper::generate_header(array(
+$headerText = Pacific_Helper::generate_header(array(
 	'text' => $header['title'],
 	'tag' => $header['tag'],
-	'class' => 'h1-font-size'
+	'class' => 'h1-font-size header_mwidth'
 ));
 
-$text = $text['normal_text'];
+$textReg = $text['normal_text'];
 
 
 if($background == 'lightBackground'){
@@ -128,61 +84,97 @@ if(!empty($goldenline)){
 	}
 }
 
-// $transparent_button = Pacific_Helper::generate_acf_link(array(
-// 	'link'            => $transparent_button,
-// 	'class'           => 'btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight',
-// 	'link_attributes' => array(
-// 		'title' => $transparent_button['title'],
-// 		'target' => $transparent_button['target'] ?? null
-// 	)
-// ));
-
-// $image = Pacific_Helper::generate_image( array(
-// 	'image' => $image,
-// 	'attributes' => array(
-// 		'class' => 'img-fluid'
-// 	)
-// ));
-
 $block_image = get_field('block_image');
 $block_location = get_field('block_location');
+$block_location_vertical = get_field('block_location_vertical');
 $enable_bg__gradient_shadow = get_field('enable_bg__gradient_shadow');
 ?>
 
-<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); echo $background; echo ' image_location'.$block_location; ?> vertical_<?php the_field('block_location_vertical'); ?> enable_bg__gradient_shadow_<?php the_field('enable_bg__gradient_shadow'); ?> hero-Parent selectedDesign center-align headingRecife-Parent">
-	<?php
-	if($breadcrumb):?>
-	<div class="breadcrumbs-parent">
-	<?php if ( function_exists('yoast_breadcrumb') ) {
-    yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
-} ?>
-	</div>
-	<?php
-	endif;?>
+<section 
+id="<?php echo esc_attr($id); ?>" 
+class="
+	<?php echo esc_attr($className); 
+	echo $background; 
+	// block location for image
+	echo ' image_location' . $block_location; 
+	echo ' vertical_' . $block_location_vertical; 
+	// background gradient globe
+	echo ' enable_bg__gradient_shadow_' . $enable_bg__gradient_shadow; 
+	?> 
+	hero-Parent selectedDesign center-align headingRecife-Parent
+">
+	
+	<?php if($breadcrumb): ?>
+		<div class="breadcrumbs-parent">
+			<?php 
+			// breadcrumbs
+			if ( function_exists('yoast_breadcrumb') ) { 
+				yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+			} 
+			?>
+		</div>
+	<?php endif;?>
+
 	<div class="container">
 		<div class="hero-Flex">
-		<?php
-		if($preheader){
-			echo $preheader;
-		}
-		if($header){
-			echo $header;
-		}
-		if($text){
-			echo '<div class="text">';
-			echo $text;
-			echo '<div>';
-		}
-
-
-		if(!empty($goldenline)){
-			echo $goldenline;
-		}
-
-		?>
+			<?php
+			// pre head title
+			if($preheader){
+				echo $preheader;
+			}
+			// header title
+			if($headerText){
+				echo $headerText;
+			}
+			// paragraph content
+			if($textReg){
+				echo '<div class="text text_mwidth">';
+					echo $textReg;
+				echo '<div>';
+			}
+			// gold text
+			if(!empty($goldenline)){
+				echo $goldenline;
+			}
+			?>
 		</div>
-		<?php if(!empty($block_image)): ?>
-		<div class="bg_image"><img src="<?= $block_image; ?>" alt="Bg image"></div>
+
+		<?php 
+			// floating image
+			if(!empty($block_image)): ?>
+			<div class="bg_image">
+				<img src="<?= $block_image; ?>" alt="background image">
+			</div>
 		<?php endif; ?>
+
 	</div>
 </section>
+
+<style>
+	@media screen and (min-width:768px) {
+		<?php 
+		// set max width in acf	
+		if($header['max_width']): ?>
+			.header_mwidth{
+				max-width:<?php echo $header['max_width']; ?>px;
+			}
+		<?php endif; ?>
+
+		<?php if($text['max_width']): ?>
+			.hero-Flex .text_mwidth{
+				max-width:<?php echo $text['max_width']; ?>px;
+			}
+		<?php endif; ?>
+		
+		<?php // set padding in acf ?>
+		section.hero-Parent .hero-Flex{
+			<?php if($padding_top): ?>
+				padding-top:<?= $padding_top; ?>px;
+			<?php endif; ?>
+
+			<?php if($padding_bottom): ?>
+				padding-bottom:<?= $padding_bottom; ?>px;
+			<?php endif; ?>
+		}
+	}
+</style>

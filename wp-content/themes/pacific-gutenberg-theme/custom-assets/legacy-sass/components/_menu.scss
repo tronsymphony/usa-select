@@ -1,0 +1,162 @@
+.menu {
+	position: absolute;
+	top: 0;
+	left: 100vw;
+	width: 100%;
+	height: 100vh;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	z-index: 110;
+	transition: all 0.5s ease-in-out;
+
+	&.active {
+		left: 0;
+	}
+
+	.mheader__top {
+		position: relative;
+		z-index: 102;
+		padding: 0 16px;
+	}
+
+	&__inner {
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+	}
+
+	&__body {
+		flex: 1;
+	}
+
+	&__footer {
+		position: relative;
+		flex-shrink: 0;
+	}
+
+	&__pickers {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 20px;
+		padding-bottom: 17px;
+		height: 58px;
+		background: #f7f9fb;
+		border-top: solid 1px #dce1e9;
+
+		.pickers {
+			padding: 0 16px;
+			margin: 0 auto;
+		}
+
+		.location-picker {
+			&__image {
+				fill: #556176;
+			}
+			&__title {
+				color: #556176;
+			}
+		}
+
+		.country-picker {
+			&__title {
+				color: #556176;
+			}
+			&__icon {
+				fill: #556176;
+			}
+			&__dropdown {
+				top: auto;
+				bottom: calc(100% + 6px);
+			}
+		}
+
+		.language-picker {
+			&__title {
+				color: #556176;
+			}
+			&__icon {
+				fill: #556176;
+			}
+			&__dropdown {
+				top: auto;
+				bottom: calc(100% + 6px);
+
+				@media (max-width: 1199.98px) {
+					left: auto;
+					right: -30px;
+				}
+			}
+		}
+	}
+
+	&__social {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 11px;
+		padding-bottom: 11px;
+		height: 54px;
+		background: #f7f9fb;
+		border-top: solid 1px #dce1e9;
+
+		.social-media {
+			padding: 0 16px;
+			margin: 0 auto;
+
+			&__item + &__item {
+				margin-left: 24px;
+			}
+		}
+	}
+}
+
+.admin-bar .menu {
+	@media (min-width: 768px) {
+		height: calc(100vh - 32px);
+	}
+
+	@media (max-width: 767.98px) {
+		height: calc(100vh - 46px);
+	}
+}
+
+.has-banner .menu {
+	@media (min-width: 768px) {
+		height: 100vh;
+	}
+
+	@media (max-width: 767.98px) {
+		height: calc(100vh - 60px);
+	}
+}
+
+.admin-bar .has-banner .menu {
+	@media (min-width: 768px) {
+		height: calc(100vh - 32px);
+	}
+
+	@media (max-width: 767.98px) {
+		height: calc(100vh - 46px - 60px);
+	}
+}
+
+@media (max-width: 767.98px) {
+	
+}
+
+.hide-banner .menu {
+	height: 100vh;
+}
+
+.admin-bar .hide-banner .menu {
+	@media (min-width: 768px) {
+		height: calc(100vh - 32px);
+	}
+
+	@media (max-width: 767.98px) {
+		height: calc(100vh - 46px);
+	}
+}
+

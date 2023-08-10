@@ -1,0 +1,19 @@
+{
+  "name": "acf/features-general",
+  "title": "Features General",
+  "category": "common",
+  "icon": "randomize",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "features-general.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "pacificScripts": false
+}
