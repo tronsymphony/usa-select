@@ -64,7 +64,7 @@
     .sButton {
         &.lightFont {
             border-color: #404040;
-            font-family: Helvetica Neue LT Pro, sans-serif;
+            font-family: 'HelveticaNeueLTPro';
             color: #BFBFBF;
 
             &:hover {
@@ -219,7 +219,7 @@
             content: close-quote;
             position: absolute;
             width: 130.108px;
-            height: 2px;
+            height: 1px;
             background: #c6b386;
             bottom: 70px;
             right: -30px;

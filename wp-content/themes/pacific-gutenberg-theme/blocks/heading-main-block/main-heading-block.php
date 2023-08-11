@@ -14,8 +14,6 @@ if( isset( $block['data']['preview_image_help'] )  ) :
 	return;
 endif;
 
-
-
 // Create id attribute allowing for custom 'anchor' value.
 $id = 'main-heading-block' . $block['id'];
 if (!empty($block['anchor'])) :
@@ -45,7 +43,12 @@ $theHeading = Pacific_Helper::generate_header(array(
 
 ?>
 
-<div class="main-heading-parent headingRecife-Parent <?php echo $className; ?> <?= $background; ?>" style="background:<?php echo get_field('background_color'); ?>;">
+<div 
+class="
+main-heading-parent headingRecife-Parent 
+<?php echo $className; ?> 
+<?= $background; ?>" 
+style="background:<?php echo get_field('background_color'); ?>;">
     <div class="main-heading-inner center-align lightFont">
         <?= $theHeading; ?>
     </div>

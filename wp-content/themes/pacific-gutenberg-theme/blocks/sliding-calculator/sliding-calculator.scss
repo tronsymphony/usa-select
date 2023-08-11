@@ -200,7 +200,7 @@
     span.amount {
         color: var(--body-text, #313131);
         text-align: right;
-        font-family: Helvetica Neue LT Pro, sans-serif;
+        font-family: 'HelveticaNeueLTPro';
         font-size: 28px;
         font-style: normal;
         font-weight: 300;
@@ -210,7 +210,7 @@
 
     .column_title {
         color: #000;
-        font-family: Helvetica Neue LT Pro, sans-serif;
+        font-family: 'HelveticaNeueLTPro';
         font-size: 28px;
         font-style: normal;
         font-weight: 300;
@@ -226,8 +226,8 @@
         font-style: normal;
         font-weight: 300;
         line-height: 32px;
-        /* 177.778% */
         border-bottom: none;
+        height: 38px;
     }
 
     .row_text.row_border {
@@ -236,6 +236,7 @@
 
     .row_text.row_textarea {
         min-height: 200px;
+        height: auto;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -549,7 +550,7 @@
 
         color: #FFF;
 text-align: center;
-font-family: Helvetica Neue LT Pro;
+font-family: 'HelveticaNeueLTPro';
 font-size: 28px;
 font-style: normal;
 font-weight: 300;
@@ -563,7 +564,7 @@ line-height: 150%; /* 42px */
             margin-top: -2px;
             color: #E0E0E0;
             text-align: center;
-            font-family: Helvetica Neue LT Pro, sans-serif;
+            font-family: 'HelveticaNeueLTPro';
             font-size: 15px;
             font-style: normal;
             font-weight: 300;
@@ -609,7 +610,7 @@ line-height: 150%; /* 42px */
         .button_track {
             color: var(--body-text, #313131);
             text-align: center;
-            font-family: Helvetica Neue LT Pro, sans-serif;
+            font-family: 'HelveticaNeueLTPro';
             font-size: 15px;
             font-style: normal;
             font-weight: 300;

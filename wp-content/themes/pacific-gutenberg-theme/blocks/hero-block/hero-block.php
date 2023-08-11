@@ -87,7 +87,7 @@ if(!empty($goldenline)){
 $block_image = get_field('block_image');
 $block_location = get_field('block_location');
 $block_location_vertical = get_field('block_location_vertical');
-$enable_bg__gradient_shadow = get_field('enable_bg__gradient_shadow');
+$background_image = get_field('background_image');
 ?>
 
 <section 
@@ -98,11 +98,11 @@ class="
 	// block location for image
 	echo ' image_location' . $block_location; 
 	echo ' vertical_' . $block_location_vertical; 
-	// background gradient globe
-	echo ' enable_bg__gradient_shadow_' . $enable_bg__gradient_shadow; 
 	?> 
 	hero-Parent selectedDesign center-align headingRecife-Parent
 ">
+
+	<?php if($background_image){ echo "<div class='hero_background_image_container'><img src='$background_image' class='hero_background_image'></div>";} ?>
 	
 	<?php if($breadcrumb): ?>
 		<div class="breadcrumbs-parent">

@@ -391,8 +391,8 @@
         },
         {
             "key": "field_64c7ff2f46236",
-            "label": "Enable BG  Gradient Shadow",
-            "name": "enable_bg__gradient_shadow",
+            "label": "Enable BG  Image",
+            "name": "enable_bg__image",
             "aria-label": "",
             "type": "true_false",
             "instructions": "",
@@ -408,6 +408,31 @@
             "ui": 0,
             "ui_on_text": "",
             "ui_off_text": ""
+        },
+        {
+            "key": "field_64d5c0248aa96",
+            "label": "Background Image",
+            "name": "background_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
         },
         {
             "key": "field_64d43ad282024",
@@ -485,5 +510,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1691630455
+    "modified": 1691729987
 }
