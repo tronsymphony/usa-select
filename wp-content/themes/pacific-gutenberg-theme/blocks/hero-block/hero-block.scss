@@ -1,7 +1,8 @@
 .hero-block {
   &__background-wrapper {
     background: url("../../dist/img/bg-dot.webp"),
-      url("../../dist/img/bg-dot.webp"), url("../../dist/img/bg-round.webp"),
+      url("../../dist/img/bg-dot.webp"),
+      url("../../dist/img/bg-round.webp"),
       url("../../dist/img/bg-tree.webp"),
       url("../../dist/img/bg-bottom-hero.webp");
     background-position: 10px 10px, bottom 190px right 10px, left 55% top -1px,
@@ -9,7 +10,6 @@
     background-repeat: no-repeat;
     background-color: #2124b1;
   }
-
 
   .hero_background_image_container {
     position: absolute;
@@ -21,14 +21,16 @@
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
-    @media screen and (max-width:768px) {
+
+    @media screen and (max-width: 768px) {
       display: none;
     }
-    img{
+
+    img {
       max-width: 40vw;
-    height: auto;
-    object-fit: contain;
-    object-position: top;
+      height: auto;
+      object-fit: contain;
+      object-position: top;
     }
   }
 
@@ -51,7 +53,7 @@
     letter-spacing: 0em;
     text-align: center;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
       font-size: 18px;
       font-weight: 300;
       line-height: 32px;
@@ -70,7 +72,7 @@
       letter-spacing: 0em;
       margin: 0;
 
-      @media screen and (max-width:768px) {
+      @media screen and (max-width: 768px) {
         font-size: 28px;
         font-style: normal;
         font-weight: 300;
@@ -88,7 +90,7 @@
     line-height: 160%;
     max-width: 812px;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
       text-align: center;
       font-size: 18px;
       font-style: normal;
@@ -131,7 +133,7 @@
     transform: translate(0px, 50%);
     display: flex;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
       display: none;
     }
   }

@@ -5,7 +5,7 @@
 
 .h2-font-size {
     font-weight: 300;
-    line-height: 110%;
+    line-height: 125%;
 
 }
 
@@ -133,6 +133,24 @@
     }
 }
 
+.flex-parent-wrapper{
+    position: relative;
+}
+.corner_image {
+    position: absolute;
+    top: -120px;
+    right: 0;
+    transform: translate(0%, 0);
+    max-width: 309px;
+
+    @media screen and (max-width:1700px) {
+        transform: translate(0%, 0);
+    }
+
+    @media screen and (max-width:768px) {
+        display: none;
+    }
+}
 
 .sFlex-wrapper {
     .sFlexContent.sFlex-2-3 {
@@ -167,7 +185,7 @@
         // font-size: 28px;
         font-style: normal;
         font-weight: 300;
-        line-height: 160%;
+        line-height: 100%;
         margin-bottom: 34px;
 
         @media screen and (max-width:768px) {
@@ -186,6 +204,7 @@
         line-height: 150%;
     }
 
+
     &.sFlex-parent {
         &.sFlex-center {}
 
@@ -197,22 +216,6 @@
 
         .sFlex-bottom-parent {
             margin-bottom: 0;
-        }
-
-        .corner_image {
-            position: absolute;
-            top: -120px;
-            right: 0;
-            transform: translate(160%, 0);
-            max-width: 309px;
-
-            @media screen and (max-width:1700px) {
-                transform: translate(120%, 0);
-            }
-
-            @media screen and (max-width:768px) {
-                display: none;
-            }
         }
 
         .strike_1:after {

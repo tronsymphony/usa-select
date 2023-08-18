@@ -1,6 +1,6 @@
 {
     "key": "group_6481ba9316a7a",
-    "title": "Main heading",
+    "title": "Block: Main heading",
     "fields": [
         {
             "key": "field_64aed76b5cca6",
@@ -111,6 +111,26 @@
                     "layout": "horizontal"
                 }
             ]
+        },
+        {
+            "key": "field_64d6aca1e16e3",
+            "label": "Add Fade In Animation",
+            "name": "add_fade_in_animation",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -131,5 +151,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1689180026
+    "modified": 1691790511
 }

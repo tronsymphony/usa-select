@@ -1,3 +1,12 @@
 .main-heading-block{
     margin: -1px 0;
+    .sticky_bg {
+        position: sticky;
+        bottom: 0;
+        height: 30vh;
+        width: 100%;
+        background: linear-gradient(0deg, rgb(247, 247, 247) 50%, rgba(255, 255, 255, 0));
+        display: flex;
+        margin-bottom: -30vh;
+    }
 }
