@@ -896,17 +896,16 @@ section.hero-Parent {
 
 /***Main Heading***/
 .main-heading-parent {
-  overflow: hidden;
+  // overflow: hidden;
 
   .main-heading-inner {
-    margin: 376px 0 30px;
-    padding: 0 10px;
+    padding: 376px 10px 30px;
 
     @media screen and (max-width:1200px) {
-      margin: 200px 0 0;
+      padding: 200px 10px 0;
     }
     @media screen and (max-width:768px) {
-      margin: 200px 0 118px;
+      padding: 200px 10px 118px;
     }
   }
 }

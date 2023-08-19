@@ -1,7 +1,6 @@
 .split-column-slider {
     position: relative;
     background: var(--gradient);
-
     margin-top: var(--margins-top--mobile);
     margin-bottom: var(--margins-bottom--mobile);
     padding-top: var(--paddings-top--mobile);
@@ -19,8 +18,6 @@
         margin: 0 auto;
         padding: 0 20px;
     }
-
-
 
     .content {
         display: grid;
@@ -75,5 +72,4 @@
         left: 0;
         transform: translate(-50%, 50%);
     }
-
 }

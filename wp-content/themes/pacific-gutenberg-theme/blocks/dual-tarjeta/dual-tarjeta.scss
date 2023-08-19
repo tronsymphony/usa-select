@@ -1,8 +1,6 @@
 .dual-tarjeta {
     position: relative;
-
     background: var(--gradient);
-
     margin-top: var(--margins-top--mobile);
     margin-bottom: var(--margins-bottom--mobile);
     padding-top: var(--paddings-top--mobile);
@@ -15,6 +13,41 @@
         padding-bottom: var(--paddings-bottom);
     }
 
+    h2.title, h3.dual_title {
+        text-align: center;
+        color: var(--body-text, #313131);
+        font-style: normal;
+    }
+
+    h2.title {
+        font-size: 42px;
+        font-family: RecifeDisplay;
+        font-weight: 300;
+        line-height: 150%;
+        margin: 0 auto 160px;
+        max-width: 900px;
+    }
+
+    h3.dual_title {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 110%;
+        margin: 0;
+
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+            line-height: 130%;
+        }
+    }
+
+    .dual_content h3 {
+        @media screen and (max-width:768px) {
+            font-size: 24px !important;
+            font-weight: 700;
+            line-height: 130%;
+        }
+    }
+
     .image_float {
         position: absolute;
         top: 0;
@@ -22,9 +55,8 @@
         transform: translate(50%, -50%);
         z-index: 0;
 
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: 768px) {
             transform: translate(30%, -50%);
-            z-index: 0;
             max-width: 300px;
         }
     }
@@ -34,22 +66,28 @@
         margin: 0 auto;
     }
 
-    p {
+    p, img {
         margin: 0;
-    }
-
-    img {
         max-width: 100%;
     }
 
-    .dual_featured_content {
+    .dual_featured_content, .dual_content {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
         align-items: center;
         gap: 1rem;
-        min-height: 400px;
-        padding: 0 20px;
+    }
+
+    .dual_content {
+        border-bottom: 1px solid #e0e0e0;
+        padding: 0 2rem 80px;
+        margin-bottom: 80px;
+        min-height: 170px;
+        justify-content: flex-start;
+    }
+
+    .dual_card_image {
+        margin: 42px 0;
     }
 
     span.dual_link {
@@ -61,30 +99,20 @@
         color: #313131;
         text-align: right;
         font-size: 18px;
-        font-style: normal;
         font-weight: 300;
         text-decoration: none;
         line-height: 32px;
     }
 
     .column {
-        padding: 0 20px;
-    }
-
-
-
-    h2.title {
-        color: var(--body-text, #313131);
+        padding: 0 20px 12px;
+        display: grid;
+        align-items: flex-start;
         text-align: center;
-
-        /* Heading - H2 */
-        font-size: 42px;
-        font-family: RecifeDisplay;
-        font-style: normal;
+        font-size: 18px;
         font-weight: 300;
-        line-height: 150%;
-        margin: 0 auto 160px;
-        max-width: 900px;
+        line-height: 32px;
+        border-bottom: 1px solid #D8D8D8;
     }
 
     .columns {
@@ -95,74 +123,6 @@
 
         @media (min-width: 1066.98px) {
             grid-template-columns: 1fr 1fr;
-        }
-    }
-
-    .column {
-        padding: 0 20px 12px;
-        display: grid;
-        align-items: flex-start;
-        text-align: center;
-        color: var(--body-text, #313131);
-        text-align: center;
-        /* Body Text */
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 32px;
-        border-bottom: 1px solid #D8D8D8;
-    }
-
-    .dual_featured_content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .dual_card_image {}
-
-    .dual_content {
-        border-bottom: 1px solid #e0e0e0;
-        padding: 0 2rem;
-        padding-bottom: 80px;
-        margin-bottom: 80px;
-        min-height: 170px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 1rem;
-    }
-
-    .dual_card_image {
-        margin: 42px 0 42px;
-    }
-
-    .dual_featured_content {}
-
-    span.dual_link {}
-
-    h3.dual_title {
-        color: var(--body-text, #313131);
-        text-align: center;
-        font-size: 28px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 110%;
-        margin: 0;
-        @media screen and (max-width:768px) {
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 130%; /* 31.2px */
-        }
-    }
-    .dual_content h3 {
-        @media screen and (max-width:768px) {
-            font-size: 24px!important;
-            font-weight: 700;
-            line-height: 130%; /* 31.2px */
         }
     }
 }
